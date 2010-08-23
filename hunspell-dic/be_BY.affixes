@@ -1,0 +1,1043 @@
+# Belarusian affix file and dictionaries
+# Version number: 0.22
+# Author: Mikalai Udodau (C) 2010
+# License: Creative Commons CC-BY-ND
+# See http://creativecommons.org/licenses/by-nd/3.0/
+.PP
+.RS
+.nf
+SET UTF-8
+
+TRY аяоёйцукжеэнгшўзхіыпрлд'юьбвтмсчфАЯОЁЙЦУКЖЕЭНГШЎЗХІЫПРЛДЮЬБВТМСЧФ
+
+REP 21
+REP ваў ў     # кароваў > кароў
+REP дзь д     # > асяроддзе
+REP е у       # замке > замку
+REP ей ёў     # князей > князёў
+REP еньва яне # выпраменьванне > выпрамяненне
+REP еч юш     # бацечка > бацюшка
+REP з с       # грамадзтва > грамадства
+REP ій яў     # губерній > губерняў
+REP іра а     # фіксіраваць > фіксаваць
+REP іру у     # >
+REP ірэ а     # >
+REP йо ё      # йод > ёд
+REP Йо Ё      # Йофе >
+REP к каў     # войск > войскаў
+REP ке цы     # цётке > цётцы
+REP наў н     # імёнаў імён
+REP тэ фе
+REP тэ фі
+REP ц дс      # грамацтва > грамадства
+REP ь '       # пьяны > п'яны
+REP яў й      # змеяў > змей
+
+MAP 20
+MAP i і
+MAP c с
+MAP а у
+MAP а о
+MAP а э
+MAP е ё
+MAP е я
+MAP о а
+MAP т ц
+MAP т ф
+MAP у ў
+MAP ы і
+MAP э е
+MAP э а
+MAP я е
+MAP зь з
+MAP ль л
+MAP нь н
+MAP сь с
+MAP ць ц
+
+BREAK 2
+BREAK -
+BREAK –
+
+
+PFX A Y 1
+PFX A   0     не         .
+
+PFX p Y 1
+PFX p   0     па         .
+
+PFX z Y 1
+PFX z   0     за         .
+
+PFX u Y 1
+PFX u   ў     у          .          # ўбок > убок
+
+PFX i Y 1
+PFX i   0     і          .          # груша > ігруша 
+
+
+# Назоўнікі
+
+# Другое скланенне, назоўнікі ж. р. на -а і -я
+# адз. лік; канчаткі тв. скл. залежаць ад націску
+SFX D Y 15
+SFX D   а     ы          [бвджзлмнпрстфцчш]а # сцяна > сцяны &_c.gen. 
+SFX D   а     і          [гкх]а     # смуга > смугі &_c.gen.
+SFX D   а     е          [бвзлмнпсф]а # > &_c.dat.
+SFX D   га    зе         га         #  >  &_c.dat.
+SFX D   да    дзе        да         # вада > вадзе &_c.dat.
+SFX D   ка    цэ         ка         # рука > руцэ &_c.dat.
+SFX D   та    це         та         #  >  &_c.dat.
+SFX D   ха    се         ха         # страха > страсе &_c.dat.
+SFX D   а     у          а          #  >  &_c.acc.
+SFX D   а     ой         а          #  >  &_c.ins.
+SFX D   а     ою         а          #  >  &_c.ins.
+SFX D   я     і          я          # зямля > зямлі &_c.gen.
+SFX D   я     ю          я          #  >  &_c.acc.
+SFX D   я     ёй         я          #  >  &_c.ins.
+SFX D   я     ёю         я          #  >  &_c.ins.
+
+SFX E Y 15
+SFX E   а     ы          [бвджзлмнпрстфцчш]а #  >  &_c.gen. 
+SFX E   а     і          [гкх]а     #  >  &_c.gen.
+SFX E   а     е          [бвзлмнпсф]а # > &_c.dat.
+SFX E   га    зе         га         # пуга > пузе &_c.dat.
+SFX E   да    дзе        да         #  >  &_c.dat.
+SFX E   ка    цы         ка         # горка > горцы &_c.dat.
+SFX E   та    це         та         # істота > істоце &_c.dat.
+SFX E   ха    се         ха         #  >  &_c.dat.
+SFX E   а     у          а          # ружа > ружу &_c.acc.
+SFX E   а     ай         а          #  >  &_c.ins.
+SFX E   а     аю         а          #  >  &_c.ins.
+SFX E   я     і          я          #  >  &_c.gen.
+SFX E   я     ю          я          #  >  &_c.acc.
+SFX E   я     яй         я          #  >  &_c.ins.
+SFX E   я     яю         я          #  >  &_c.ins.
+
+# множны лік
+SFX F Y 29
+SFX F   а     ы          [бвджзлмнпрстфцчш]а #  >  &_c.nom._plur.
+SFX F   а     і          [гкх]а     # муха > мухі &_c.nom._plur.
+SFX F   а     0          [бджзлмнпрстфхцчш]а # асоба > асоб &_c.gen._plur.
+SFX F   ва    ў          ва         # мова > моў &_c.gen._plur.
+SFX F   га    аг         [бджзлмнпрстфцчш]га # розга > розаг &_c.gen._plur.
+SFX F   га    г          [аеёіоуыэюя]га # заўвага > заўваг &_c.gen._plur.
+SFX F   ка    ак         [бджзлмнпрстфцчш]ка # нітка > нітак &_c.gen._plur.
+SFX F   йка   ек         йка        # сойка > соек &_c.gen._plur.
+SFX F   ўка   вак        ўка        # лаўка > лавак &_c.gen._plur.
+SFX F   ька   ек         ька        # бутэлька > бутэлек &_c.gen._plur.
+SFX F   ка    к          [аеёіоуыэюя]ка # рука > рук &_c.gen._plur.
+SFX F   а     ам         а          #  >  &_c.dat._plur.
+SFX F   а     амі        а          #  >  &_c.ins._plur.
+SFX F   а     ах         а          #  >  &_c.pr._plur.
+SFX F   я     й          [аеёіоуыэюя]я # армія > армій &_c.gen._plur.
+SFX F   ля    ль         [аеёіоуыэюя]ля # нядзеля > нядзель &_c.gen._plur.
+SFX F   ля    ель        [бмпф]ля   # кропля > кропель &_c.gen._plur.
+SFX F   ня    нь         [аеёіоуыэюя]ня # вяршыня > вяршынь &_c.gen._plur.
+SFX F   йня   ень        йня        # бойня > боень &_c.gen._plur.
+SFX F   ня    ань        [рхш]ня    # вішня > вішань &_c.gen._plur.
+SFX F   ня    ень        [с]ня      # песня > песень &_c.gen._plur.
+SFX F   ўня   вень       ўня        # жароўня > жаровень &_c.gen._plur.
+SFX F   я     ям         я          #  >  &_c.dat._plur.
+SFX F   я     ямі        я          #  >  &_c.ins._plur.
+SFX F   я     ях         я          #  >  &_c.pr._plur.
+SFX F   і     й          і          # змеі > змей &_c.gen._plur.
+SFX F   і     ям         і          #  >  &_c.dat._plur.
+SFX F   і     ямі        і          #  >  &_c.ins._plur.
+SFX F   і     ях         і          #  >  &_c.pr._plur.
+
+# Множны лік назоўнікаў са збегам зычных у аснове,
+# з чаргаваннем галоснай кораню, ці маючых толькі мн.л.
+SFX G Y 18
+SFX G   і     0          [гх]і      # стрэхі > стрэх &_c.gen._plur.
+SFX G   кі    к          [аеёіоуыэю]кі # рака > рэк &_c.gen._plur.
+SFX G   йкі   ек         йкі        #  >  &_c.gen._plur.
+SFX G   ўкі   вак        ўкі        # высеўкі > высевак &_c.gen._plur.
+SFX G   ькі   ек         ькі        # грабелькі > грабелек &_c.gen._plur.
+SFX G   кі    ак         [бгджзлмнпрстфхцчш]кі  # суткі > сутак &_c.gen._plur.
+SFX G   ы     0          [бджзлмнпрстфцчш]ы  # межы > меж &_c.gen._plur.
+SFX G   вы    ў          вы         # галовы > галоў &_c.gen._plur.
+SFX G   е     0          е          # датчане > датчан &_c.gen._plur.
+SFX G   е     ам         е          # рымляне > рымлянам &_c.dat._plur.
+SFX G   е     амі        е          #  >  &_c.ins._plur.
+SFX G   е     ах         е          #  >  &_c.pr._plur.
+SFX G   і     ам         [гкх]і     #  >  &_c.dat._plur.
+SFX G   і     амі        [гкх]і     #  >  &_c.ins._plur.
+SFX G   і     ах         [гкх]і     #  >  &_c.pr._plur.
+SFX G   ы     ам         ы          #  >  &_c.dat._plur.
+SFX G   ы     амі        ы          #  >  &_c.ins._plur.
+SFX G   ы     ах         ы          #  >  &_c.pr._plur.
+
+# множны лік назоўнікаў са збегам зычных у аснове,
+# ці наз. толькі множнага ліку (на -я -ё -ю -і -е), ...
+SFX N Y 5
+SFX N   а     аў         а          # чаромха > чаромхаў &_c.gen._plur.
+SFX N   і     яў         і          #  >  &_c.gen._plur.
+SFX N   ы     аў         ы          # баразна > барознаў &_c.gen._plur.
+SFX N   я     яў         я          # роля > роляў &_c.gen.plur.
+SFX N   ь     яў         ь          # гантэль > гантэляў &_c.gen.plur.
+# давальны, творны і месны склоны множнага ліку ў SFX M
+
+
+# Першае скланенне, мужчынскі і ніякі род
+
+# канчатак р. скл. адз. л., незалежна ад характару асновы,
+# можа быць -а (-я) ці -у (-ю);
+# "-у" супадае з творным склонам, "-а" выводзім асобна:
+SFX O Y 19
+SFX O   0     а          [бвгджзлмнпрстфхчш] # гад > гада &_c.gen.
+SFX O   о     а          о          # дабро > дабра &_c.gen.
+SFX O   е     я          е          # поле > поля &_c.gen.
+SFX O   ё     я          ё          # жыццё > жыцця &_c.gen.
+SFX O   й     я          й          #  >  &_c.gen.
+SFX O   ў     ва         ў          # кааператыў > кааператыва &_c.gen.
+SFX O   ь     я          ь          # алень > аленя &_c.gen.
+SFX O   ка    кі         ка         # сабака > сабакі &_c.gen.
+SFX O   к     ка         [еёійнрсуўцыэюя]к # дранік > драніка &_c.gen.
+SFX O   ак    ка         [бджзлмнпрстчш]ак # канчатак > канчатка &_c.gen.
+SFX O   вак   ўка        вак        # аловак > алоўка &_c.gen.
+SFX O   ок    ка         [бджзлмнпрстчш]ок # дубок > дубка &_c.gen.
+SFX O   вок   ўка        вок        # рывок > рыўка &_c.gen.
+SFX O   ц     ца         [аірыья]ц  # месяц > месяца &_c.gen.
+SFX O   ец    ца         [бзмнпсф]ец # канец > канца &_c.gen.
+SFX O   вец   ўца        вец        # вайсковец > вайскоўца &_c.gen.
+SFX O   лец   льца       лец        # відэлец > відэльца &_c.gen.
+SFX O   а     ы          [длн]а     # Скарына > Скарыны &_c.gen.
+SFX O   я     і          я          # Бядуля > Бядулі &_c.gen.
+
+# SFX B Y 14
+
+# давальны, творны і месны склоны адзіночнага ліку;
+# характар асновы вызначаем па канчатку наз. ск.
+# у творным склоне канчатак можа быць "-ам" (SFX H) ці "-ом" (SFX U)
+SFX H Y 56
+SFX H   а     у          а          # палена > палену &_c.dat.
+SFX H   е     ю          е          #  >  &_c.dat.
+SFX H   ё     ю          ё          #  >  &_c.dat.
+SFX H   й     ю          й          # звычай > звычаю &_c.dat.
+SFX H   к     ку         [еёійлнрсуўцыэюя]к # дотык > дотыку &_c.dat.
+SFX H   ак    ку         [бджзлмнпрстчш]ак #  >  &_c.dat.
+SFX H   вак   ўку        вак        #  >  &_c.dat.
+SFX H   ок    ку         [бджзлмнпрстчш]ок #  >  &_c.dat.
+SFX H   вок   ўку        вок        #  >  &_c.dat.
+SFX H   о     у          о          #  >  &_c.dat.
+SFX H   ў     ву         ў          # матыў > матыву &_c.dat.
+SFX H   ц     цу         [аірыья]ц  #  >  &_c.dat.
+SFX H   ец    цу         [бзмнпсф]ец #  >  &_c.dat.
+SFX H   вец   ўцу        вец        # ядловец > ядлоўцу &_c.dat.
+SFX H   лец   льцу       лец        #  >  &_c.dat.
+SFX H   ь     ю          ь          # боль > болю &_c.dat.
+SFX H   я     ю          я          #  >  &_c.dat.
+SFX H   0     у          [бвгджзлмнпрстфхчш] # дол > долу &_c.dat.
+SFX H   0     ам         [бвгджзлмнпрстфхчш] # год > годам &_c.ins.
+SFX H   а     ам         а          #  >  &_c.ins.
+SFX H   е     ем         е          #  >  &_c.ins.
+SFX H   я     ем         я          # імя > імем &_c.ins.
+SFX H   й     ем         й          #  >  &_c.ins.
+SFX H   ь     ем         ь          # боль > болем &_c.ins.
+SFX H   ў     вам        ў          #  >  &_c.ins.
+SFX H   к     кам        [еёійлнорсуўцыэюя]к # адскок > адскокам &_c.ins.
+SFX H   ак    кам        [бджзлмнпрстчш]ак #  >  &_c.ins.
+SFX H   вак   ўкам       вак        # аловак > алоўкам &_c.ins.
+SFX H   ц     цам        [аірыья]ц  #  >  &_c.ins.
+SFX H   ец    цам        [бзмнпсф]ец #  >  &_c.ins.
+SFX H   вец   ўцам       вец        #  >  &_c.ins.
+SFX H   лец   льцам      лец        #  >  &_c.ins.
+SFX H   а     е          [бвзлмнпсф]а # дрэва > дрэве &_c.pr.
+SFX H   да    дзе        да         #  >  &_c.pr.
+SFX H   а     ы          [жчш]а     # збожжа > збожжы &_c.pr.
+SFX H   ра    ры         ра         # возера > возеры &_c.pr.
+SFX H   та    це         та         # стараста > старасце &_c.pr.
+SFX H   о     е          [бвзлмнпсф]о #  >  &_c.pr.
+SFX H   ро    ры         ро         #  >  &_c.pr.
+SFX H   ў     ве         ў          #  >  &_c.pr.
+SFX H   д     дзе        д          #  >  &_c.pr.
+SFX H   ж     жы         ж          #  >  &_c.pr.
+SFX H   р     ры         р          #  >  &_c.pr.
+SFX H   т     це         т          #  >  &_c.pr.
+SFX H   х     ху         х          #  >  &_c.pr.
+SFX H   ч     чы         ч          #  >  &_c.pr.
+SFX H   ш     шы         ш          #  >  &_c.pr.
+SFX H   ец    цы         [бзмнпсф]ец #  >  &_c.pr.
+SFX H   вец   ўцы        вец        #  >  &_c.pr.
+SFX H   лец   льцы       лец        #  >  &_c.pr.
+SFX H   е     і          е          #  >  &_c.pr.
+SFX H   ё     і          ё          #  >  &_c.pr.
+SFX H   й     і          й          #  >  &_c.pr.
+SFX H   ь     і          ь          #  >  &_c.pr.
+SFX H   я     і          я          #  >  &_c.pr.
+SFX H   0     е          [бвзлмнпсф] # закон > законе &_c.pr.
+
+# тое ж, толькі канчатак -ом (-ём) тв.скл.,
+SFX U Y 62
+SFX U   а     у          а          #  >  &_c.dat.
+SFX U   е     ю          е          #  >  &_c.dat.
+SFX U   ё     ю          ё          #  >  &_c.dat.
+SFX U   й     ю          й          #  >  &_c.dat.
+SFX U   к     ку         [еёійлнрсуўцыэюя]к #  >  &_c.dat.
+SFX U   ак    ку         [бджзлмнпрстчш]ак #  >  &_c.dat.
+SFX U   вак   ўку        вак        #  >  &_c.dat.
+SFX U   ок    ку         [бджзлмнпрстчш]ок #  >  &_c.dat.
+SFX U   вок   ўку        вок        #  >  &_c.dat.
+SFX U   о     у          о          #  >  &_c.dat.
+SFX U   ў     ву         ў          #  >  &_c.dat.
+SFX U   ц     цу         [аірыья]ц  #  >  &_c.dat.
+SFX U   ец    цу         [бзмнпсф]ец #  >  &_c.dat.
+SFX U   вец   ўцу        вец        #  >  &_c.dat.
+SFX U   лец   льцу       лец        #  >  &_c.dat.
+SFX U   ь     ю          ь          #  >  &_c.dat.
+SFX U   я     ю          я          #  >  &_c.dat.
+SFX U   0     у          [бвгджзлмнпрстфхчш] #  >  &_c.dat.
+SFX U   0     ом         [бвгджзлмнпрстфхчш] #  >  &_c.ins.
+SFX U   а     ом         а          # мастака > мастаком &_c.ins.
+SFX U   е     ём         е          #  >  &_c.ins.
+SFX U   ё     ём         ё          #  >  &_c.ins.
+SFX U   й     ём         й          #  >  &_c.ins.
+SFX U   о     ом         о          #  >  &_c.ins.
+SFX U   к     ком        [аеёійлнрсуўцыэюя]к # хмызняк > хмызняком &_c.ins.
+SFX U   ок    ком        [бджзлмнпрстчш]ок # вазок > вазком &_c.ins.
+SFX U   вок   ўком       вок        # паплавок > паплаўком &_c.ins.
+SFX U   у     ом         у          #  >  &_c.ins.
+SFX U   ў     вом        ў          #  >  &_c.ins.
+SFX U   ь     ём         ь          #  >  &_c.ins.
+SFX U   ю     ём         ю          # жавялю > жавялём &_c.ins.
+SFX U   я     ём         я          #  >  &_c.ins.
+SFX U   ц     цом        [аірыья]ц  #  >  &_c.ins.
+SFX U   ец    цом        [бзмнпсф]ец # блінец > блінцом &_c.ins.
+SFX U   вец   ўцом       вец        #  >  &_c.ins.
+SFX U   лец   льцом      лец        # ўдалец > ўдальцом &_c.ins.
+SFX U   а     е          [бвзлмнпсф]а #  >  &_c.pr.
+SFX U   да    дзе        да         #  >  &_c.pr.
+SFX U   а     ы          [жчш]а     #  >  &_c.pr.
+SFX U   ра    ры         ра         #  >  &_c.pr.
+SFX U   та    це         та         #  >  &_c.pr.
+SFX U   о     е          [бвзлмнпсф]о #  >  &_c.pr.
+SFX U   о     зе         до         # гняздо > гняздзе &_c.pr.
+SFX U   ро    ры         ро         #  >  &_c.pr.
+SFX U   ў     ве         ў          #  >  &_c.pr.
+SFX U   д     дзе        д          #  >  &_c.pr.
+SFX U   ж     жы         ж          #  >  &_c.pr.
+SFX U   р     ры         р          #  >  &_c.pr.
+SFX U   т     це         т          #  >  &_c.pr.
+SFX U   х     ху         х          #  >  &_c.pr.
+SFX U   ч     чы         ч          #  >  &_c.pr.
+SFX U   ш     шы         ш          #  >  &_c.pr.
+SFX U   ец    цы         [бзмнпсф]ец #  >  &_c.pr.
+SFX U   вец   ўцы        вец        #  >  &_c.pr.
+SFX U   лец   льцы       лец        #  >  &_c.pr.
+SFX U   е     і          е          #  >  &_c.pr.
+SFX U   ё     і          ё          #  >  &_c.pr.
+SFX U   й     і          й          #  >  &_c.pr.
+SFX U   ь     і          ь          #  >  &_c.pr.
+SFX U   ю     і          ю          #  >  &_c.pr.
+SFX U   я     і          я          #  >  &_c.pr.
+SFX U   0     е          [бвзлмнпсф] #  >  &_c.pr.
+
+# множны лік, канчатак -аў (-яў) р.скл. мн.л.
+SFX P Y 56
+SFX P   а     ы          [бвджзлмнпрстфцчш]а # цела > целы &_c.nom._plur.
+SFX P   а     і          [гкх]а     # воблака > воблакі &_c.nom._plur.
+SFX P   0     ы          [бвджзлмнпрстфцчш] #  >  &_c.nom._plur.
+SFX P   0     і          [гкх]      #  >  &_c.nom._plur.
+SFX P   е     і          е          #  >  &_c.nom._plur.
+SFX P   ё     і          ё          #  >  &_c.nom._plur.
+SFX P   й     і          й          # вырай > выраі &_c.nom._plur.
+SFX P   о     ы          о          # гумно > гумны &_c.nom._plur.
+SFX P   ў     вы         ў          # нораў > норавы &_c.nom._plur.
+SFX P   ь     і          ь          # ветразь > ветразі &_c.nom._plur.
+SFX P   я     і          я          # выкапня > выкапні &_c.nom._plur.
+SFX P   а     аў         а          #  >  &_c.gen._plur.
+SFX P   0     аў         [бвгджзклмнпрстфхцчш] #  >  &_c.gen._plur.
+SFX P   е     яў         е          # значэнне > значэнняў &_c.gen._plur.
+SFX P   ё     яў         ё          # жыццё > жыццяў &_c.gen._plur.
+SFX P   й     яў         й          # ураджай > ураджаяў &_c.gen._plur.
+SFX P   о     аў         о          #  >  &_c.gen._plur.
+SFX P   ў     ваў        ў          #  >  &_c.gen._plur.
+SFX P   ь     яў         ь          # барэль > барэляў &_c.gen._plur.
+SFX P   я     яў         я          # выкапня > выкапняў &_c.gen._plur.
+SFX P   а     ам         а          #  >  &_c.dat._plur.
+SFX P   0     ам         [бвгджзклмнпрстфхцчш] #  >  &_c.dat._plur.
+SFX P   е     ям         е          #  >  &_c.dat._plur.
+SFX P   ё     ям         ё          # жыццё > жыццям &_c.dat._plur.
+SFX P   й     ям         й          #  >  &_c.dat._plur.
+SFX P   о     ам         о          #  >  &_c.dat._plur.
+SFX P   ў     вам        ў          # павеў > павевам &_c.dat._plur.
+SFX P   ь     ям         ь          #  >  &_c.dat._plur.
+SFX P   я     ям         я          #  >  &_c.dat._plur.
+SFX P   а     амі        а          #  >  &_c.ins._plur.
+SFX P   0     амі        [бвгджзклмнпрстфхцчш] #  >  &_c.ins._plur.
+SFX P   е     ямі        е          #  >  &_c.ins._plur.
+SFX P   ё     ямі        ё          #  >  &_c.ins._plur.
+SFX P   й     ямі        й          #  >  &_c.ins._plur.
+SFX P   о     амі        о          #  >  &_c.ins._plur.
+SFX P   ў     вамі       ў          #  >  &_c.ins._plur.
+SFX P   ь     ямі        ь          #  >  &_c.ins._plur.
+SFX P   я     ямі        я          #  >  &_c.ins._plur.
+SFX P   а     ах         а          #  >  &_c.pr._plur.
+SFX P   0     ах         [бвгджзклмнпрстфхцчш] #  >  &_c.pr._plur.
+SFX P   е     ях         е          #  >  &_c.pr._plur.
+SFX P   ё     ях         ё          #  >  &_c.pr._plur.
+SFX P   о     ах         о          #  >  &_c.pr._plur.
+SFX P   й     ях         й          #  >  &_c.pr._plur.
+SFX P   ў     вах        ў          #  >  &_c.pr._plur.
+SFX P   ь     ях         ь          #  >  &_c.pr._plur.
+SFX P   я     ях         я          #  >  &_c.pr._plur.
+SFX P   і     яў         [бвдзлмнпстфц]і #  >  &_c.gen._plur.
+SFX P   і     аў         [гкх]і     #  >  &_c.gen._plur.
+SFX P   і     ам         [гкх]і     #  >  &_c.dat._plur.
+SFX P   і     амі        [гкх]і     #  >  &_c.ins._plur.
+SFX P   і     ах         [гкх]і     #  >  &_c.pr._plur.
+SFX P   ы     аў         ы          # вокны > вокнаў &_c.gen._plur.
+SFX P   ы     ам         ы          #  >  &_c.dat._plur.
+SFX P   ы     амі        ы          #  >  &_c.ins._plur.
+SFX P   ы     ах         ы          #  >  &_c.pr._plur.
+
+# множны лік, канчатак -оў (-ёў) р.скл. мн.л.
+# і мн.л. пры цвёрдай аснове з чаргаваннем галоснай
+SFX Q Y 39
+SFX Q   а     ы          [бвджзлмнпрстфцчш]а #  >  &_c.nom._plur.
+SFX Q   а     і          [гкх]а     # васілька > васількі &_c.nom._plur.
+SFX Q   ь     і          ь          # руль > рулі &_c.nom._plur.
+SFX Q   а     оў         а          #  >  &_c.gen.plur.
+SFX Q   е     ёў         е          # поле > палёў &_c.gen._plur.
+SFX Q   ё     ёў         ё          #  >  &_c.gen._plur.
+SFX Q   і     ёў         [азілмносуў']і # баі > баёў &_c.gen._plur.
+SFX Q   і     оў         [гкх]і     # вазкі > вазкоў &_c.gen.plur.
+SFX Q   й     ёў         й          # гай > гаёў &_c.gen._plur.
+SFX Q   ь     ёў         ь          # куль > кулёў &_c.gen._plur.
+SFX Q   ы     оў         ы          # галасы > галасоў &_c.gen.plur.
+SFX Q   я     ёў         я          # крамля > крамлёў &_c.gen._plur.
+SFX Q   а     ам         а          #  >  &_c.dat._plur.
+SFX Q   е     ям         е          #  >  &_c.dat._plur.
+SFX Q   ё     ям         ё          #  >  &_c.dat._plur.
+SFX Q   і     ям         [азілмносуў']і #  >  &_c.dat._plur.
+SFX Q   і     ам         [гкх]і     #  >  &_c.dat._plur.
+SFX Q   й     ям         й          #  >  &_c.dat._plur.
+SFX Q   ы     ам         ы          #  >  &_c.dat._plur.
+SFX Q   ь     ям         ь          #  >  &_c.dat._plur.
+SFX Q   я     ям         я          #  >  &_c.dat._plur.
+SFX Q   а     амі        а          #  >  &_c.ins._plur.
+SFX Q   е     ямі        е          #  >  &_c.ins._plur.
+SFX Q   ё     ямі        ё          #  >  &_c.ins._plur.
+SFX Q   і     ямі        [азілмносуў']і #  >  &_c.ins._plur.
+SFX Q   і     амі        [гкх]і     #  >  &_c.ins._plur.
+SFX Q   й     ямі        й          #  >  &_c.ins._plur.
+SFX Q   ы     амі        ы          #  >  &_c.ins._plur.
+SFX Q   ь     ямі        ь          #  >  &_c.ins._plur.
+SFX Q   я     ямі        я          #  >  &_c.ins._plur.
+SFX Q   а     ах         а          #  >  &_c.pr._plur.
+SFX Q   е     ях         е          #  >  &_c.pr._plur.
+SFX Q   ё     ях         ё          #  >  &_c.pr._plur.
+SFX Q   і     ях         [азілмносуў']і #  >  &_c.pr._plur.
+SFX Q   і     ах         [гкх]і     #  >  &_c.pr._plur.
+SFX Q   й     ях         й          #  >  &_c.pr._plur.
+SFX Q   ы     ах         ы          #  >  &_c.pr._plur.
+SFX Q   ь     ях         ь          #  >  &_c.pr._plur.
+SFX Q   я     ях         я          #  >  &_c.pr._plur.
+
+
+# Трэцяе скланенне, назоўнікі жаночага роду
+# з асновай на мяккі і зацвярдзелы зычны 
+SFX T Y 15
+SFX T   ь     і          [злнсц]ь   # рысь > рысі &_c.gen.
+SFX T   дзь   ддзю       дзь        # моладзь > моладдзю &_c.ins.
+SFX T   зь    ззю        [аеёіоуыэюя]зь # мазь > маззю &_c.ins.
+SFX T   ль    ллю        ль         # соль > соллю &_c.ins.
+SFX T   нь    нню        нь         #  >  &_c.ins.
+SFX T   сь    ссю        сь         #  >  &_c.ins.
+SFX T   ць    ццю        [аеёіоуыэюя]ць # памяць > памяццю &_c.ins.
+SFX T   ць    цю         [рс]ць     # косць > косцю &_c.ins.
+SFX T   0     ы          [жрчшц]    # моц > моцы &_c.gen.
+SFX T   0     і          [бф]       # глыб > глыбі &_c.gen.
+SFX T   ж     жжу        ж          # бездараж > бездаражжу &_c.ins.
+SFX T   ш     шшу        ш          # мыш > мышшу &_c.ins.
+SFX T   ч     ччу        ч          # ноч > ноччу &_c.ins.
+SFX T   0     ю          [ў]        # кроў > кроўю &_c.ins.
+SFX T   0     'ю         [брф]      # шыр > шыр'ю &_c.ins.
+
+# Формы множнага ліку для назоўнікаў без чаргавання галоснай у аснове
+# утвараем ад формы наз.скл. адз.л.,
+# а з чаргаваннем галоснай кораню - ад формы р.скл. мн.л.
+SFX L Y 21
+SFX L   0     ы          [жрчшц]    # мыш > мышы &_c.nom.plur.
+SFX L   0     і          [бф]       # верф > верфі &_c.nom.plur.
+SFX L   0     эй         [жрчшц]    #  >  &_c.gen.plur.
+SFX L   0     ей         [бф]       #  >  &_c.gen.plur.
+SFX L   а     эй         а          # бахча > бахчэй &_c.gen.plur.
+SFX L   і     ей         і          # сані > саней &_c.gen.plur.
+SFX L   ы     эй         ы          # куры > курэй &_c.gen.plur.
+SFX L   ь     ей         ь          # супольнасць > супольнасцей &_c.gen.plur.
+SFX L   я     ей         я          # ладдзя > ладдзей &_c.gen.plur.
+SFX L   0     ам         [жрчшц]    #  >  &_c.dat.plur.
+SFX L   0     амі        [жрчшц]    #  >  &_c.ins.plur.
+SFX L   0     ах         [жрчшц]    #  >  &_c.pr.plur.
+SFX L   0     ям         [бф]       #  >  &_c.dat.plur.
+SFX L   0     ямі        [бф]       #  >  &_c.ins.plur.
+SFX L   0     ях         [бф]       #  >  &_c.pr.plur.
+SFX L   ей    ям         ей         # касцей > касцям &_c.dat.plur.
+SFX L   ей    ямі        ей         #  >  &_c.ins.plur.
+SFX L   ей    ях         ей         #  >  &_c.pr.plur.
+SFX L   эй    ам         эй         # начэй > начам &_c.dat.plur.
+SFX L   эй    амі        эй         #  >  &_c.ins.plur.
+SFX L   эй    ах         эй         #  >  &_c.pr.plur.
+
+# Давальны, творны і месны склоны множнага ліку ўсіх скланенняў
+SFX M Y 24
+SFX M   а     ам         а          #  >  &_c.dat._plur.
+SFX M   а     амі        а          #  >  &_c.ins._plur.
+SFX M   а     ах         а          #  >  &_c.pr._plur.
+SFX M   е     ям         е          #  >  &_c.dat._plur.
+SFX M   е     ямі        е          #  >  &_c.ins._plur.
+SFX M   е     ях         е          #  >  &_c.pr._plur.
+SFX M   ё     ям         ё          #  >  &_c.dat._plur.
+SFX M   ё     ямі        ё          #  >  &_c.ins._plur.
+SFX M   ё     ях         ё          #  >  &_c.pr._plur.
+SFX M   і     ям         і          #  >  &_c.dat._plur.
+SFX M   і     ямі        і          #  >  &_c.ins._plur.
+SFX M   і     ях         і          #  >  &_c.pr._plur.
+SFX M   й     ям         й          #  >  &_c.dat._plur.
+SFX M   й     ямі        й          #  >  &_c.ins._plur.
+SFX M   й     ях         й          #  >  &_c.pr._plur.
+SFX M   ь     ям         ь          #  >  &_c.dat._plur.
+SFX M   ь     ямі        ь          #  >  &_c.ins._plur.
+SFX M   ь     ях         ь          #  >  &_c.pr._plur.
+SFX M   ы     ам         ы          #  >  &_c.dat._plur.
+SFX M   ы     амі        ы          #  >  &_c.ins._plur.
+SFX M   ы     ах         ы          #  >  &_c.pr._plur.
+SFX M   я     ям         я          #  >  &_c.dat._plur.
+SFX M   я     ямі        я          #  >  &_c.ins._plur.
+SFX M   я     ях         я          #  >  &_c.pr._plur.
+
+
+# Прыметнікі
+
+# Паслядоўна муж. ды жан. род адз. ліку і множны лік
+# спачатку якасныя і адносныя, потым прыналежныя прыметнікі
+SFX V Y 55
+SFX V   ы     ага        ы          # добры > добрага &_c.gen._masc.
+SFX V   ы     аму        ы          #  >  &_c.dat._masc.
+SFX V   ы     ым         ы          #  >  &_c.ins._masc.
+SFX V   ы     ая         ы          # прыгожы > прыгожая &_c.nom._fem.
+SFX V   ы     ай         ы          #  >  &_c.gen._fem.
+SFX V   ы     ую         ы          #  >  &_c.acc._fem.
+SFX V   ы     аю         ы          #  >  &_c.ins._fem.
+SFX V   ы     ыя         ы          #  >  &_c.nom._plur.
+SFX V   ы     ых         ы          #  >  &_c.gen._plur.
+SFX V   ы     ым         ы          #  >  &_c.dat._plur.
+SFX V   ы     ымі        ы          #  >  &_c.ins._plur.
+SFX V   ы     ых         ы          #  >  &_c.pr._plur.
+SFX V   і     ага        [гкх]і     # кароткі > кароткага &_c.gen._masc.
+SFX V   і     аму        [гкх]і     #  >  &_c.dat._masc.
+SFX V   і     ім         [гкх]і     #  >  &_c.ins._masc.
+SFX V   і     ая         [гкх]і     #  >  &_c.nom._fem.
+SFX V   і     ай         [гкх]і     #  >  &_c.gen._fem.
+SFX V   і     ую         [гкх]і     #  >  &_c.acc._fem.
+SFX V   і     аю         [гкх]і     #  >  &_c.ins._fem.
+SFX V   і     яга        [нц]і      # сіні > сіняга &_c.gen._masc.
+SFX V   і     яму        [нц]і      # трэці > трэцяму &_c.dat._masc.
+SFX V   і     ім         [нц]і      #  >  &_c.ins._masc.
+SFX V   і     яя         [нц]і      #  >  &_c.nom._fem.
+SFX V   і     яй         [нц]і      #  >  &_c.gen._fem.
+SFX V   і     юю         [нц]і      #  >  &_c.acc._fem.
+SFX V   і     яю         [нц]і      #  >  &_c.ins._fem.
+SFX V   і     ія         і          #  >  &_c.nom._plur.
+SFX V   і     іх         і          #  >  &_c.gen._plur.
+SFX V   і     ім         і          #  >  &_c.dat._plur.
+SFX V   і     імі        і          #  >  &_c.ins._plur.
+SFX V   і     іх         і          #  >  &_c.pr._plur.
+SFX V   ў     вага       [аеёо]ў    # дзедаў > дзедавага &_c.gen._masc.
+SFX V   ў     ваму       [аеёо]ў    # Васілёў > Васілёваму &_c.dat._masc.
+SFX V   ў     вым        [аеёо]ў    # Кузьмоў > Кузьмовым &_c.ins._masc.
+SFX V   ў     ва         [аеёо]ў    # Алесеў > Алесева &_c.nom._fem.
+SFX V   ў     вай        [аеёо]ў    #  >  &_c.gen._fem.
+SFX V   ў     ву         [аеёо]ў    #  >  &_c.acc._fem.
+SFX V   ў     вай        [аеёо]ў    #  >  &_c.ins._fem.
+SFX V   ў     вы         [аеёо]ў    #  >  &_c.nom._plur.
+SFX V   ў     вых        [аеёо]ў    #  >  &_c.gen._plur.
+SFX V   ў     вым        [аеёо]ў    #  >  &_c.dat._plur.
+SFX V   ў     вымі       [аеёо]ў    #  >  &_c.ins._plur.
+SFX V   ў     вых        [аеёо]ў    #  >  &_c.pr._plur.
+SFX V   н     нага       [іы]н      # цётчын > цётчынага &_c.gen._masc.
+SFX V   н     наму       [іы]н      # Вольгін > Вольгінаму &_c.dat._masc.
+SFX V   н     ным        [іы]н      #  >  &_c.ins._masc.
+SFX V   н     на         [іы]н      #  >  &_c.nom._fem.
+SFX V   н     най        [іы]н      #  >  &_c.gen._fem.
+SFX V   н     ну         [іы]н      #  >  &_c.acc._fem.
+SFX V   н     най        [іы]н      #  >  &_c.ins._fem.
+SFX V   н     ны         [іы]н      #  >  &_c.nom._plur.
+SFX V   н     ных        [іы]н      #  >  &_c.gen._plur.
+SFX V   н     ным        [іы]н      #  >  &_c.dat._plur.
+SFX V   н     нымі       [іы]н      #  >  &_c.ins._plur.
+SFX V   н     ных        [іы]н      #  >  &_c.pr._plur.
+# ніякі род
+SFX I Y 3
+SFX I   ы     ае         ы          # хворы > хворае &_c.nom._neut.
+SFX I   і     ае         [гкх]і     #  >  &_c.nom._neut.
+SFX I   і     яе         [нц]і      #  >  &_c.nom._neut.
+# утварэнне прыслоўя ад прыметніка, кароткая форма прыметніка
+SFX X Y 3
+SFX X   ы     а          ы          # добры > добра &_
+SFX X   і     а          [гкх]і     # хуткі > хутка &_
+SFX X   і     а          ні         # позні > позна &_
+
+# цвёрдая аснова, націск на канцы
+SFX Z Y 26
+SFX Z   ы     ога        ы          # жывы > жывога &_c.gen._masc.
+SFX Z   ы     ому        ы          #  >  &_c.dat._masc.
+SFX Z   ы     ым         ы          #  >  &_c.ins._masc.
+SFX Z   ы     ое         ы          #  >  &_c.nom._neut.
+SFX Z   ы     ая         ы          #  >  &_c.nom._fem.
+SFX Z   ы     ой         ы          #  >  &_c.gen._fem.
+SFX Z   ы     ую         ы          #  >  &_c.acc._fem.
+SFX Z   ы     ою         ы          #  >  &_c.ins._fem.
+SFX Z   ы     ыя         ы          #  >  &_c.nom._plur.
+SFX Z   ы     ых         ы          #  >  &_c.gen._plur.
+SFX Z   ы     ым         ы          #  >  &_c.dat._plur.
+SFX Z   ы     ымі        ы          #  >  &_c.ins._plur.
+SFX Z   ы     ых         ы          #  >  &_c.pr._plur.
+SFX Z   і     ога        і          # дарагі > дарагога &_c.gen._masc.
+SFX Z   і     ому        і          #  >  &_c.dat._masc.
+SFX Z   і     ім         і          #  >  &_c.ins._masc.
+SFX Z   і     ое         і          #  >  &_c.nom._neut.
+SFX Z   і     ая         і          #  >  &_c.nom._fem.
+SFX Z   і     ой         і          #  >  &_c.gen._fem.
+SFX Z   і     ую         і          #  >  &_c.acc._fem.
+SFX Z   і     ою         і          #  >  &_c.ins._fem.
+SFX Z   і     ія         і          #  >  &_c.nom._plur.
+SFX Z   і     іх         і          #  >  &_c.gen._plur.
+SFX Z   і     ім         і          #  >  &_c.dat._plur.
+SFX Z   і     імі        і          #  >  &_c.ins._plur.
+SFX Z   і     іх         і          #  >  &_c.pr._plur.
+
+# Склонавыя канчаткі прозвішчаў, падобных на прыметнікі
+SFX S Y 16
+SFX S   ў     ва         [аеёо]ў    # Аненкаў > Аненкава &_c.gen._masc.
+SFX S   ў     ву         [аеёо]ў    # Аляб'еў > Аляб'еву &_c.dat._masc.
+SFX S   ў     вым        [аеёо]ў    # Вараб'ёў > Вараб'ёвым &_c.ins._masc.
+SFX S   ў     вай        [аеёо]ў    # Агароў > Агаровай &_c.gen._fem.
+SFX S   ў     вы         [аеёо]ў    #  >  &_c.nom._plur.
+SFX S   ў     вых        [аеёо]ў    #  >  &_c.gen._plur.
+SFX S   ў     вым        [аеёо]ў    #  >  &_c.dat._plur.
+SFX S   ў     вымі       [аеёо]ў    #  >  &_c.ins._plur.
+SFX S   н     на         [іы]н      # Барадзін > Барадзіна &_c.gen._masc.
+SFX S   н     ну         [іы]н      # Чычэрын > Чычэрыну &_c.dat._masc.
+SFX S   н     ным        [іы]н      #  >  &_c.ins._masc.
+SFX S   н     най        [і]н       # Шчадрын >  &_c.gen._fem.
+SFX S   н     ны         [іы]н      #  >  &_c.nom._plur.
+SFX S   н     ных        [іы]н      #  >  &_c.gen._plur.
+SFX S   н     ным        [іы]н      #  >  &_c.dat._plur.
+SFX S   н     нымі       [іы]н      #  >  &_c.ins._plur.
+
+
+# Дзеясловы
+
+# I спражэнне
+
+# формы цяперашняга часу ўтвараем з 1-й ас. адз. л.:
+# 2-я і 3-я ас. адз. ліку, 1-я, 2-я і 3-я ас. множнага ліку
+# канчаткі залежаць ад націску
+SFX c Y 30
+SFX c   у     еш         [бвзмнс]у  #  >  &_2p._sing._pres.
+SFX c   гу    жаш        гу         # лягу > ляжаш &_2p._sing._pres.
+SFX c   у     зеш        ду         #  >  &_2p._sing._pres.
+SFX c   у     аш         [жрчш]у    # кажу > кажаш &_2p._sing._pres.
+SFX c   ку    чаш        ку         # высеку > высечаш &_2p._sing._pres.
+SFX c   ту    цеш        ту         #  >  &_2p._sing._pres.
+SFX c   у     е          [бвзмнс]у  #  >  &_3p._sing._pres.
+SFX c   гу    жа         гу         #  >  &_3p._sing._pres.
+SFX c   у     зе         ду         #  >  &_3p._sing._pres.
+SFX c   у     а          [жрчш]у    #  >  &_3p._sing._pres.
+SFX c   ку    ча         ку         #  >  &_3p._sing._pres.
+SFX c   ту    це         ту         #  >  &_3p._sing._pres.
+SFX c   у     ем         [бвзмнс]у  # кіну > кінем &_1p._plur._pres.
+SFX c   гу    жам        гу         #  >  &_1p._plur._pres.
+SFX c   у     зем        ду         # сяду > сядзем &_1p._plur._pres.
+SFX c   у     ам         [жрчш]у    # кажу > кажам &_1p._plur._pres.
+SFX c   ку    чам        ку         # вывалаку > вывалачам &_1p._plur._pres.
+SFX c   ту    цем        ту         # вырасту > вырасцем &_1p._plur._pres.
+SFX c   у     еце        [бвзмнс]у  # сціхну > сціхнеце &_2p._plur._pres.
+SFX c   гу    жаце       гу         #  >  &_2p._plur._pres.
+SFX c   у     зеце       ду         #  >  &_2p._plur._pres.
+SFX c   у     аце        [жрчш]у    #  >  &_2p._plur._pres.
+SFX c   ку    чаце       ку         #  >  &_2p._plur._pres.
+SFX c   ту    цеце       ту         #  >  &_2p._plur._pres.
+SFX c   у     уць        у          # жну > жнуць &_3p._plur._pres.
+SFX c   ю     еш         ю          # кідаю > кідаеш &_2p._sing._pres.
+SFX c   ю     е          ю          # кідаю > кідае &_3p._sing._pres.
+SFX c   ю     ем         ю          # кідаю > кідаем &_1p._plur._pres.
+SFX c   ю     еце        ю          # кідаю > кідаеце &_2p._plur._pres.
+SFX c   ю     юць        ю          # гадую > гадуюць &_3p._plur._pres.
+
+# 2-ю асобу мн. ліку ўтвараем не для ўсіх дзеясловаў,
+# бо вельмі часта назіраецца чаргаванне галоснай
+SFX e Y 26
+SFX e   у     еш         [бвзмнс]у  #  >  &_2p._sing._pres.
+SFX e   гу    жэш        гу         # ілгу > ілжэш &_2p._sing._pres.
+SFX e   у     зеш        ду         #  >  &_2p._sing._pres.
+SFX e   у     эш         [жрчш]у    # бяру > бярэш &_2p._sing._pres.
+SFX e   ку    чэш        ку         # валаку > валачэш &_2p._sing._pres.
+SFX e   ту    цеш        ту         #  >  &_2p._sing._pres.
+SFX e   у     е          [бвзмнс]у  #  >  &_3p._sing._pres.
+SFX e   гу    жэ         гу         #  >  &_3p._sing._pres.
+SFX e   у     зе         ду         #  >  &_3p._sing._pres.
+SFX e   у     э          [жрчш]у    # ржу > ржэ &_3p._sing._pres.
+SFX e   ку    чэ         ку         #  >  &_3p._sing._pres.
+SFX e   ту    це         ту         #  >  &_3p._sing._pres.
+SFX e   у     ём         [бвзмнс]у  # рву > рвём &_1p._plur._pres.
+SFX e   гу    жом        гу         #  >  &_1p._plur._pres.
+SFX e   у     зём        ду         # вяду > вядзём &_1p._plur._pres.
+SFX e   у     ом         [жрчш]у    # бяру > бяром &_1p._plur._pres.
+SFX e   ку    чом        ку         #  >  &_1p._plur._pres.
+SFX e   ту    цём        ту         #  >  &_1p._plur._pres.
+SFX e   у     яце        [вмн]у     # шпурну > шпурняце &_2p._plur._pres.
+SFX e   у     аце        жу         #  >  &_2p._plur._pres.
+SFX e   у     уць        у          #  >  &_3p._plur._pres.
+SFX e   ю     еш         ю          #  >  &_2p._sing._pres.
+SFX e   ю     е          ю          #  >  &_3p._sing._pres.
+SFX e   ю     ём         ю          # існую > існуём &_1p._plur._pres.
+SFX e   ю     яце        [аілуўью']ю # даю > даяце &_2p._plur._pres.
+SFX e   ю     юць        ю          #  >  &_3p._plur._pres.
+
+# неазначальная форма (інфінітыў),
+# прошлы час: адз. (муж. і ж. род) і мн. лік;
+# утварэнне з ф. 1-й ас. адз. л., і з неазначальнай формы
+SFX f Y 28
+SFX f   у     уць        у          # кіну > кінуць &_inf.
+SFX f   у     уў         у          #  >  &_masc._sing._past
+SFX f   у     ула        у          #  >  &_fem._sing._past
+SFX f   у     улі        у          #  >  &_plur._past
+SFX f   ю     ць         [аеыэя]ю   # наведваю > наведваць &_inf.
+SFX f   ю     ў          [аеыэя]ю   # выветрываю > выветрываў &_masc._sing._past
+SFX f   ю     ла         [аеыэя]ю   # узорваю > узорвала &_fem._sing._past
+SFX f   ю     лі         [аеыэя]ю   # запэўніваю > запэўнівалі &_plur._past
+SFX f   ую    аваць      ую         # гарантую > гарантаваць &_inf.
+SFX f   ую    аваў       ую         # даследую > даследаваў &_masc._sing._past
+SFX f   ую    авала      ую         #  >  &_fem._sing._past
+SFX f   ую    авалі      ую         # дзякую > дзякавалі &_plur._past
+SFX f   юю    яваць      юю         # габлюю > габляваць &_inf.
+SFX f   юю    яваў       юю         #  >  &_masc._sing._past
+SFX f   юю    явала      юю         #  >  &_fem._sing._past
+SFX f   юю    явалі      юю         #  >  &_plur._past
+SFX f   ць    ў          ць         # адаслаць > адаслаў &_masc._sing._past
+SFX f   ць    ла         ць         #  >  &_fem._sing._past
+SFX f   ць    лі         ць         #  >  &_plur._past
+SFX f   зці   з          зці        # лезці > лез &_masc._sing._past
+SFX f   зці   зла        зці        #  >  &_fem._sing._past
+SFX f   зці   злі        зці        #  >  &_plur._past
+SFX f   сці   ў          сці        #  >  &_masc._sing._past
+SFX f   сці   ла         сці        #  >  &_fem._sing._past
+SFX f   сці   лі         сці        #  >  &_plur._past
+SFX f   чы    0          чы         # бегчы > бег &_masc._sing._past
+SFX f   чы    ла         чы         #  >  &_fem._sing._past
+SFX f   чы    лі         чы         #  >  &_plur._past
+
+#  загадны лад, форма на -і (-ы)
+SFX g Y 18
+SFX g   у     і          [бвзлмнпсфц]у # нясу > нясі &_imp.
+SFX g   у     іце        [бвзлмнпсфц]у #  >  &_imp.
+SFX g   у     ы          [жрчш]у    # скачу > скачы &_imp.
+SFX g   у     ыце        [жрчш]у    #  >  &_imp.
+SFX g   гу    жы         гу         #  >  &_imp.
+SFX g   гу    жыце       гу         #  >  &_imp.
+SFX g   у     зі         ду         # іду > ідзі &_imp.
+SFX g   у     зіце       ду         #  >  &_imp.
+SFX g   ку    чы         ку         # пяку > пячы &_imp.
+SFX g   ку    чыце       ку         #  >  &_imp.
+SFX g   ту    ці         ту         # мяту > мяці &_imp.
+SFX g   ту    ціце       ту         #  >  &_imp.
+SFX g   ю     і          ю          # дашлю > дашлі &_imp.
+SFX g   ю     іце        ю          #  >  &_imp.
+SFX g   аць   і          аць        # трапаць > трапі &_imp.
+SFX g   аць   іце        аць        #  >  &_imp.
+SFX g   ець   і          ець        # хацець > хаці &_imp.
+SFX g   ець   іце        ець        #  >  &_imp.
+
+# загадны лад, форма са "скарачэннем" галоснай
+SFX h Y 12
+SFX h   у     ь          [змнс]у    # кіну > кінь &_imp.
+SFX h   у     ьце        [змнс]у    #  >  &_imp.
+SFX h   гу    ж          гу         # лягу > ляж &_imp.
+SFX h   гу    жце        гу         #  >  &_imp.
+SFX h   у     зь         ду         # буду > будзь &_imp.
+SFX h   у     зьце       ду         #  >  &_imp.
+SFX h   у     0          [жрчш]у    # абмажу > абмаж &_imp.
+SFX h   у     це         [жрчш]у    # клічу > клічце &_imp.
+SFX h   ю     й          ю          # гуляю > гуляй &_imp.
+SFX h   ю     йце        ю          #  >  &_imp.
+SFX h   ць    й          ць         # кідаць > кідай &_imp.
+SFX h   ць    йце        ць         #  >  &_imp.
+
+# зваротныя формы, канчаткі залежаць ад націску. 
+# утварэнне з ф. 1-й ас. адз. л.: 1-я, 2-я і 3-я асобы адз. і мн. лікаў,
+# і з неазначальнай формы: 1-я і 2-я ас. адз. і мн. л.
+SFX b Y 27
+SFX b   0     ся         [ую]       #  >  &_1p._sing._refl._pres.
+SFX b   у     ешся       [бвзмнс]у  #  >  &_2p._sing._refl._pres.
+SFX b   гу    жашся      гу         # выпрагу > выпражашся &_2p._sing._refl._pres.
+SFX b   у     зешся      ду         # вяду > вядзешся &_2p._sing._refl._pres.
+SFX b   у     ашся       [жрчш]у    #  >  &_2p._sing._refl._pres.
+SFX b   у     ецца       [бвзмнс]у  #  >  &_3p._sing._refl._pres.
+SFX b   гу    жацца      гу         #  >  &_3p._sing._refl._pres.
+SFX b   у     зецца      ду         #  >  &_3p._sing._refl._pres.
+SFX b   у     ацца       [жрчш]у    #  >  &_3p._sing._refl._pres.
+SFX b   у     емся       [бвзмнс]у  #  >  &_1p._plur._refl._pres.
+SFX b   гу    жамся      гу         #  >  &_1p._plur._refl._pres.
+SFX b   у     земся      ду         #  >  &_1p._plur._refl._pres.
+SFX b   у     амся       [жрчш]у    #  >  &_1p._plur._refl._pres.
+SFX b   у     ецеся      [бвзмнс]у  #  >  &_2p._plur._refl._pres.
+SFX b   гу    жацеся     гу         #  >  &_2p._plur._refl._pres.
+SFX b   у     зецеся     ду         #  >  &_2p._plur._refl._pres.
+SFX b   у     ацеся      [жрчш]у    #  >  &_2p._plur._refl._pres.
+SFX b   у     уцца       у          #  >  &_3p._plur._refl._pres.
+SFX b   ю     ешся       ю          #  >  &_2p._sing._refl._pres.
+SFX b   ю     ецца       ю          #  >  &_3p._sing._refl._pres.
+SFX b   ю     емся       ю          #  >  &_1p._plur._refl._pres.
+SFX b   ю     ецеся      ю          #  >  &_2p._plur._refl._pres.
+SFX b   ю     юцца       ю          #  >  &_3p._plur._refl._pres.
+SFX b   цца   юся        цца        # адпрошвацца > адпрошваюся &_1p._sing._refl._pres.
+SFX b   цца   ешся       цца        #  >  &_2p._sing._refl._pres.
+SFX b   цца   емся       цца        #  >  &_1p._plur._refl._pres.
+SFX b   цца   ецеся      цца        #  >  &_2p._plur._refl._pres.
+
+# утварэнне з ф. 1-й ас. адз. л.: 1-я, 2-я і 3-я асобы адз. і мн. лікаў
+# (2-я ас. мн. л. не для ўсіх дзеясловаў),
+# і з неазначальнай формы: 3-я ас., адз. і мн. л.
+SFX d Y 26
+SFX d   0     ся         [ую]       #  >  &_1p._sing._refl._pres.
+SFX d   у     ешся       [бвзмнс]у  #  >  &_2p._sing._refl._pres.
+SFX d   гу    жэшся      гу         # берагу > беражэшся &_2p._sing._refl._pres.
+SFX d   у     зешся      ду         # вяду > вядзешся &_2p._sing._refl._pres.
+SFX d   у     эшся       [жрчш]у    #  >  &_2p._sing._refl._pres.
+SFX d   ку    чэшся      ку         # валаку > валачэшся &_2p._sing._refl._pres.
+SFX d   у     ецца       [бвзмнс]у  #  >  &_3p._sing._refl._pres.
+SFX d   гу    жэцца      гу         #  >  &_3p._sing._refl._pres.
+SFX d   у     зецца      ду         #  >  &_3p._sing._refl._pres.
+SFX d   у     эцца       [жрчш]у    #  >  &_3p._sing._refl._pres.
+SFX d   ку    чэцца      ку         #  >  &_3p._sing._refl._pres.
+SFX d   у     ёмся       [бвзмнс]у  #  >  &_1p._plur._refl._pres.
+SFX d   гу    жомся      гу         #  >  &_1p._plur._refl._pres.
+SFX d   у     зёмся      ду         #  >  &_1p._plur._refl._pres.
+SFX d   у     омся       [жрчш]у    #  >  &_1p._plur._refl._pres.
+SFX d   ку    чомся      ку         #  >  &_1p._plur._refl._pres.
+SFX d   ту    цёмся      ту         #  >  &_1p._plur._refl._pres.
+SFX d   у     яцеся      [вмн]у     #  >  &_2p._plur._refl._pres.
+SFX d   у     уцца       у          #  >  &_3p._plur._refl._pres.
+SFX d   ю     ешся       ю          #  >  &_2p._sing._refl._pres.
+SFX d   ю     ецца       ю          #  >  &_3p._sing._refl._pres.
+SFX d   ю     ёмся       ю          #  >  &_1p._plur._refl._pres.
+SFX d   ю     яцеся      [аілуўью']ю #  >  &_2p._plur._refl._pres.
+SFX d   ю     юцца       ю          #  >  &_3p._plur._refl._pres.
+SFX d   цца   ецца       цца        # адбывацца > адбываецца &_3p._sing._refl._pres.
+SFX d   цца   юцца       цца        #  >  &_3p._plur._refl._pres.
+
+# неазначальная форма,
+# прошлы час, адз. (м. і ж. род) і мн. лік
+SFX j Y 29
+SFX j   у     уцца       у          # кіну > кінуцца &_inf._refl.
+SFX j   у     уўся       у          #  >  &_masc._past
+SFX j   у     улася      у          #  >  &_fem._past
+SFX j   у     уліся      у          #  >  &_plur._past
+SFX j   ю     цца        [аеыэя]ю   # наведваю > наведвацца &_inf._refl.
+SFX j   ю     ўся        [аеыэя]ю   # выветрываю > выветрываўся &_masc._sing._refl._past
+SFX j   ю     лася       [аеыэя]ю   #  >  &_fem._sing._refl._past
+SFX j   ю     ліся       [аеыэя]ю   # запэўніваю > запэўніваліся &_plur._refl._past
+SFX j   ую    авацца     ую         # гарантую > гарантавацца &_inf._refl.
+SFX j   ую    аваўся     ую         # даследую > даследаваўся &_masc._past_refl.
+SFX j   ую    авалася    ую         #  >  &_fem._past_refl.
+SFX j   ую    аваліся    ую         # злую > злаваліся &_plur._past
+SFX j   юю    явацца     юю         # габлюю > габлявацца &_inf._refl.
+SFX j   юю    яваўся     юю         #  >  &_masc._past_refl.
+SFX j   юю    явалася    юю         #  >  &_fem._past_refl.
+SFX j   юю    яваліся    юю         #  >  &_plur._past_refl.
+SFX j   ць    цца        ць         #  >  &_inf._refl.
+SFX j   ць    ўся        ць         #  >  &_masc._past_refl.
+SFX j   ць    лася       ць         #  >  &_fem._past_refl.
+SFX j   ць    ліся       ць         #  >  &_plur._past_refl.
+SFX j   сці   ўся        сці        #  >  &_masc._past_refl.
+SFX j   сці   лася       сці        #  >  &_fem._past_refl.
+SFX j   сці   ліся       сці        #  >  &_plur._past_refl.
+SFX j   чы    ся         чы         # асекчы > асекся &_masc._past_refl.
+SFX j   чы    лася       чы         #  >  &_fem._past_refl.
+SFX j   чы    ліся       чы         #  >  &_plur._past_refl.
+SFX j   цца   ўся        цца        # адбывацца > адбываўся &_masc._past_refl.
+SFX j   цца   лася       цца        #  >  &_fem._past_refl.
+SFX j   цца   ліся       цца        #  >  &_plur._past_refl.
+
+# і загадны лад
+SFX x Y 12
+SFX x   у     зья        ду         # забуду > забудзься &_imp._refl.
+SFX x   у     зьцеся     ду         #  >  &_imp._refl.
+SFX x   у     ься        [змнс]у    # кіну > кінься &_imp._refl.
+SFX x   у     ьцеся      [змнс]у    #  >  &_imp._plur._refl.
+SFX x   у     ся         [жрчш]у    # абмажу > абмажся &_imp._refl.
+SFX x   у     цеся       [жрчш]у    #  >  &_imp._plur._refl.
+SFX x   ю     йся        ю          # гуляю > гуляйся &_imp._refl.
+SFX x   ю     йцеся      ю          #  >  &_imp._plur._refl.
+SFX x   ць    йся        ць         #  >  &_imp._refl.
+SFX x   ць    йцеся      ць         #  >  &_imp._plur._refl.
+SFX x   цца   йся        цца        #  >  &_imp._refl.
+SFX x   цца   йцеся      цца        #  >  &_imp._plur._refl.
+
+SFX y Y 18
+SFX y   у     іся        [бвзлмнпсфц]у # нясу > нясіся &_imp._refl.
+SFX y   у     іцеся      [бвзлмнпсфц]у #  >  &_imp._plur._refl.
+SFX y   у     ыся        [жрчш]у    # бяру > бярыся &_imp._refl.
+SFX y   у     ыцеся      [жрчш]у    #  >  &_imp._plur._refl.
+SFX y   гу    жыся       гу         #  >  &_imp._refl.
+SFX y   гу    жыцеся     гу         #  >  &_imp._plur._refl.
+SFX y   у     зіся       ду         # вяду > вядзіся &_imp._refl.
+SFX y   у     зіцеся     ду         #  >  &_imp._plur._refl.
+SFX y   ку    чыся       ку         # пяку > пячыся &_imp._refl.
+SFX y   ку    чыцеся     ку         #  >  &_imp._plur._refl.
+SFX y   ю     іся        ю          # ганю > ганіся &_imp._refl.
+SFX y   ю     іцеся      ю          #  >  &_imp._plur._refl.
+SFX y   аць   іся        аць        # трапаць > трапіся &_imp._refl.
+SFX y   аць   іцеся      аць        #  >  &_imp._plur._refl.
+SFX y   юся   іся        юся        # ўганюся > ўганіся &_imp.
+SFX y   юся   іцеся      юся        #  >  &_imp.
+SFX y   уцца  іся        уцца       # усміхнуцца > усміхніся &_imp.
+SFX y   уцца  іцеся      уцца       #  >  &_imp.
+
+# калі 1-я і 2-я асобы не ўжываюцца
+SFX n Y 5
+SFX n   ць    е          [аеэя]ць   # брыняць > брыняе &_3p._sing._pres.
+SFX n   ць    юць        [аеэя]ць   #  >  &_3p._plur._pres.
+SFX n   уць   е          [мн]уць    # адхлынуць > адхлыне &_3p._sing._pres.
+SFX n   сці   е          сці        # адгнісці > адгніе &_3p._sing._pres.
+SFX n   сці   юць        сці        #  >  &_3p._plur._pres.
+
+# II спражэнне
+
+# утварэнне ад неазначальнай формы:
+# загадны лад
+SFX k Y 10
+SFX k   іць   ь          [злмнсц]іць # дазволіць > дазволь &_imp.
+SFX k   іць   ьце        [злмнсц]іць #  >  &_imp._plur.
+SFX k   віць  ў          віць       # ставіць > стаў &_imp.
+SFX k   віць  ўце        віць       #  >  &_imp._plur.
+SFX k   іць   й          [ео]іць    # асвоіць > асвой &_imp.
+SFX k   іць   йце        [ео]іць    #  >  &_imp._plur.
+SFX k   ыць   0          [жрчш]ыць  # цешыць > цеш &_imp.
+SFX k   ыць   це         [жрчш]ыць  #  >  &_imp._plur.
+SFX k   ець   ь          [знс]ець   # ўгледзець > ўгледзь &_imp.
+SFX k   ець   ьце        [знс]ець   #  >  &_imp._plur.
+
+SFX l Y 8
+SFX l   іць   і          іць        # запоўніць > запоўні &_imp.
+SFX l   іць   іце        іць        #  >  &_imp._plur.
+SFX l   ыць   ы          ыць        # варыць > вары &_imp.
+SFX l   ыць   ыце        ыць        #  >  &_imp._plur.
+SFX l   ець   і          ець        # цярпець > цярпі &_imp.
+SFX l   ець   іце        ець        #  >  &_imp._plur.
+SFX l   аць   ы          аць        # дрыжаць > дрыжы &_imp.
+SFX l   аць   ыце        аць        #  >  &_imp._plur.
+
+# 1-я асоба адз. ліку цяперашняга часу
+# прошлы час: муж. і жан. род адз. ліку, мн. лік
+SFX m Y 17
+SFX m   іць   лю         [бмпф]іць  # купіць > куплю &_1p._sing._pres.
+SFX m   іць   ю          [аеёіоуыэюялн]іць # бяліць > бялю &_1p._sing._pres.
+SFX m   віць  ўлю        віць       # ставіць > стаўлю &_1p._sing._pres.
+SFX m   зіць  жу         зіць       # хадзіць > хаджу &_1p._sing._pres.
+SFX m   сіць  шу         сіць       # касіць > кашу &_1p._sing._pres.
+SFX m   ціць  чу         [аеёіоуыэюя]ціць # круціць > кручу &_1p._sing._pres.
+SFX m   сціць шчу        сціць      # пусціць > пушчу &_1p._sing._pres.
+SFX m   ыць   у          [жрчш]ыць  # варыць > вару &_1p._sing._pres.
+SFX m   ець   лю         [мп]ець    # цярпець > цярплю &_1p._sing._pres.
+SFX m   зець  жу         зець       # глядзець > гляджу &_1p._sing._pres.
+SFX m   сець  шу         сець       # вісець > вішу &_1p._sing._pres.
+SFX m   цець  чу         цець       # вярцець > вярчу &_1p._sing._pres.
+SFX m   аць   у          [жрчш]аць  # задрыжаць > задрыжу &_1p._sing._pres.
+SFX m   аць   лю         [мп]аць    # заламаць > заламлю &_1p._sing._pres.
+SFX m   ць    ў          [аеіы]ць   #  >  &_masc._sing._past
+SFX m   ць    ла         [аеіы]ць   #  >  &_fem._sing._past
+SFX m   ць    лі         [аеіы]ць   #  >  &_plur._past
+
+# зваротныя формы ад неазначальнай формы
+SFX s Y 12
+SFX s   іць   ься        [злмнсц]іць # заахвоціць > заахвоцься &_imp.
+SFX s   іць   ьцеся      [злмнсц]іць #  >  &_imp._plur.
+SFX s   віць  ўся        віць       # славіць > слаўся &_imp.
+SFX s   віць  ўцеся      віць       #  >  &_imp._plur.
+SFX s   оіць  ойся       оіць       # асвоіць > асвойся &_imp.
+SFX s   оіць  ойцеся     оіць       #  >  &_imp._plur.
+SFX s   ыць   ся         [жрчш]ыць  # важыць > важся &_imp.
+SFX s   ыць   цеся       [жрчш]ыць  #  >  &_imp._plur.
+SFX s   ець   ься        [знс]ець   # ўгледзець > ўгледзься &_imp.
+SFX s   ець   ьцеся      [знс]ець   #  >  &_imp._plur.
+SFX s   іцца  ься        іцца       # асмеліцца > асмелься &_imp._refl.
+SFX s   іцца  ьцеся      іцца       #  >  &_imp._plur._refl.
+
+SFX w Y 10
+SFX w   ць    ся         [іы]ць     # упэўніць > упэўніся &_imp.
+SFX w   ць    цеся       [іы]ць     # варыць > варыцеся &_imp._plur.
+SFX w   ець   іся        ець        # вярцець > вярціся &_imp.
+SFX w   ець   іцеся      ець        #  >  &_imp._plur.
+SFX w   цца   ся         [іы]цца    # апомніцца > апомніся &_imp._refl.
+SFX w   цца   цеся       [іы]цца    #  >  &_imp._plur._refl.
+SFX w   ецца  іся        ецца       # апомніцца > апомніся &_imp._refl.
+SFX w   ецца  іцеся      ецца       #  >  &_imp._plur._refl.
+SFX w   ацца  ыся        ацца       # заляжацца > заляжыся &_imp._refl.
+SFX w   ацца  ыцеся      ацца       #  >  &_imp._plur._refl.
+
+SFX q Y 18
+SFX q   ць    цца        ць         #  >  &_inf._refl.
+SFX q   іць   юся        [аеёілноу]іць # галіць > галюся &_1p._sing._pres._refl.
+SFX q   іць   люся       [бмп]іць   # абразуміць > абразумлюся &_1p._sing._pres._refl.
+SFX q   віць  ўлюся      віць       #  >  &_1p._sing._pres._refl.
+SFX q   зіць  жуся       зіць       #  >  &_1p._sing._pres._refl.
+SFX q   сіць  шуся       сіць       #  >  &_1p._sing._pres._refl.
+SFX q   ціць  чуся       [аеёіоуыэюя]ціць # круціць > кручуся &_1p._sing._pres._refl.
+SFX q   сціць шчуся      сціць      # пусціць > пушчуся &_1p._sing._pres._refl.
+SFX q   ыць   уся        ыць        #  >  &_1p._sing._pres._refl.
+SFX q   зець  жуся       зець       # глядзець > гляджуся &_1p._sing._pres._refl.
+SFX q   цець  чуся       цець       # вярцець > вярчуся &_1p._sing._pres._refl.
+SFX q   аць   уся        [жрчш]аць  #  >  &_1p._sing._pres._refl.
+SFX q   ць    ўся        [аеіы]ць   #  >  &_masc._sing._past_refl.
+SFX q   ць    лася       [аеіы]ць   #  >  &_fem._sing._past_refl.
+SFX q   ць    ліся       [аеіы]ць   #  >  &_plur._past_refl.
+SFX q   цца   ўся        [аеіы]цца  #  >  &_masc._sing._past_refl.
+SFX q   цца   лася       [аеіы]цца  #  >  &_fem._sing._past_refl.
+SFX q   цца   ліся       [аеіы]цца  #  >  &_plur._past_refl.
+
+# 2-я асоба адз. ліку, 1-я, 2-я і 3-я ас. множнага ліку
+# утвораныя ад 3-й ас. адз. л.
+SFX o Y 5
+SFX o   ць    ш          [іы]ць     # косіць > косіш &_2p._sing._pres.
+SFX o   ць    м          [іы]ць     #  >  &_1p._plur._pres.
+SFX o   ць    це         [іы]ць     #  >  &_2p._plur._pres.
+SFX o   іць   яць        іць        #  >  &_3p._plur._pres.
+SFX o   ыць   аць        ыць        #  >  &_3p._plur._pres.
+
+# зваротныя формы ад 3-й ас. адз. л.
+# і ад неазн. формы зваротнага дзеяслова
+SFX t Y 11
+SFX t   ць    цца        [іы]ць     # зводзіць > зводзіцца &_3p._sing._pres._refl.
+SFX t   ць    шся        [іы]ць     # валіць > валішся &_2p._sing._pres._refl.
+SFX t   ць    мся        [іы]ць     #  >  &_1p._plur._pres._refl.
+SFX t   ць    цеся       [іы]ць     #  >  &_2p._plur._pres._refl.
+SFX t   іць   яцца       іць        #  >  &_3p._plur._pres._refl.
+SFX t   ыць   ацца       ыць        #  >  &_3p._plur._pres._refl.
+SFX t   цца   шся        цца        #  >  &_2p._sing._pres._refl.
+SFX t   цца   мся        цца        #  >  &_1p._plur._pres._refl.
+SFX t   цца   цеся       цца        #  >  &_2p._plur._pres._refl.
+SFX t   іцца  яцца       іцца       #  >  &_3p._plur._pres._refl.
+SFX t   ыцца  ацца       ыцца       #  >  &_3p._plur._pres._refl.
+
+# калі 1-я і 2-я асобы не ўжываюцца
+SFX v Y 4
+SFX v   іць   яць        іць        #  >  &_3p._plur._pres.
+SFX v   ыць   аць        ыць        #  >  &_3p._plur._pres.
+SFX v   іцца  яцца       іцца       #  >  &_3p._plur._pres._refl.
+SFX v   ыцца  ацца       ыцца       #  >  &_3p._plur._pres._refl.
+
+
+# Назначэнне гэтага афікса - утварэнне зваротных дзеепрыслоўяў
+# але часам добра ўжыць і з дзеясловамі
+SFX K Y 1
+SFX K   0     ся         .          # выгнуўшы > выгнуўшыся &_ger._refl.
+
+
+.fi
+.RE
+.PP

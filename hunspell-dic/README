@@ -1,0 +1,9 @@
+Spell-checking dictionary and affix files for Belarusian
+
+Author: Mikalai Udodau (c) 2010
+
+License: Creative Commons cc-by-nd (attributes, no derivatives)
+See http://creativecommons.org/licenses/by-nd/3.0/
+
+
+To build dictionary from this source you should concatenate dictionary parts together.
