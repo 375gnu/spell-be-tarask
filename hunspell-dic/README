@@ -1,9 +1,7 @@
 Spell-checking dictionary and affix files for Belarusian
 
-Author: Mikalai Udodau (c) 2010
+Copyright: Mikalai Udodau (c) 2010
 
-License: Creative Commons cc-by-nd (attributes, no derivatives)
-See http://creativecommons.org/licenses/by-nd/3.0/
-
+This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
 
 To build dictionary from this source you should concatenate dictionary parts together.
