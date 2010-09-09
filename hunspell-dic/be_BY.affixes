@@ -334,7 +334,7 @@ SFX U   я     і          я          #  >  &_c.pr.
 SFX U   0     е          [бвзлмнпсф] #  >  &_c.pr.
 
 # множны лік, канчатак -аў (-яў) р.скл. мн.л.
-SFX P Y 56
+SFX P Y 59
 SFX P   а     ы          [бвджзлмнпрстфцчш]а # цела > целы &_c.nom._plur.
 SFX P   а     і          [гкх]а     # воблака > воблакі &_c.nom._plur.
 SFX P   0     ы          [бвджзлмнпрстфцчш] #  >  &_c.nom._plur.
@@ -382,7 +382,10 @@ SFX P   й     ях         й          #  >  &_c.pr._plur.
 SFX P   ў     вах        ў          #  >  &_c.pr._plur.
 SFX P   ь     ях         ь          #  >  &_c.pr._plur.
 SFX P   я     ях         я          #  >  &_c.pr._plur.
-SFX P   і     яў         [бвдзлмнпстфц]і #  >  &_c.gen._plur.
+SFX P   і     яў         [бвдзлмнпстфц]і # калені > каленяў &_c.gen._plur.
+SFX P   і     ям         [бвдзлмнпстфц]і #  >  &_c.dat._plur.
+SFX P   і     ямі        [бвдзлмнпстфц]і #  >  &_c.ins._plur.
+SFX P   і     ях         [бвдзлмнпстфц]і #  >  &_c.pr._plur.
 SFX P   і     аў         [гкх]і     #  >  &_c.gen._plur.
 SFX P   і     ам         [гкх]і     #  >  &_c.dat._plur.
 SFX P   і     амі        [гкх]і     #  >  &_c.ins._plur.
