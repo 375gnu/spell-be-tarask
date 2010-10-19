@@ -1,11 +1,9 @@
 # Belarusian affix file and dictionaries
-# Version number: 0.23
+# Version number: 0.24
 # Copyright: Mikalai Udodau (C) 2010
 # License: Creative Commons Attribution-ShareAlike
 # See http://creativecommons.org/licenses/by-sa/3.0/
-.PP
-.RS
-.nf
+
 SET UTF-8
 
 TRY аяоёйцукжеэнгшўзхіыпрлд'юьбвтмсчфАЯОЁЙЦУКЖЕЭНГШЎЗХІЫПРЛДЮЬБВТМСЧФ
@@ -1053,7 +1051,3 @@ SFX v   ыцца  ацца       ыцца       #  >  &_3p._plur._pres._refl.
 SFX K Y 1
 SFX K   0     ся         .          # выгнуўшы > выгнуўшыся &_ger._refl.
 
-
-.fi
-.RE
-.PP
