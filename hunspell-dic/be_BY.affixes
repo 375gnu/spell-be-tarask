@@ -1,5 +1,5 @@
 # Belarusian affix file and dictionaries
-# Version number: 0.24
+# Version number: 0.25
 # Copyright: Mikalai Udodau (C) 2010
 # License: Creative Commons Attribution-ShareAlike
 # See http://creativecommons.org/licenses/by-sa/3.0/
@@ -455,6 +455,8 @@ SFX Q   я     ях         я          #  >  &_c.pr._plur.
 # Трэцяе скланенне, назоўнікі жаночага роду
 # з асновай на мяккі і зацвярдзелы зычны 
 SFX T Y 15
+SFX T   0     і          [бф]       # глыб > глыбі &_c.gen.
+SFX T   0     ы          [жрчшц]    # моц > моцы &_c.gen.
 SFX T   ь     і          [злнсц]ь   # рысь > рысі &_c.gen.
 SFX T   дзь   ддзю       дзь        # моладзь > моладдзю &_c.ins.
 SFX T   зь    ззю        [аеёіоуыэюя]зь # мазь > маззю &_c.ins.
@@ -463,8 +465,6 @@ SFX T   нь    нню        нь         #  >  &_c.ins.
 SFX T   сь    ссю        сь         #  >  &_c.ins.
 SFX T   ць    ццю        [аеёіоуыэюя]ць # памяць > памяццю &_c.ins.
 SFX T   ць    цю         [рс]ць     # косць > косцю &_c.ins.
-SFX T   0     ы          [жрчшц]    # моц > моцы &_c.gen.
-SFX T   0     і          [бф]       # глыб > глыбі &_c.gen.
 SFX T   ж     жжу        ж          # бездараж > бездаражжу &_c.ins.
 SFX T   ш     шшу        ш          # мыш > мышшу &_c.ins.
 SFX T   ч     ччу        ч          # ноч > ноччу &_c.ins.
