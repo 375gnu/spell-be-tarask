@@ -529,9 +529,9 @@ SFX M   я     ях         я          #  >  &_c.pr._plur.
 
 # Прыметнікі
 
-# Паслядоўна муж. ды жан. род адз. ліку і множны лік
+# Паслядоўна муж., жан. ды ніякі род адз. ліку і множны лік
 # спачатку якасныя і адносныя, потым прыналежныя прыметнікі
-SFX V Y 55
+SFX V Y 58
 SFX V   ы     ага        ы          # добры > добрага &_c.gen._masc.
 SFX V   ы     аму        ы          #  >  &_c.dat._masc.
 SFX V   ы     ым         ы          #  >  &_c.ins._masc.
@@ -539,6 +539,7 @@ SFX V   ы     ая         ы          # прыгожы > прыгожая &_c.
 SFX V   ы     ай         ы          #  >  &_c.gen._fem.
 SFX V   ы     ую         ы          #  >  &_c.acc._fem.
 SFX V   ы     аю         ы          #  >  &_c.ins._fem.
+SFX V   ы     ае         ы          # хворы > хворае &_c.nom._neut.
 SFX V   ы     ыя         ы          #  >  &_c.nom._plur.
 SFX V   ы     ых         ы          #  >  &_c.gen._plur.
 SFX V   ы     ым         ы          #  >  &_c.dat._plur.
@@ -551,6 +552,7 @@ SFX V   і     ая         [гкх]і     #  >  &_c.nom._fem.
 SFX V   і     ай         [гкх]і     #  >  &_c.gen._fem.
 SFX V   і     ую         [гкх]і     #  >  &_c.acc._fem.
 SFX V   і     аю         [гкх]і     #  >  &_c.ins._fem.
+SFX V   і     ае         [гкх]і     #  >  &_c.nom._neut.
 SFX V   і     яга        [нц]і      # сіні > сіняга &_c.gen._masc.
 SFX V   і     яму        [нц]і      # трэці > трэцяму &_c.dat._masc.
 SFX V   і     ім         [нц]і      #  >  &_c.ins._masc.
@@ -558,6 +560,7 @@ SFX V   і     яя         [нц]і      #  >  &_c.nom._fem.
 SFX V   і     яй         [нц]і      #  >  &_c.gen._fem.
 SFX V   і     юю         [нц]і      #  >  &_c.acc._fem.
 SFX V   і     яю         [нц]і      #  >  &_c.ins._fem.
+SFX V   і     яе         [нц]і      #  >  &_c.nom._neut.
 SFX V   і     ія         і          #  >  &_c.nom._plur.
 SFX V   і     іх         і          #  >  &_c.gen._plur.
 SFX V   і     ім         і          #  >  &_c.dat._plur.
@@ -587,11 +590,7 @@ SFX V   н     ных        [іы]н      #  >  &_c.gen._plur.
 SFX V   н     ным        [іы]н      #  >  &_c.dat._plur.
 SFX V   н     нымі       [іы]н      #  >  &_c.ins._plur.
 SFX V   н     ных        [іы]н      #  >  &_c.pr._plur.
-# ніякі род
-SFX I Y 3
-SFX I   ы     ае         ы          # хворы > хворае &_c.nom._neut.
-SFX I   і     ае         [гкх]і     #  >  &_c.nom._neut.
-SFX I   і     яе         [нц]і      #  >  &_c.nom._neut.
+
 # утварэнне прыслоўя ад прыметніка, кароткая форма прыметніка
 SFX X Y 3
 SFX X   ы     а          ы          # добры > добра &_
@@ -628,7 +627,38 @@ SFX Z   і     імі        і          #  >  &_c.ins._plur.
 SFX Z   і     іх         і          #  >  &_c.pr._plur.
 
 # Склонавыя канчаткі прозвішчаў, падобных на прыметнікі
-SFX S Y 16
+SFX S Y 47
+SFX S   ы     ага        ы          # Гартны > Гартнага &_c.gen._masc.
+SFX S   ы     аму        ы          #  >  &_c.dat._masc.
+SFX S   ы     ым         ы          #  >  &_c.ins._masc.
+SFX S   ы     ая         ы          # Паддубны > Паддубная &_c.nom._fem.
+SFX S   ы     ай         ы          #  >  &_c.gen._fem.
+SFX S   ы     ую         ы          #  >  &_c.acc._fem.
+SFX S   ы     аю         ы          #  >  &_c.ins._fem.
+SFX S   ы     ыя         ы          #  >  &_c.nom._plur.
+SFX S   ы     ых         ы          #  >  &_c.gen._plur.
+SFX S   ы     ым         ы          #  >  &_c.dat._plur.
+SFX S   ы     ымі        ы          #  >  &_c.ins._plur.
+SFX S   ы     ых         ы          #  >  &_c.pr._plur.
+SFX S   і     ага        [гкх]і     # Каліноўскі > Каліноўскага &_c.gen._masc.
+SFX S   і     аму        [гкх]і     #  >  &_c.dat._masc.
+SFX S   і     ім         [гкх]і     #  >  &_c.ins._masc.
+SFX S   і     ая         [гкх]і     #  >  &_c.nom._fem.
+SFX S   і     ай         [гкх]і     #  >  &_c.gen._fem.
+SFX S   і     ую         [гкх]і     #  >  &_c.acc._fem.
+SFX S   і     аю         [гкх]і     #  >  &_c.ins._fem.
+SFX S   і     яга        [нц]і      #  >  &_c.gen._masc.
+SFX S   і     яму        [нц]і      #  >  &_c.dat._masc.
+SFX S   і     ім         [нц]і      #  >  &_c.ins._masc.
+SFX S   і     яя         [нц]і      #  >  &_c.nom._fem.
+SFX S   і     яй         [нц]і      #  >  &_c.gen._fem.
+SFX S   і     юю         [нц]і      #  >  &_c.acc._fem.
+SFX S   і     яю         [нц]і      #  >  &_c.ins._fem.
+SFX S   і     ія         і          #  >  &_c.nom._plur.
+SFX S   і     іх         і          #  >  &_c.gen._plur.
+SFX S   і     ім         і          #  >  &_c.dat._plur.
+SFX S   і     імі        і          #  >  &_c.ins._plur.
+SFX S   і     іх         і          #  >  &_c.pr._plur.
 SFX S   ў     ва         [аеёо]ў    # Аненкаў > Аненкава &_c.gen._masc.
 SFX S   ў     ву         [аеёо]ў    # Аляб'еў > Аляб'еву &_c.dat._masc.
 SFX S   ў     вым        [аеёо]ў    # Вараб'ёў > Вараб'ёвым &_c.ins._masc.
