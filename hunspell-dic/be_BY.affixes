@@ -914,7 +914,7 @@ SFX j   цца   ліся       цца        #  >  &_plur._past_refl.
 
 # і загадны лад
 SFX x Y 12
-SFX x   у     зья        ду         # забуду > забудзься &_imp._refl.
+SFX x   у     зься       ду         # забуду > забудзься &_imp._refl.
 SFX x   у     зьцеся     ду         #  >  &_imp._refl.
 SFX x   у     ься        [змнс]у    # кіну > кінься &_imp._refl.
 SFX x   у     ьцеся      [змнс]у    #  >  &_imp._plur._refl.
