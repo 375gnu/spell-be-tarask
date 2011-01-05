@@ -387,10 +387,10 @@ SFX P   й     ях         й          #  >  &_c.pr._plur.
 SFX P   ў     вах        ў          #  >  &_c.pr._plur.
 SFX P   ь     ях         ь          #  >  &_c.pr._plur.
 SFX P   я     ях         я          #  >  &_c.pr._plur.
-SFX P   і     яў         [бвдзлмнпстфц]і # калені > каленяў &_c.gen._plur.
-SFX P   і     ям         [бвдзлмнпстфц]і #  >  &_c.dat._plur.
-SFX P   і     ямі        [бвдзлмнпстфц]і #  >  &_c.ins._plur.
-SFX P   і     ях         [бвдзлмнпстфц]і #  >  &_c.pr._plur.
+SFX P   і     яў         [бвдезлмнопстфц']і # калені > каленяў &_c.gen._plur.
+SFX P   і     ям         [бвдезлмнопстфц']і #  >  &_c.dat._plur.
+SFX P   і     ямі        [бвдезлмнопстфц']і #  >  &_c.ins._plur.
+SFX P   і     ях         [бвдезлмнопстфц']і #  >  &_c.pr._plur.
 SFX P   і     аў         [гкх]і     #  >  &_c.gen._plur.
 SFX P   і     ам         [гкх]і     #  >  &_c.dat._plur.
 SFX P   і     амі        [гкх]і     #  >  &_c.ins._plur.
@@ -475,24 +475,39 @@ SFX T   0     ю          [ў]        # кроў > кроўю &_c.ins.
 SFX T   0     'ю         [брф]      # шыр > шыр'ю &_c.ins.
 
 # Формы множнага ліку для назоўнікаў без чаргавання галоснай у аснове
-# утвараем ад формы наз.скл. адз.л.,
+# ўтвараем ад формы назоўнага склону адзіночнага ліку,
 # а з чаргаваннем галоснай кораню - ад формы р.скл. мн.л.
-SFX L Y 21
-SFX L   0     ы          [жрцчш]    # мыш > мышы &_c.nom.plur.
-SFX L   0     і          [бф]       # верф > верфі &_c.nom.plur.
-SFX L   0     эй         [жрцчш]    #  >  &_c.gen.plur.
-SFX L   0     ей         [бф]       #  >  &_c.gen.plur.
+SFX L Y 36
 SFX L   а     эй         а          # бахча > бахчэй &_c.gen.plur.
-SFX L   і     ей         і          # сані > саней &_c.gen.plur.
-SFX L   ы     эй         ы          # куры > курэй &_c.gen.plur.
-SFX L   ь     ей         ь          # супольнасць > супольнасцей &_c.gen.plur.
-SFX L   я     ей         я          # ладдзя > ладдзей &_c.gen.plur.
-SFX L   0     ам         [жрцчш]    #  >  &_c.dat.plur.
-SFX L   0     амі        [жрцчш]    #  >  &_c.ins.plur.
-SFX L   0     ах         [жрцчш]    #  >  &_c.pr.plur.
+SFX L   а     ам         а          #  >  &_c.dat._plur.
+SFX L   а     амі        а          #  >  &_c.ins._plur.
+SFX L   а     ах         а          #  >  &_c.pr._plur.
+SFX L   0     і          [бф]       # верф > верфі &_c.nom.plur.
+SFX L   0     ей         [бф]       #  >  &_c.gen.plur.
 SFX L   0     ям         [бф]       #  >  &_c.dat.plur.
 SFX L   0     ямі        [бф]       #  >  &_c.ins.plur.
 SFX L   0     ях         [бф]       #  >  &_c.pr.plur.
+SFX L   0     ы          [жрцчш]    # мыш > мышы &_c.nom.plur.
+SFX L   0     эй         [жрцчш]    #  >  &_c.gen.plur.
+SFX L   0     ам         [жрцчш]    #  >  &_c.dat.plur.
+SFX L   0     амі        [жрцчш]    #  >  &_c.ins.plur.
+SFX L   0     ах         [жрцчш]    #  >  &_c.pr.plur.
+SFX L   і     ей         і          # сані > саней &_c.gen.plur.
+SFX L   і     ям         і          #  >  &_c.dat._plur.
+SFX L   і     ямі        і          #  >  &_c.ins._plur.
+SFX L   і     ях         і          #  >  &_c.pr._plur.
+SFX L   ы     эй         ы          # куры > курэй &_c.gen.plur.
+SFX L   ы     ам         ы          #  >  &_c.dat._plur.
+SFX L   ы     амі        ы          #  >  &_c.ins._plur.
+SFX L   ы     ах         ы          #  >  &_c.pr._plur.
+SFX L   ь     ей         ь          # супольнасць > супольнасцей &_c.gen.plur.
+SFX L   ь     ям         ь          #  >  &_c.dat._plur.
+SFX L   ь     ямі        ь          #  >  &_c.ins._plur.
+SFX L   ь     ях         ь          #  >  &_c.pr._plur.
+SFX L   я     ей         я          # ладдзя > ладдзей &_c.gen.plur.
+SFX L   я     ям         я          #  >  &_c.dat._plur.
+SFX L   я     ямі        я          #  >  &_c.ins._plur.
+SFX L   я     ях         я          #  >  &_c.pr._plur.
 SFX L   ей    ям         ей         # касцей > касцям &_c.dat.plur.
 SFX L   ей    ямі        ей         #  >  &_c.ins.plur.
 SFX L   ей    ях         ей         #  >  &_c.pr.plur.
