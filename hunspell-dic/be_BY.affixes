@@ -928,7 +928,7 @@ SFX j   цца   лася       цца        #  >  &_fem._past_refl.
 SFX j   цца   ліся       цца        #  >  &_plur._past_refl.
 
 # і загадны лад
-SFX x Y 12
+SFX x Y 14
 SFX x   у     зься       ду         # забуду > забудзься &_imp._refl.
 SFX x   у     зьцеся     ду         #  >  &_imp._refl.
 SFX x   у     ься        [змнс]у    # кіну > кінься &_imp._refl.
@@ -939,6 +939,8 @@ SFX x   ю     йся        ю          # гуляю > гуляйся &_imp._re
 SFX x   ю     йцеся      ю          #  >  &_imp._plur._refl.
 SFX x   ць    йся        ць         #  >  &_imp._refl.
 SFX x   ць    йцеся      ць         #  >  &_imp._plur._refl.
+SFX x   юся   йся        юся        # напрацуюся > напрацуйся &_imp.
+SFX x   юся   йцеся      юся        #  >  &_imp.
 SFX x   цца   йся        цца        #  >  &_imp._refl.
 SFX x   цца   йцеся      цца        #  >  &_imp._plur._refl.
 
