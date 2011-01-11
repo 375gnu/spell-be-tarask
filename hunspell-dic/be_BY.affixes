@@ -735,19 +735,19 @@ SFX c   ю     юць        ю          # гадую > гадуюць &_3p._plu
 # 2-ю асобу мн. ліку ўтвараем не для ўсіх дзеясловаў,
 # бо вельмі часта назіраецца чаргаванне галоснай
 SFX e Y 26
-SFX e   у     еш         [бвзмнс]у  #  >  &_2p._sing._pres.
+SFX e   у     еш         [бвзмнпс]у #  >  &_2p._sing._pres.
 SFX e   гу    жэш        гу         # ілгу > ілжэш &_2p._sing._pres.
 SFX e   у     зеш        ду         #  >  &_2p._sing._pres.
 SFX e   у     эш         [жрчш]у    # бяру > бярэш &_2p._sing._pres.
 SFX e   ку    чэш        ку         # валаку > валачэш &_2p._sing._pres.
 SFX e   ту    цеш        ту         #  >  &_2p._sing._pres.
-SFX e   у     е          [бвзмнс]у  #  >  &_3p._sing._pres.
+SFX e   у     е          [бвзмнпс]у #  >  &_3p._sing._pres.
 SFX e   гу    жэ         гу         #  >  &_3p._sing._pres.
 SFX e   у     зе         ду         #  >  &_3p._sing._pres.
 SFX e   у     э          [жрчш]у    # ржу > ржэ &_3p._sing._pres.
 SFX e   ку    чэ         ку         #  >  &_3p._sing._pres.
 SFX e   ту    це         ту         #  >  &_3p._sing._pres.
-SFX e   у     ём         [бвзмнс]у  # рву > рвём &_1p._plur._pres.
+SFX e   у     ём         [бвзмнпс]у # рву > рвём &_1p._plur._pres.
 SFX e   гу    жом        гу         #  >  &_1p._plur._pres.
 SFX e   у     зём        ду         # вяду > вядзём &_1p._plur._pres.
 SFX e   у     ом         [жрчш]у    # бяру > бяром &_1p._plur._pres.
@@ -868,17 +868,17 @@ SFX b   цца   ецеся      цца        #  >  &_2p._plur._refl._pres.
 # і з неазначальнай формы: 3-я ас., адз. і мн. л.
 SFX d Y 26
 SFX d   0     ся         [ую]       #  >  &_1p._sing._refl._pres.
-SFX d   у     ешся       [бвзмнс]у  #  >  &_2p._sing._refl._pres.
+SFX d   у     ешся       [бвзмнпс]у #  >  &_2p._sing._refl._pres.
 SFX d   гу    жэшся      гу         # берагу > беражэшся &_2p._sing._refl._pres.
 SFX d   у     зешся      ду         # вяду > вядзешся &_2p._sing._refl._pres.
 SFX d   у     эшся       [жрчш]у    #  >  &_2p._sing._refl._pres.
 SFX d   ку    чэшся      ку         # валаку > валачэшся &_2p._sing._refl._pres.
-SFX d   у     ецца       [бвзмнс]у  #  >  &_3p._sing._refl._pres.
+SFX d   у     ецца       [бвзмнпс]у #  >  &_3p._sing._refl._pres.
 SFX d   гу    жэцца      гу         #  >  &_3p._sing._refl._pres.
 SFX d   у     зецца      ду         #  >  &_3p._sing._refl._pres.
 SFX d   у     эцца       [жрчш]у    #  >  &_3p._sing._refl._pres.
 SFX d   ку    чэцца      ку         #  >  &_3p._sing._refl._pres.
-SFX d   у     ёмся       [бвзмнс]у  #  >  &_1p._plur._refl._pres.
+SFX d   у     ёмся       [бвзмнпс]у #  >  &_1p._plur._refl._pres.
 SFX d   гу    жомся      гу         #  >  &_1p._plur._refl._pres.
 SFX d   у     зёмся      ду         #  >  &_1p._plur._refl._pres.
 SFX d   у     омся       [жрчш]у    #  >  &_1p._plur._refl._pres.
