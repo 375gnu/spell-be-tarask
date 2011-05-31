@@ -178,15 +178,6 @@ SFX G   ы     ам         ы          #  >  &_c.dat._plur.
 SFX G   ы     амі        ы          #  >  &_c.ins._plur.
 SFX G   ы     ах         ы          #  >  &_c.pr._plur.
 
-# множны лік назоўнікаў са збегам зычных у аснове,
-# ці наз. толькі множнага ліку (на -я -ё -ю -і -е), ...
-SFX N Y 5
-SFX N   а     аў         а          # чаромха > чаромхаў &_c.gen._plur.
-SFX N   і     яў         і          #  >  &_c.gen._plur.
-SFX N   ы     аў         ы          # баразна > барознаў &_c.gen._plur.
-SFX N   я     яў         я          # роля > роляў &_c.gen.plur.
-SFX N   ь     яў         ь          # гантэль > гантэляў &_c.gen.plur.
-
 
 # Першае скланенне, мужчынскі і ніякі род
 
@@ -512,33 +503,6 @@ SFX L   ей    ях         ей         #  >  &_c.pr.plur.
 SFX L   эй    ам         эй         # начэй > начам &_c.dat.plur.
 SFX L   эй    амі        эй         #  >  &_c.ins.plur.
 SFX L   эй    ах         эй         #  >  &_c.pr.plur.
-
-# Давальны, творны і месны склоны множнага ліку ўсіх скланенняў
-SFX M Y 24
-SFX M   а     ам         а          #  >  &_c.dat._plur.
-SFX M   а     амі        а          #  >  &_c.ins._plur.
-SFX M   а     ах         а          #  >  &_c.pr._plur.
-SFX M   е     ям         е          #  >  &_c.dat._plur.
-SFX M   е     ямі        е          #  >  &_c.ins._plur.
-SFX M   е     ях         е          #  >  &_c.pr._plur.
-SFX M   ё     ям         ё          #  >  &_c.dat._plur.
-SFX M   ё     ямі        ё          #  >  &_c.ins._plur.
-SFX M   ё     ях         ё          #  >  &_c.pr._plur.
-SFX M   і     ям         і          #  >  &_c.dat._plur.
-SFX M   і     ямі        і          #  >  &_c.ins._plur.
-SFX M   і     ях         і          #  >  &_c.pr._plur.
-SFX M   й     ям         й          #  >  &_c.dat._plur.
-SFX M   й     ямі        й          #  >  &_c.ins._plur.
-SFX M   й     ях         й          #  >  &_c.pr._plur.
-SFX M   ь     ям         ь          #  >  &_c.dat._plur.
-SFX M   ь     ямі        ь          #  >  &_c.ins._plur.
-SFX M   ь     ях         ь          #  >  &_c.pr._plur.
-SFX M   ы     ам         ы          #  >  &_c.dat._plur.
-SFX M   ы     амі        ы          #  >  &_c.ins._plur.
-SFX M   ы     ах         ы          #  >  &_c.pr._plur.
-SFX M   я     ям         я          #  >  &_c.dat._plur.
-SFX M   я     ямі        я          #  >  &_c.ins._plur.
-SFX M   я     ях         я          #  >  &_c.pr._plur.
 
 
 # Прыметнікі
