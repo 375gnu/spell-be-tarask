@@ -411,7 +411,7 @@ SFX Q   а     оў         а          #  >  &_c.gen.plur.
 SFX Q   0     оў         [бвгджзклмнпрстфхцчш] # бык > быкоў &_c.gen._plur.
 SFX Q   е     ёў         е          #  >  &_c.gen._plur.
 SFX Q   ё     ёў         ё          #  >  &_c.gen._plur.
-SFX Q   і     ёў         [азілмносуў']і # баі > баёў &_c.gen._plur.
+SFX Q   і     ёў         [азілмносуўя']і # баі > баёў &_c.gen._plur.
 SFX Q   і     оў         [гкх]і     # вазкі > вазкоў &_c.gen.plur.
 SFX Q   й     ёў         й          # гай > гаёў &_c.gen._plur.
 SFX Q   ь     ёў         ь          # куль > кулёў &_c.gen._plur.
@@ -422,7 +422,7 @@ SFX Q   а     ам         а          #  >  &_c.dat._plur.
 SFX Q   0     ам         [бвгджзклмнпрстфхцчш] #  >  &_c.dat._plur.
 SFX Q   е     ям         е          #  >  &_c.dat._plur.
 SFX Q   ё     ям         ё          #  >  &_c.dat._plur.
-SFX Q   і     ям         [азілмносуў']і #  >  &_c.dat._plur.
+SFX Q   і     ям         [азілмносуўя']і #  >  &_c.dat._plur.
 SFX Q   і     ам         [гкх]і     #  >  &_c.dat._plur.
 SFX Q   й     ям         й          #  >  &_c.dat._plur.
 SFX Q   о     ам         о          #  >  &_c.dat._plur.
@@ -433,7 +433,7 @@ SFX Q   а     амі        а          #  >  &_c.ins._plur.
 SFX Q   0     амі        [бвгджзклмнпрстфхцчш] #  >  &_c.ins._plur.
 SFX Q   е     ямі        е          #  >  &_c.ins._plur.
 SFX Q   ё     ямі        ё          #  >  &_c.ins._plur.
-SFX Q   і     ямі        [азілмносуў']і #  >  &_c.ins._plur.
+SFX Q   і     ямі        [азілмносуўя']і #  >  &_c.ins._plur.
 SFX Q   і     амі        [гкх]і     #  >  &_c.ins._plur.
 SFX Q   й     ямі        й          #  >  &_c.ins._plur.
 SFX Q   о     амі        о          #  >  &_c.ins._plur.
@@ -444,7 +444,7 @@ SFX Q   а     ах         а          #  >  &_c.pr._plur.
 SFX Q   0     ах         [бвгджзклмнпрстфхцчш] #  >  &_c.pr._plur.
 SFX Q   е     ях         е          #  >  &_c.pr._plur.
 SFX Q   ё     ях         ё          #  >  &_c.pr._plur.
-SFX Q   і     ях         [азілмносуў']і #  >  &_c.pr._plur.
+SFX Q   і     ях         [азілмносуўя']і #  >  &_c.pr._plur.
 SFX Q   і     ах         [гкх]і     #  >  &_c.pr._plur.
 SFX Q   й     ях         й          #  >  &_c.pr._plur.
 SFX Q   о     ах         о          #  >  &_c.pr._plur.
