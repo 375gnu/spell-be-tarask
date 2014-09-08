@@ -1,6 +1,6 @@
 # Belarusian affix file and dictionaries
 # Version number: 0.56
-# Copyright: Mikalai Udodau (C) 2010-2012
+# Copyright: Mikalai Udodau (C) 2010-2014
 # License: Creative Commons Attribution-ShareAlike
 # See http://creativecommons.org/licenses/by-sa/3.0/
 
@@ -10,7 +10,7 @@ TRY аяоёйцукжеэнгшўзхіыпрлдюьбвтмсчфАЯОЁЙЦ
 
 WORDCHARS '
 
-REP 40
+REP 45
 REP а у       # верху
 REP ваў ў     # кароваў > кароў
 REP дзь д     # > асяроддзе
@@ -21,6 +21,7 @@ REP ецца юць  # святкуецца > святкуюць
 REP еч юш     # бацечка > бацюшка
 REP з сы      # сыграць
 REP зі ы      # ванадзій > ванадый
+REP зь з
 REP ій яў     # губерній > губерняў
 REP іра а     # фіксіраваць > фіксаваць
 REP іра я     # маніпуліраваць > маніпуляваць
@@ -32,8 +33,11 @@ REP Йо Ё      # Йофе > Ёфе
 REP к каў     # войск > войскаў
 REP каў к     # навукаў > навук
 REP ке цы     # цётке > цётцы
+REP ль л
 REP наў н     # імёнаў > імён
+REP нь н
 REP с на      # накіраванасць
+REP сь с
 REP сь ш      # смяешся
 REP то цё     # > акцёр
 REP ты ці     # > каранцін
@@ -43,6 +47,7 @@ REP у 'ю      # камп'ютар
 REP ўся ў     #
 REP ц дс      # грамацтва > грамадства
 REP ца ь      # заблудзіцца > заблудзіць
+REP ць ц
 REP ш ін      # памылка аптычнага распазнавання
 REP ь '       # пьяны > п'яны
 REP ье а      # крыльеў > крылаў
@@ -52,7 +57,7 @@ REP эй оў     # мужэй > мужоў
 REP яль й     # афіцыяльны > афіцыйны
 REP яў й      # змеяў > змей
 
-MAP 20
+MAP 15
 MAP c с
 MAP i і
 MAP а о
@@ -68,11 +73,6 @@ MAP ы і
 MAP э а
 MAP э е
 MAP я е
-MAP зь з
-MAP ль л
-MAP нь н
-MAP сь с
-MAP ць ц
 
 BREAK 2
 BREAK -
