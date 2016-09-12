@@ -4,13 +4,13 @@
     <node oor:name="Dictionaries">
         <node oor:name="HunSpellDic_be_BY" oor:op="fuse">
             <prop oor:name="Locations" oor:type="oor:string-list">
-                <value>%origin%/be_BY.aff %origin%/be_BY.dic</value>
+                <value>%origin%/be_BY@tarask.aff %origin%/be_BY@tarask.dic</value>
             </prop>
             <prop oor:name="Format" oor:type="xs:string">
                 <value>DICT_SPELL</value>
             </prop>
             <prop oor:name="Locales" oor:type="oor:string-list">
-                <value>be-BY</value>
+                <value>be-BY@tarask</value>
             </prop>
         </node>
     </node>

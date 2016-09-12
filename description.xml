@@ -3,15 +3,15 @@
 <!--
     <registration>
         <simple-license accept-by="admin" suppress-on-update="false" >
-            <license-text xlink:href="README_spell_be_BY.txt" lang="be-BY" />
+            <license-text xlink:href="README_spell_be_BY.txt" lang="be-BY@tarask" />
         </simple-license>
     </registration>
 -->
     <version value="0.57" />
-    <identifier value="net.crom-a.at.tut.by.www.Mikalai.Udodau.OOo-Dictionaries.be-BY" />
+    <identifier value="net.crom-a.at.tut.by.www.Mikalai.Udodau.OOo-Dictionaries.be-BY.tarask" />
     <display-name>
-        <name lang="en">Belarusian (Belarus) spell check dictionary</name>
-        <name lang="be">Беларускі слоўнік для спраўджэння арфаграфіі</name>
+        <name lang="en">Belarusian (Belarus, tarask varian) spell check dictionary</name>
+        <name lang="be">Беларускі (тарашкевіца) слоўнік для спраўджэньня артаґрафіі</name>
     </display-name>
     <platform value="all" />
     <dependencies>

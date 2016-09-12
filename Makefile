@@ -14,18 +14,18 @@ VERSION_NUMBER=$$(head -n2 hunspell-dic/be_BY.affixes | tail -n1 | cut -c19-)
 
 all: dict-zip dict-xpi dict-oxt
 
-dict: be_BY.aff be_BY.dic
+dict: be_BY@tarask.aff be_BY@tarask.dic
 
 # This target removes comments - all but 5 lines - from affix file
-be_BY.aff:
-	head -n 5 hunspell-dic/be_BY.affixes > be_BY.aff
+be_BY@tarask.aff:
+	head -n 5 hunspell-dic/be_BY.affixes > be_BY@tarask.aff
 	cut -d# -f1 hunspell-dic/be_BY.affixes \
 	| tr -s ' ' ' ' | tr -s '\12' '\12' | tail -n+2 \
-	>> be_BY.aff
+	>> be_BY@tarask.aff
 
 # This target concatenates dictionary parts
 # then counts words and put number in 1st line of dictionary
-be_BY.dic:
+be_BY@tarask.dic:
 	cat \
 	hunspell-dic/chasc.dic \
 	hunspell-dic/dzeeprym.dic \
@@ -60,27 +60,27 @@ be_BY.dic:
 	hunspell-dic/pryst.dic \
 	hunspell-dic/sk.dic \
 	| sort | uniq > be_BY.dictionary
-	cat be_BY.dictionary | wc -l > be_BY.dic
-	cat be_BY.dictionary >> be_BY.dic && rm be_BY.dictionary
+	cat be_BY.dictionary | wc -l > be_BY@tarask.dic
+	cat be_BY.dictionary >> be_BY@tarask.dic && rm be_BY.dictionary
 
 dict-zip: dict
-	zip -rq hunspell-be-$(VERSION_NUMBER).zip be_BY.aff be_BY.dic
+	zip -rq hunspell-be-tarask-$(VERSION_NUMBER).zip be_BY@tarask.aff be_BY@tarask.dic
 
 dict-xpi: dict
-	cp be_BY.aff be_BY.dic dictionaries/
-	zip -rq spell-be-$(VERSION_NUMBER).xpi \
+	cp be_BY@tarask.aff be_BY@tarask.dic dictionaries/
+	zip -rq spell-be-tarask-$(VERSION_NUMBER).xpi \
 	install.rdf install.js \
-	dictionaries/ dictionaries/be_BY.aff dictionaries/be_BY.dic \
+	dictionaries/ dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
 	dictionaries/README_be_BY.txt
 
 dict-oxt: dict
-	zip -rq dict-be-$(VERSION_NUMBER).oxt \
+	zip -rq dict-be-tarask-$(VERSION_NUMBER).oxt \
 	META-INF/ META-INF/manifest.xml README_spell_be_BY.txt \
-	be_BY.aff be_BY.dic description.xml dictionaries.xcu \
+	be_BY@tarask.aff be_BY@tarask.dic description.xml dictionaries.xcu \
 	 
 
 clean:
-	rm be_BY.aff be_BY.dic hunspell-be-$(VERSION_NUMBER).zip \
-	dictionaries/be_BY.aff dictionaries/be_BY.dic \
-	spell-be-$(VERSION_NUMBER).xpi \
-	dict-be-$(VERSION_NUMBER).oxt
+	rm be_BY@tarask.aff be_BY@tarask.dic hunspell-be-tarask-$(VERSION_NUMBER).zip \
+	dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
+	spell-be-tarask-$(VERSION_NUMBER).xpi \
+	dict-be-tarask-$(VERSION_NUMBER).oxt

@@ -32,8 +32,8 @@
 		<em:maxVersion>2.18.*</em:maxVersion>
 		</Description>
 	</em:targetApplication>
-	<em:name>Belarusian spellcheck dictionary</em:name>
-	<em:description>Беларускі слоўнік для спраўджэння арфаграфіі</em:description>
+	<em:name>Belarusian (tarask) spellcheck dictionary</em:name>
+	<em:description>Беларускі (тарашкевіца) слоўнік для спраўджэньня артаґрафіі</em:description>
 	<em:creator>Mikalai Udodau</em:creator>
 	<em:contributor>Mikalai Udodau</em:contributor>
 	<em:homepageURL>http://sourceforge.net/projects/spell-be/</em:homepageURL>
