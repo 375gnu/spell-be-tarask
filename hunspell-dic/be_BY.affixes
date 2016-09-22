@@ -38,7 +38,7 @@ REP наў н     # імёнаў > імён
 REP н нь
 REP с на      # накіраванасьць
 REP с сь
-REP сь ш      # сьмяешся
+REP ш сь      # сьмяесься
 REP ўся ў     #
 REP ц дз      # грамацтва > грамадзтва
 REP дс дз     # грамадства > грамадзтва
@@ -805,10 +805,10 @@ SFX h   ць    йце        ць         #  >  &_imp.
 # і з неазначальнай формы: 1-я і 2-я ас. адз. і мн. л.
 SFX b Y 27
 SFX b   0     ся         [ую]       #  >  &_1p._sing._refl._pres.
-SFX b   у     ешся       [бвзмнс]у  #  >  &_2p._sing._refl._pres.
-SFX b   гу    жашся      гу         # выпрагу > выпражашся &_2p._sing._refl._pres.
-SFX b   у     зешся      ду         # вяду > вядзешся &_2p._sing._refl._pres.
-SFX b   у     ашся       [жрчш]у    #  >  &_2p._sing._refl._pres.
+SFX b   у     есься      [бвзмнс]у  #  >  &_2p._sing._refl._pres.
+SFX b   гу    жасься     гу         # выпрагу > выпражасься &_2p._sing._refl._pres.
+SFX b   у     зесься     ду         # вяду > вядзесься &_2p._sing._refl._pres.
+SFX b   у     асься      [жрчш]у    #  >  &_2p._sing._refl._pres.
 SFX b   у     ецца       [бвзмнс]у  #  >  &_3p._sing._refl._pres.
 SFX b   гу    жацца      гу         #  >  &_3p._sing._refl._pres.
 SFX b   у     зецца      ду         #  >  &_3p._sing._refl._pres.
@@ -822,13 +822,13 @@ SFX b   гу    жацеся     гу         #  >  &_2p._plur._refl._pres.
 SFX b   у     зецеся     ду         #  >  &_2p._plur._refl._pres.
 SFX b   у     ацеся      [жрчш]у    #  >  &_2p._plur._refl._pres.
 SFX b   у     уцца       у          #  >  &_3p._plur._refl._pres.
-SFX b   ю     ешся       ю          #  >  &_2p._sing._refl._pres.
+SFX b   ю     есься      ю          #  >  &_2p._sing._refl._pres.
 SFX b   ю     ецца       ю          #  >  &_3p._sing._refl._pres.
 SFX b   ю     емся       ю          #  >  &_1p._plur._refl._pres.
 SFX b   ю     ецеся      ю          #  >  &_2p._plur._refl._pres.
 SFX b   ю     юцца       ю          #  >  &_3p._plur._refl._pres.
 SFX b   цца   юся        цца        # адпрошвацца > адпрошваюся &_1p._sing._refl._pres.
-SFX b   цца   ешся       цца        #  >  &_2p._sing._refl._pres.
+SFX b   цца   есься      цца        #  >  &_2p._sing._refl._pres.
 SFX b   цца   емся       цца        #  >  &_1p._plur._refl._pres.
 SFX b   цца   ецеся      цца        #  >  &_2p._plur._refl._pres.
 
@@ -837,11 +837,11 @@ SFX b   цца   ецеся      цца        #  >  &_2p._plur._refl._pres.
 # і з неазначальнай формы: 3-я ас., адз. і мн. л.
 SFX d Y 26
 SFX d   0     ся         [ую]       #  >  &_1p._sing._refl._pres.
-SFX d   у     ешся       [бвзмнпс]у #  >  &_2p._sing._refl._pres.
-SFX d   гу    жэшся      гу         # берагу > беражэшся &_2p._sing._refl._pres.
-SFX d   у     зешся      ду         # вяду > вядзешся &_2p._sing._refl._pres.
-SFX d   у     эшся       [жрчш]у    #  >  &_2p._sing._refl._pres.
-SFX d   ку    чэшся      ку         # валаку > валачэшся &_2p._sing._refl._pres.
+SFX d   у     есься      [бвзмнпс]у #  >  &_2p._sing._refl._pres.
+SFX d   гу    жэсься     гу         # берагу > беражэсься &_2p._sing._refl._pres.
+SFX d   у     зесься     ду         # вяду > вядзесься &_2p._sing._refl._pres.
+SFX d   у     эсься      [жрчш]у    #  >  &_2p._sing._refl._pres.
+SFX d   ку    чэсься     ку         # валаку > валачэсься &_2p._sing._refl._pres.
 SFX d   у     ецца       [бвзмнпс]у #  >  &_3p._sing._refl._pres.
 SFX d   гу    жэцца      гу         #  >  &_3p._sing._refl._pres.
 SFX d   у     зецца      ду         #  >  &_3p._sing._refl._pres.
@@ -855,7 +855,7 @@ SFX d   ку    чомся      ку         #  >  &_1p._plur._refl._pres.
 SFX d   ту    цёмся      ту         #  >  &_1p._plur._refl._pres.
 SFX d   у     яцеся      [вмн]у     #  >  &_2p._plur._refl._pres.
 SFX d   у     уцца       у          #  >  &_3p._plur._refl._pres.
-SFX d   ю     ешся       ю          #  >  &_2p._sing._refl._pres.
+SFX d   ю     есься       ю          #  >  &_2p._sing._refl._pres.
 SFX d   ю     ецца       ю          #  >  &_3p._sing._refl._pres.
 SFX d   ю     ёмся       ю          #  >  &_1p._plur._refl._pres.
 SFX d   ю     яцеся      [аілуўью']ю #  >  &_2p._plur._refl._pres.
@@ -1058,12 +1058,12 @@ SFX o   ыць   аць        ыць        #  >  &_3p._plur._pres.
 # і ад неазн. формы зваротнага дзеяслова
 SFX t Y 11
 SFX t   ць    цца        [іы]ць     # зводзіць > зводзіцца &_3p._sing._pres._refl.
-SFX t   ць    шся        [іы]ць     # валіць > валішся &_2p._sing._pres._refl.
+SFX t   ць    сься       [іы]ць     # валіць > валісься &_2p._sing._pres._refl.
 SFX t   ць    мся        [іы]ць     #  >  &_1p._plur._pres._refl.
 SFX t   ць    цеся       [іы]ць     #  >  &_2p._plur._pres._refl.
 SFX t   іць   яцца       іць        #  >  &_3p._plur._pres._refl.
 SFX t   ыць   ацца       ыць        #  >  &_3p._plur._pres._refl.
-SFX t   цца   шся        цца        #  >  &_2p._sing._pres._refl.
+SFX t   цца   сься       цца        #  >  &_2p._sing._pres._refl.
 SFX t   цца   мся        цца        #  >  &_1p._plur._pres._refl.
 SFX t   цца   цеся       цца        #  >  &_2p._plur._pres._refl.
 SFX t   іцца  яцца       іцца       #  >  &_3p._plur._pres._refl.
