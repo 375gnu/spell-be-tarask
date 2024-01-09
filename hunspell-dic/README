@@ -1,7 +1,11 @@
 Spell-checking dictionary and affix files for Belarusian
 
-Copyright: Mikalai Udodau (c) 2010-2016
+Copyright: Mikalai Udodau (c) 2010-2023
 
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
 
 To build dictionary from this source you should concatenate dictionary parts together.
+
+For more information about Hunspell dictionary format see:
+ENG http://pwet.fr/man/linux/fichiers_speciaux/hunspell
+RUS http://mozilla-russia.org/projects/dictionary/hunspell.html

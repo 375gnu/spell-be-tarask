@@ -1,6 +1,6 @@
 # Makefile for spell-be
 
-# Copyright (C) 2012-2016 Mikalai Udodau
+# Copyright (C) 2012-2023 Mikalai Udodau
 
 # This work is licensed under the Creative Commons
 # Attribution-ShareAlike 3.0 Unported License.
@@ -10,7 +10,7 @@
 # 171 Second Street, Suite 300, San Francisco,
 # California, 94105, USA.
 
-VERSION_NUMBER=$$(head -n2 hunspell-dic/be_BY.affixes | tail -n1 | cut -c19-)
+VERSION_NUMBER=$(shell echo $$(head -n2 hunspell-dic/be_BY.affixes | tail -n1 | cut -c19-))
 
 all: dict-zip dict-xpi dict-oxt
 
@@ -51,6 +51,7 @@ be_BY@tarask.dic:
 	hunspell-dic/ext-naz2.dic \
 	hunspell-dic/ext-naz3.dic \
 	hunspell-dic/ext-prym.dic \
+	hunspell-dic/ext-pryn.dic \
 	hunspell-dic/ext-prysl.dic \
 	hunspell-dic/ext-zajm.dic \
 	hunspell-dic/geagraph.dic \
@@ -69,19 +70,24 @@ dict-zip: dict
 
 dict-xpi: dict
 	cp be_BY@tarask.aff be_BY@tarask.dic dictionaries/
-	zip -rq spell-be-tarask-$(VERSION_NUMBER).xpi \
-	install.rdf install.js \
-	dictionaries/ dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
+	sed -i \
+	's/\"version\": \"[[:graph:]]*\.1w/\"version\": \"$(VERSION_NUMBER)\.1w/' \
+	manifest.json
+	zip -rq spell-be-tarask-$(VERSION_NUMBER).1.xpi \
+	manifest.json \
+	dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
 	dictionaries/README_be_BY.txt
 
 dict-oxt: dict
+	sed -i \
+	's/<version value=\"[[:graph:]]*\"/<version value=\"$(VERSION_NUMBER)\"/' \
+	description.xml
 	zip -rq dict-be-tarask-$(VERSION_NUMBER).oxt \
-	META-INF/ META-INF/manifest.xml README_spell_be_BY.txt \
-	be_BY@tarask.aff be_BY@tarask.dic description.xml dictionaries.xcu \
-	 
+	META-INF/manifest.xml README_spell_be_BY.txt \
+	be_BY@tarask.aff be_BY@tarask.dic description.xml dictionaries.xcu
 
 clean:
 	rm be_BY@tarask.aff be_BY@tarask.dic hunspell-be-tarask-$(VERSION_NUMBER).zip \
 	dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
-	spell-be-tarask-$(VERSION_NUMBER).xpi \
+	spell-be-tarask-$(VERSION_NUMBER).1.xpi \
 	dict-be-tarask-$(VERSION_NUMBER).oxt
