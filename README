@@ -1,4 +1,4 @@
-﻿Dictionary for Belarusian language (recent academic orthography) in Hunspell format.
+﻿Dictionary for Belarusian language (tarask orthography) in Hunspell format.
 
 Features:
 
@@ -6,9 +6,9 @@ Features:
 * affixes for nouns, adjectives, and verbs
 
 
-Слоўнік для праверкі арфаграфіі беларускай мовы (найноўшы афіцыйны правапіс) у фармаце Hunspell.
+Слоўнік для праверкі артаграфіі беларускай мовы (клясычны правапіс 2005 году) у фармаце Hunspell.
 
-Асаблівасці:
+Асаблівасьці:
 
 * асэнсаваныя прапановы для найбольш пашыраных памылак
-* кампактны памер за конт ужывання афіксаў для ўсіх зменных часцін мовы
+* кампактны памер за кошт ужываньня афіксаў для ўсіх зьменных часьцін мовы
