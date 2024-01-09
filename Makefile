@@ -52,6 +52,7 @@ be_BY@tarask.dic:
 	hunspell-dic/ext-naz3.dic \
 	hunspell-dic/ext-prym.dic \
 	hunspell-dic/ext-prysl.dic \
+	hunspell-dic/ext-zajm.dic \
 	hunspell-dic/geagraph.dic \
 	hunspell-dic/im1.dic \
 	hunspell-dic/im2.dic \
