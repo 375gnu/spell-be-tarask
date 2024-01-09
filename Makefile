@@ -43,6 +43,7 @@ be_BY@tarask.dic:
 	hunspell-dic/vykl.dic \
 	hunspell-dic/zajm.dic \
 	hunspell-dic/zluchn.dic \
+	hunspell-dic/ext-chim.dic \
 	hunspell-dic/ext-dzeeprym.dic \
 	hunspell-dic/ext-dzejasl1.dic \
 	hunspell-dic/ext-dzejasl2.dic \
