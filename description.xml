@@ -7,8 +7,8 @@
         </simple-license>
     </registration>
 -->
-    <version value="0.60" />
-    <identifier value="net.crom-a.at.tut.by.www.Mikalai.Udodau.OOo-Dictionaries.be-BY" />
+    <version value="0.60-alpha2" />
+    <identifier value="org.openoffice.dict.be.tarask" />
     <display-name>
         <name lang="en">Belarusian (Belarus, tarask variant) spell check dictionary</name>
         <name lang="be">Беларускі (тарашкевіца) слоўнік для спраўджэньня артаґрафіі</name>
