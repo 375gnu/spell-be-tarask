@@ -159,18 +159,18 @@ SFX F   а     ам         а          #  >  &_c.dat._plur.
 SFX F   а     амі        а          #  >  &_c.ins._plur.
 SFX F   а     ах         а          #  >  &_c.pr._plur.
 SFX F   я     й          [аеёіоуыэюя]я # армія > армій &_c.gen._plur.
-SFX F   0     ў          [іы]я      # рэдакцыя > рэдакцыяў &_c.gen._plur.
-SFX F   ля    ль         [аеёіоуыэюя]ля # нядзеля > нядзель &_c.gen._plur.
+SFX F   0     ў          [іыэ]я     # рэдакцыя > рэдакцыяў &_c.gen._plur.
+SFX F   я     ь          [аеёіоуыэюя]ля # нядзеля > нядзель &_c.gen._plur.
 SFX F   ля    ель        [бмпф]ля   # кропля > кропель &_c.gen._plur.
 SFX F   0     ў          [аеёіоуыэюябмпф]ля # хваля > хваляў &_c.gen._plur.
-SFX F   ня    нь         [аеёіоуыэюя]ня # вяршыня > вяршынь &_c.gen._plur.
+SFX F   я     ь          [аеёіоуыэюя]ня # вяршыня > вяршынь &_c.gen._plur.
 SFX F   йня   ень        йня        # бойня > боень &_c.gen._plur.
 SFX F   ня    ань        [рхш]ня    # вішня > вішань &_c.gen._plur.
 SFX F   ьня   ень        сьня       # песьня > песень &_c.gen._plur.
 SFX F   ўня   вень       ўня        # жароўня > жаровень &_c.gen._plur.
-SFX F   я     ям         я          #  >  &_c.dat._plur.
-SFX F   я     ямі        я          #  >  &_c.ins._plur.
-SFX F   я     ях         я          #  >  &_c.pr._plur.
+SFX F   0     м          я          #  >  &_c.dat._plur.
+SFX F   0     мі         я          #  >  &_c.ins._plur.
+SFX F   0     х          я          #  >  &_c.pr._plur.
 SFX F   і     й          і          # зьмеі > зьмей &_c.gen._plur.
 SFX F   і     ям         і          #  >  &_c.dat._plur.
 SFX F   і     ямі        і          #  >  &_c.ins._plur.
