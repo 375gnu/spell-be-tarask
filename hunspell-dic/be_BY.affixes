@@ -178,9 +178,10 @@ SFX F   і     ях         і          #  >  &_c.pr._plur.
 
 # Множны лік назоўнікаў са збегам зычных у аснове,
 # з чаргаваннем галоснай кораню, ці маюць толькі мн.л.
-SFX G Y 21
+SFX G Y 22
 SFX G   і     0          [гх]і      # стрэхі > стрэх &_c.gen._plur.
-SFX G   кі    к          [аеёіоуыэю]кі # рака > рэк &_c.gen._plur.
+SFX G   і     аў         [гх]і      # стрэхі > стрэхаў &_c.gen._plur.
+SFX G   кі    к          [аеёіоуыэю]кі # рэкі > рэк &_c.gen._plur.
 SFX G   йкі   ек         йкі        #  >  &_c.gen._plur.
 SFX G   ўкі   вак        ўкі        # высеўкі > высевак &_c.gen._plur.
 SFX G   ькі   ек         ькі        # грабелькі > грабелек &_c.gen._plur.
@@ -887,7 +888,7 @@ SFX d   ку    чомся      ку         #  >  &_1p._plur._refl._pres.
 SFX d   ту    цёмся      ту         #  >  &_1p._plur._refl._pres.
 SFX d   у     яцеся      [вмн]у     #  >  &_2p._plur._refl._pres.
 SFX d   у     уцца       у          #  >  &_3p._plur._refl._pres.
-SFX d   ю     есься       ю          #  >  &_2p._sing._refl._pres.
+SFX d   ю     есься      ю          #  >  &_2p._sing._refl._pres.
 SFX d   ю     ецца       ю          #  >  &_3p._sing._refl._pres.
 SFX d   ю     ёмся       ю          #  >  &_1p._plur._refl._pres.
 SFX d   ю     яцеся      [аілуўью']ю #  >  &_2p._plur._refl._pres.
