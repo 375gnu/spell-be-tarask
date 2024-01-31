@@ -88,7 +88,7 @@ dict-oxt: dict
 	be_BY@tarask.aff be_BY@tarask.dic description.xml dictionaries.xcu
 
 clean:
-	rm be_BY@tarask.aff be_BY@tarask.dic hunspell-be-tarask-$(VERSION_NUMBER).zip \
+	rm -f be_BY@tarask.aff be_BY@tarask.dic hunspell-be-tarask-$(VERSION_NUMBER).zip \
 	dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
 	spell-be-tarask-$(VERSION_NUMBER).1.xpi \
 	dict-be-tarask-$(VERSION_NUMBER).oxt
