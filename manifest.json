@@ -1,7 +1,7 @@
 ﻿{
     "dictionaries":
     {
-        "be": "dictionaries/be_BY.dic"
+        "be": "dictionaries/be_BY@tarask.dic"
     },
     "version": "0.60.1",
     "browser_specific_settings":
