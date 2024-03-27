@@ -1,0 +1,3 @@
+# This is a Lintian false positive based on the -be extension.  Dictionaries should be in text.
+hunspell-be-tarask: wrong-section-according-to-package-name text => localization
+hunspell-be-tarask: initial-upload-closes-no-bugs [usr/share/doc/hunspell-be-tarask/changelog.Debian.gz:1]

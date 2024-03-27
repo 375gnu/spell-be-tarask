@@ -1,0 +1,24 @@
+Source: spell-be-tarask
+Section: text
+Priority: optional
+Maintainer: Hleb Valoshka <375gnu@gmail.com>
+Build-Depends: debhelper-compat (= 13),
+               convert-bdic
+Build-Depends-Indep: dictionaries-common-dev (>= 1.10.5)
+Standards-Version: 4.6.2
+Homepage: https://github.com/375gnu/spell-be-tarask/
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/375gnu/spell-be-tarask.git
+Vcs-Browser: https://github.com/375gnu/spell-be-tarask
+
+Package: hunspell-be-tarask
+Architecture: all
+Depends: dictionaries-common (>= 1.0.0), ${misc:Depends}
+Provides: hunspell-dictionary, hunspell-dictionary-be
+Suggests: firefox | firefox-esr | thunderbird, libreoffice
+Conflicts: hunspell-be
+Description: Belarusian dictionary for hunspell and classic orthography
+ This package contains Belarusian dictionary for the hunspell
+ spell-checker currently supported by LibreOffice and Mozilla.
+ .
+ This dictionary is for the recent taraskievica orthography.

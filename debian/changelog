@@ -1,0 +1,5 @@
+spell-be-tarask (0.60~beta1-1) unstable; urgency=medium
+
+  * The first release as a debian package.
+
+ -- Hleb Valoshka <375gnu@gmail.com>  Wed, 27 Mar 2024 21:49:30 +0200

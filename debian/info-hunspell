@@ -1,0 +1,7 @@
+Language: беларуская (belarusian)
+Hash-Name: be_BY@tarask
+Emacsen-Name: belarusian
+Casechars: [АБВГҐДЕЁЖЗІЙКЛМНОПРСТУЎФХЦЧШЬЫЭЮЯабвгґдеёжзійклмнопрстуўфхцчшьыэюя]
+Not-Casechars: [^АБВГҐДЕЁЖЗІЙКЛМНОПРСТУЎФХЦЧШЬЫЭЮЯабвгґдеёжзійклмнопрстуфхцчшьыэюя]
+Otherchars: ^$
+Coding-System: utf-8
