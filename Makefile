@@ -87,8 +87,13 @@ dict-oxt: dict
 	META-INF/manifest.xml README_spell_be_BY.txt \
 	be_BY@tarask.aff be_BY@tarask.dic description.xml dictionaries.xcu
 
+rpm:
+	rpmbuild -v -bb --build-in-place hunspell-be-tarask.spec
+
 clean:
 	rm -f be_BY@tarask.aff be_BY@tarask.dic hunspell-be-tarask-$(VERSION_NUMBER).zip \
 	dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
 	spell-be-tarask-$(VERSION_NUMBER).1.xpi \
 	dict-be-tarask-$(VERSION_NUMBER).oxt
+
+.PHONY: clean rpm
