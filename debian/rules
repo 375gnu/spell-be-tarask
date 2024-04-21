@@ -1,9 +1,17 @@
 #!/usr/bin/make -f
 
+INSTALL_OPTIONS =
+
+ifneq ($(filter pkg.spell-be-tarask.nolinks,$(DEB_BUILD_PROFILES)),)
+	INSTALL_OPTIONS += --dico-no-alt-links
+endif
+
 %:
 	dh $@
 
-override_dh_auto_install:
+override_dh_auto_build:
 	make dict
-	installdeb-myspell --srcdir=. --bdic
+
+override_dh_auto_install:
+	installdeb-myspell --srcdir=. --bdic $(INSTALL_OPTIONS)
 	installdeb-hunspell
