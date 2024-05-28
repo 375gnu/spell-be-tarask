@@ -132,7 +132,7 @@ SFX D   я     ю          я          #  >  &_c.acc.
 SFX D   я     ёй         я          #  >  &_c.ins.
 SFX D   я     ёю         я          #  >  &_c.ins.
 
-SFX E Y 25
+SFX E Y 26
 SFX E   а     ы          [бвджзлмнпрстфцчш]а #  >  &_c.gen. 
 SFX E   а     і          [гкх]а     #  >  &_c.gen.
 SFX E   а     е          [^сз][бвзлмнпсф]а # > &_c.dat.
@@ -149,8 +149,9 @@ SFX E   га    зе         [^з]га     # пуга > пузе &_c.dat.
 SFX E   га    ьзе        зга        #  >  &_c.dat.
 SFX E   да    дзе        да         #  >  &_c.dat.
 SFX E   ка    цы         ка         # горка > горцы &_c.dat.
-SFX E   та    це         та         # істота > істоце &_c.dat.
-SFX E   ха    се         ха         #  >  &_c.dat.
+SFX E   та    це         [^с]та     # істота > істоце &_c.dat.
+SFX E   ха    ьсе        сха        #  >  &_c.dat.
+SFX E   ха    се         [^с]ха     #  >  &_c.dat.
 SFX E   а     у          а          # ружа > ружу &_c.acc.
 SFX E   а     ай         а          #  >  &_c.ins.
 SFX E   а     аю         а          #  >  &_c.ins.
@@ -256,7 +257,7 @@ SFX O   ар    ра         дар        # Аляксандар > Алякса
 # давальны, творны і месны склоны адзіночнага ліку;
 # характар асновы вызначаем па канчатку наз. ск.
 # у творным склоне канчатак можа быць "-ам" (SFX H) ці "-ом" (SFX U)
-SFX H Y 60
+SFX H Y 64
 SFX H   а     у          а          # палена > палену &_c.dat.
 SFX H   е     ю          е          #  >  &_c.dat.
 SFX H   ё     ю          ё          #  >  &_c.dat.
@@ -289,11 +290,15 @@ SFX H   ц     цам        [аірыья]ц  #  >  &_c.ins.
 SFX H   ец    цам        [бзмнпсф]ец #  >  &_c.ins.
 SFX H   вец   ўцам       вец        #  >  &_c.ins.
 SFX H   лец   льцам      лец        #  >  &_c.ins.
-SFX H   а     е          [бвзлмнпсф]а # дрэва > дрэве &_c.pr.
+SFX H   ла    ьле        [зс]ла     # бусла > бусьле &_c.pr.
+SFX H   а     е          [^зс]ла    #  >  &_c.pr.
+SFX H   ла    ьле        [зс]на     #  >  &_c.pr.
+SFX H   а     е          [^зс]на    #  >  &_c.pr.
+SFX H   а     е          [бвзмпсф]а # дрэва > дрэве &_c.pr.
 SFX H   да    дзе        да         #  >  &_c.pr.
 SFX H   а     ы          [жрцчш]а   # збожжа > збожжы &_c.pr.
 SFX H   та    ьце        ста        # стараста > старасьце &_c.pr.
-SFX H   та    це         та         # -//- але бяз "с" у канцы
+SFX H   та    це         [^с]та     # -//- але бяз "с" у канцы
 SFX H   0     е          [^зс][бвзлмнпсф] # закон > законе &_c.pr.
 SFX H   д     дзе        [^з]д      #  >  &_c.pr.
 SFX H   е     і          е          #  >  &_c.pr.
@@ -302,9 +307,9 @@ SFX H   зд    зьдзе      зд         #  >  &_c.pr.
 SFX H   зм    зьме       зм         #  >  &_c.pr.
 SFX H   0     ы          [жрчш]     #  >  &_c.pr.
 SFX H   й     і          й          #  >  &_c.pr.
-SFX H   см    сьме       см         #  >  &_c.pr.
-SFX H   ст    сьце       ст         #  >  &_c.pr.
-SFX H   т     це         т          #  >  &_c.pr.
+SFX H   м     ьме        см         #  >  &_c.pr.
+SFX H   т     ьце        ст         #  >  &_c.pr.
+SFX H   т     це         [^с]т      #  >  &_c.pr.
 SFX H   у     ы          [жрчш]у    #  >  &_c.pr.
 SFX H   ў     ве         ў          #  >  &_c.pr.
 SFX H   х     ху         х          #  >  &_c.pr.
@@ -319,7 +324,7 @@ SFX H   ар    рам        ар         # Аляксандар > Алякса
 SFX H   ар    ры         дар        # Аляксандар > Аляксандры &_c.gen.
 
 # тое ж, толькі канчатак -ом (-ём) тв.скл.,
-SFX U Y 61
+SFX U Y 67
 SFX U   а     у          а          #  >  &_c.dat.
 SFX U   е     ю          е          #  >  &_c.dat.
 SFX U   ё     ю          ё          #  >  &_c.dat.
@@ -358,18 +363,24 @@ SFX U   ц     цом        [аірыья]ц  #  >  &_c.ins.
 SFX U   ец    цом        [бзмнпсф]ец # блінец > блінцом &_c.ins.
 SFX U   вец   ўцом       вец        #  >  &_c.ins.
 SFX U   лец   льцом      лец        # ўдалец > ўдальцом &_c.ins.
-SFX U   а     е          [бвзлмнпсф]а #  >  &_c.pr.
+SFX U   а     ьле        [зс]ла     # вузла > вузьле &_c.pr.
+SFX U   а     е          [^зс]ла    #  >  &_c.pr.
+SFX U   а     е          [бвзмнпсф]а #  >  &_c.pr.
 SFX U   да    дзе        да         #  >  &_c.pr.
 SFX U   а     ы          [жрчш]а    #  >  &_c.pr.
-SFX U   та    це         та         #  >  &_c.pr.
-SFX U   о     е          [бвзлмнпсф]о #  >  &_c.pr.
+SFX U   та    ьце        ста        #  >  &_c.pr.
+SFX U   та    це         [^с]та     #  >  &_c.pr.
+SFX U   ло    ьле        [зс]ло     # чысло > чысьле &_c.pr.
+SFX U   о     е          [^зс]ло    #  >  &_c.pr.
+SFX U   о     е          [бвзмнпсф]о #  >  &_c.pr.
 SFX U   до    ьдзе       здо        # гняздо > гнязьдзе &_c.pr.
 SFX U   ро    ры         ро         #  >  &_c.pr.
 SFX U   у     ы          [жрчш]у    # крадзеж - крадзяжу > крадзяжы &_c.pr.
 SFX U   ў     ве         ў          #  >  &_c.pr.
 SFX U   д     дзе        д          #  >  &_c.pr.
 SFX U   0     ы          [жрчш]     #  >  &_c.pr.
-SFX U   т     це         т          #  >  &_c.pr.
+SFX U   т     ьце        ст          #  >  &_c.pr.
+SFX U   т     це         [^с]т          #  >  &_c.pr.
 SFX U   х     ху         х          #  >  &_c.pr.
 SFX U   ец    цы         [бзмнпсф]ец #  >  &_c.pr.
 SFX U   вец   ўцы        вец        #  >  &_c.pr.
@@ -721,31 +732,51 @@ SFX S   н     нымі       [іы]н      #  >  &_c.ins._plur.
 # формы цяперашняга часу ўтвараем з 1-й ас. адз. л.:
 # 2-я і 3-я ас. адз. ліку, 1-я, 2-я і 3-я ас. множнага ліку
 # канчаткі залежаць ад націску
-SFX c Y 30
-SFX c   у     еш         [бвзмнс]у  #  >  &_2p._sing._pres.
+SFX c Y 50
+SFX c   у     еш         [^зс]ну    #  >  &_2p._sing._pres.
+SFX c   ну    ьнеш       [зс]ну     #  >  &_2p._sing._pres.
+SFX c   у     ьсеш       ссу        #  >  &_2p._sing._pres.
+SFX c   у     еш         [^с]су     #  >  &_2p._sing._pres.
+SFX c   у     еш         [бвзм]у   #  >  &_2p._sing._pres.
 SFX c   гу    жаш        гу         # лягу > ляжаш &_2p._sing._pres.
 SFX c   у     зеш        ду         #  >  &_2p._sing._pres.
 SFX c   у     аш         [жрчш]у    # кажу > кажаш &_2p._sing._pres.
 SFX c   ку    чаш        ку         # высеку > высечаш &_2p._sing._pres.
-SFX c   ту    цеш        ту         #  >  &_2p._sing._pres.
-SFX c   у     е          [бвзмнс]у  #  >  &_3p._sing._pres.
+SFX c   ту    ьцеш       сту        #  >  &_2p._sing._pres.
+SFX c   ту    цеш        [^с]ту     #  >  &_2p._sing._pres.
+SFX c   у     е          [^зс]ну    #  >  &_2p._sing._pres.
+SFX c   ну    ьне        [зс]ну     #  >  &_2p._sing._pres.
+SFX c   у     ьсе        ссу        # выссу > выссе &_3p._sing._pres.
+SFX c   у     е          [^с]су     #  >  &_3p._sing._pres.
+SFX c   у     е          [бвзм]у    #  >  &_3p._sing._pres.
 SFX c   гу    жа         гу         #  >  &_3p._sing._pres.
 SFX c   у     зе         ду         #  >  &_3p._sing._pres.
 SFX c   у     а          [жрчш]у    #  >  &_3p._sing._pres.
 SFX c   ку    ча         ку         #  >  &_3p._sing._pres.
-SFX c   ту    це         ту         #  >  &_3p._sing._pres.
-SFX c   у     ем         [бвзмнс]у  # кіну > кінем &_1p._plur._pres.
+SFX c   ту    ьце        сту        #  >  &_3p._sing._pres.
+SFX c   ту    це         [^с]ту     #  >  &_3p._sing._pres.
+SFX c   у     ем         [^зс]ну    #  >  &_2p._sing._pres.
+SFX c   ну    ьнем       [зс]ну     #  >  &_2p._sing._pres.
+SFX c   су    ьсем       ссу        # выссу > выссем &_1p._plur._pres.
+SFX c   у     ем         [^с]су     #  >  &_1p._plur._pres.
+SFX c   у     ем         [бвзм]у    # кіну > кінем &_1p._plur._pres.
 SFX c   гу    жам        гу         #  >  &_1p._plur._pres.
 SFX c   у     зем        ду         # сяду > сядзем &_1p._plur._pres.
 SFX c   у     ам         [жрчш]у    # кажу > кажам &_1p._plur._pres.
 SFX c   ку    чам        ку         # вывалаку > вывалачам &_1p._plur._pres.
-SFX c   ту    ьцем       ту         # вырасту > вырасьцем &_1p._plur._pres.
-SFX c   у     еце        [бвзмнс]у  # сьціхну > сьціхнеце &_2p._plur._pres.
+SFX c   ту    ьцем       сту        # вырасту > вырасьцем &_1p._plur._pres.
+SFX c   ту    цем        [^с]ту     # вырасту > вырасьцем &_1p._plur._pres.
+SFX c   у     еце        [^зс]ну    #  >  &_2p._sing._pres.
+SFX c   ну    ьнеце      [зс]ну     #  >  &_2p._sing._pres.
+SFX c   у     ьсеце      ссу        # сьціхну > сьціхнеце &_2p._plur._pres.
+SFX c   у     еце        [^с]су     # сьціхну > сьціхнеце &_2p._plur._pres.
+SFX c   у     еце        [бвзм]у    # сьціхну > сьціхнеце &_2p._plur._pres.
 SFX c   гу    жаце       гу         #  >  &_2p._plur._pres.
 SFX c   у     зеце       ду         #  >  &_2p._plur._pres.
 SFX c   у     аце        [жрчш]у    #  >  &_2p._plur._pres.
 SFX c   ку    чаце       ку         #  >  &_2p._plur._pres.
-SFX c   ту    цеце       ту         #  >  &_2p._plur._pres.
+SFX c   ту    ьцеце      сту        #  >  &_2p._plur._pres.
+SFX c   ту    цеце       [^с]ту     #  >  &_2p._plur._pres.
 SFX c   у     уць        у          # жну > жнуць &_3p._plur._pres.
 SFX c   ю     еш         ю          # кідаю > кідаеш &_2p._sing._pres.
 SFX c   ю     е          ю          # кідаю > кідае &_3p._sing._pres.
@@ -755,26 +786,43 @@ SFX c   ю     юць        ю          # гадую > гадуюць &_3p._plu
 
 # 2-ю асобу мн. ліку ўтвараем не для ўсіх дзеясловаў,
 # бо вельмі часта назіраецца чаргаванне галоснай
-SFX e Y 26
-SFX e   у     еш         [бвзмнпс]у #  >  &_2p._sing._pres.
+SFX e Y 43
+SFX e   ну    ьнеш       [зс]ну     # аблізну > аблізьнеш &_2p._sing._pres.
+SFX e   у     еш         [^зс]ну    #  >  &_2p._sing._pres.
+SFX e   cу    ьcеш       сcу        # ccу > cьcеш &_2p._sing._pres.
+SFX e   у     еш         [^с]cу     #  >  &_2p._sing._pres.
+SFX e   у     еш         [бвзмп]у   #  >  &_2p._sing._pres.
 SFX e   гу    жэш        гу         # ілгу > ілжэш &_2p._sing._pres.
 SFX e   у     зеш        ду         #  >  &_2p._sing._pres.
 SFX e   у     эш         [жрчш]у    # бяру > бярэш &_2p._sing._pres.
 SFX e   ку    чэш        ку         # валаку > валачэш &_2p._sing._pres.
-SFX e   ту    цеш        ту         #  >  &_2p._sing._pres.
-SFX e   у     е          [бвзмнпс]у #  >  &_3p._sing._pres.
+SFX e   ту    ьцеш       сту        #  >  &_2p._sing._pres.
+SFX e   ту    цеш        [^с]ту     #  >  &_2p._sing._pres.
+SFX e   ну    ьне        [зс]ну     # аблізну > аблізьне &_2p._sing._pres.
+SFX e   у     е          [^зс]ну    #  >  &_2p._sing._pres.
+SFX e   cу    ьcе        сcу        # ccу > cьcе &_2p._sing._pres.
+SFX e   у     е          [^с]cу     #  >  &_2p._sing._pres.
+SFX e   у     е          [бвзмп]у   #  >  &_3p._sing._pres.
 SFX e   гу    жэ         гу         #  >  &_3p._sing._pres.
 SFX e   у     зе         ду         #  >  &_3p._sing._pres.
 SFX e   у     э          [жрчш]у    # ржу > ржэ &_3p._sing._pres.
 SFX e   ку    чэ         ку         #  >  &_3p._sing._pres.
-SFX e   ту    це         ту         #  >  &_3p._sing._pres.
-SFX e   у     ём         [бвзмнпс]у # рву > рвём &_1p._plur._pres.
+SFX e   ту    ьце        сту        #  >  &_3p._sing._pres.
+SFX e   ту    це         [^с]ту     #  >  &_3p._sing._pres.
+SFX e   ну    ьнеш       [зс]ну     # аблізну > аблізьнём &_2p._sing._pres.
+SFX e   у     еш         [^зс]ну    #  >  &_2p._sing._pres.
+SFX e   cу    ьcём       сcу        # ccу > cьcём &_2p._sing._pres.
+SFX e   у     ём         [^с]cу     #  >  &_2p._sing._pres.
+SFX e   у     ём         [бвзмп]у   # рву > рвём &_1p._plur._pres.
 SFX e   гу    жом        гу         #  >  &_1p._plur._pres.
 SFX e   у     зём        ду         # вяду > вядзём &_1p._plur._pres.
 SFX e   у     ом         [жрчш]у    # бяру > бяром &_1p._plur._pres.
 SFX e   ку    чом        ку         #  >  &_1p._plur._pres.
-SFX e   ту    цём        ту         #  >  &_1p._plur._pres.
-SFX e   у     яце        [вмн]у     # шпурну > шпурняце &_2p._plur._pres.
+SFX e   ту    ьцём        сту       #  >  &_1p._plur._pres.
+SFX e   ту    цём        [^с]ту     #  >  &_1p._plur._pres.
+SFX e   у     ьняце      [зс]ну     # аблізну > аблізьняце &_2p._plur._pres.
+SFX e   у     яце        [^зс]ну    #  >  &_2p._plur._pres.
+SFX e   у     яце        [вм]у      # шпурну > шпурняце &_2p._plur._pres.
 SFX e   у     аце        жу         #  >  &_2p._plur._pres.
 SFX e   у     уць        у          #  >  &_3p._plur._pres.
 SFX e   ю     еш         ю          #  >  &_2p._sing._pres.
@@ -817,9 +865,17 @@ SFX f   чы    ла         чы         #  >  &_fem._sing._past
 SFX f   чы    лі         чы         #  >  &_plur._past
 
 #  загадны лад, форма на -і (-ы)
-SFX g Y 18
-SFX g   у     і          [бвзлмнпсфц]у # нясу > нясі &_imp.
-SFX g   у     іце        [бвзлмнпсфц]у #  >  &_imp.
+SFX g Y 28
+SFX g   ну    ьні        [зс]ну     # абвісну > абвісьні &_imp.
+SFX g   ну    ьніце      [зс]ну     #  >  &_imp.
+SFX g   у     і          [^зс]ну    #  > &_imp.
+SFX g   у     іце        [^зс]ну    #  >  &_imp.
+SFX g   су    сьсі       ссу        #  >  &_imp.
+SFX g   у     і          [^с]су     #  >  &_imp.
+SFX g   су    сьсіце     ссу        #  >  &_imp.
+SFX g   у     іце        [^с]су     #  >  &_imp.
+SFX g   у     і          [бвзлмпфц]у # нясу > нясі &_imp.
+SFX g   у     іце        [бвзлмпфц]у #  >  &_imp.
 SFX g   у     ы          [жрчш]у    # скачу > скачы &_imp.
 SFX g   у     ыце        [жрчш]у    #  >  &_imp.
 SFX g   гу    жы         гу         #  >  &_imp.
@@ -828,8 +884,10 @@ SFX g   у     зі         ду         # іду > ідзі &_imp.
 SFX g   у     зіце       ду         #  >  &_imp.
 SFX g   ку    чы         ку         # пяку > пячы &_imp.
 SFX g   ку    чыце       ку         #  >  &_imp.
-SFX g   ту    ці         ту         # мяту > мяці &_imp.
-SFX g   ту    ціце       ту         #  >  &_imp.
+SFX g   ту    ьці        сту        # абрасту > абрасьці &_imp.
+SFX g   ту    ьціце      сту        #  >  &_imp.
+SFX g   ту    ці         [^с]ту     # мяту > мяці &_imp.
+SFX g   ту    ціце       [^с]ту     #  >  &_imp.
 SFX g   ю     і          ю          # дашлю > дашлі &_imp.
 SFX g   ю     іце        ю          #  >  &_imp.
 SFX g   аць   і          аць        # трапаць > трапі &_imp.
@@ -855,21 +913,29 @@ SFX h   ць    йце        ць         #  >  &_imp.
 # зваротныя формы, канчаткі залежаць ад націску. 
 # утварэнне з ф. 1-й ас. адз. л.: 1-я, 2-я і 3-я асобы адз. і мн. лікаў,
 # і з неазначальнай формы: 1-я і 2-я ас. адз. і мн. л.
-SFX b Y 27
+SFX b Y 35
 SFX b   0     ся         [ую]       #  >  &_1p._sing._refl._pres.
-SFX b   у     есься      [бвзмнс]у  #  >  &_2p._sing._refl._pres.
+SFX b   ну    ьнесься    [зс]ну     #  >  &_2p._sing._refl._pres.
+SFX b   у     есься      [^зс]ну    #  >  &_2p._sing._refl._pres.
+SFX b   у     есься      [бвзмс]у   #  >  &_2p._sing._refl._pres.
 SFX b   гу    жасься     гу         # выпрагу > выпражасься &_2p._sing._refl._pres.
 SFX b   у     зесься     ду         # вяду > вядзесься &_2p._sing._refl._pres.
 SFX b   у     асься      [жрчш]у    #  >  &_2p._sing._refl._pres.
-SFX b   у     ецца       [бвзмнс]у  #  >  &_3p._sing._refl._pres.
+SFX b   ну    ьнецца     [зс]ну     # храсну > храсьнецца &_3p._sing._refl._pres.
+SFX b   у     ецца       [^зс]ну    #  >  &_3p._sing._refl._pres.
+SFX b   у     ецца       [бвзмс]у   #  >  &_3p._sing._refl._pres.
 SFX b   гу    жацца      гу         #  >  &_3p._sing._refl._pres.
 SFX b   у     зецца      ду         #  >  &_3p._sing._refl._pres.
 SFX b   у     ацца       [жрчш]у    #  >  &_3p._sing._refl._pres.
-SFX b   у     емся       [бвзмнс]у  #  >  &_1p._plur._refl._pres.
+SFX b   ну    ьнемся     [зс]ну     #  >  &_1p._plur._refl._pres.
+SFX b   у     емся       [^зс]ну    #  >  &_1p._plur._refl._pres.
+SFX b   у     емся       [бвзмс]у  #  >  &_1p._plur._refl._pres.
 SFX b   гу    жамся      гу         #  >  &_1p._plur._refl._pres.
 SFX b   у     земся      ду         #  >  &_1p._plur._refl._pres.
 SFX b   у     амся       [жрчш]у    #  >  &_1p._plur._refl._pres.
-SFX b   у     ецеся      [бвзмнс]у  #  >  &_2p._plur._refl._pres.
+SFX b   ну    ьнецеся    [зс]ну     #  >  &_2p._plur._refl._pres.
+SFX b   у     ецеся      [^зс]ну    #  >  &_2p._plur._refl._pres.
+SFX b   у     ецеся      [бвзмс]у   #  >  &_2p._plur._refl._pres.
 SFX b   гу    жацеся     гу         #  >  &_2p._plur._refl._pres.
 SFX b   у     зецеся     ду         #  >  &_2p._plur._refl._pres.
 SFX b   у     ацеся      [жрчш]у    #  >  &_2p._plur._refl._pres.
@@ -887,25 +953,39 @@ SFX b   цца   ецеся      цца        #  >  &_2p._plur._refl._pres.
 # утварэнне з ф. 1-й ас. адз. л.: 1-я, 2-я і 3-я асобы адз. і мн. лікаў
 # (2-я ас. мн. л. не для ўсіх дзеясловаў),
 # і з неазначальнай формы: 3-я ас., адз. і мн. л.
-SFX d Y 26
+SFX d Y 40
 SFX d   0     ся         [ую]       #  >  &_1p._sing._refl._pres.
-SFX d   у     есься      [бвзмнпс]у #  >  &_2p._sing._refl._pres.
+SFX d   ну    ьнесься    [зс]ну     #  >  &_2p._sing._refl._pres.
+SFX d   у     есься      [^зс]ну    #  >  &_2p._sing._refl._pres.
+SFX d   у     ьсесься    ссу        #  >  &_2p._sing._refl._pres.
+SFX d   у     есься      [^с]су     #  >  &_2p._sing._refl._pres.
+SFX d   у     есься      [бвзмп]у   #  >  &_2p._sing._refl._pres.
 SFX d   гу    жэсься     гу         # берагу > беражэсься &_2p._sing._refl._pres.
 SFX d   у     зесься     ду         # вяду > вядзесься &_2p._sing._refl._pres.
 SFX d   у     эсься      [жрчш]у    #  >  &_2p._sing._refl._pres.
 SFX d   ку    чэсься     ку         # валаку > валачэсься &_2p._sing._refl._pres.
-SFX d   у     ецца       [бвзмнпс]у #  >  &_3p._sing._refl._pres.
+SFX d   ну    ьнецца     [зс]ну     #  >  &_3p._sing._refl._pres.
+SFX d   у     ецца       [^зс]ну    #  >  &_3p._sing._refl._pres.
+SFX d   у     ьсецца     ссу        #  >  &_3p._sing._refl._pres.
+SFX d   у     ецца       [^с]су     #  >  &_3p._sing._refl._pres.
+SFX d   у     ецца       [бвзмп]у   #  >  &_3p._sing._refl._pres.
 SFX d   гу    жэцца      гу         #  >  &_3p._sing._refl._pres.
 SFX d   у     зецца      ду         #  >  &_3p._sing._refl._pres.
 SFX d   у     эцца       [жрчш]у    #  >  &_3p._sing._refl._pres.
 SFX d   ку    чэцца      ку         #  >  &_3p._sing._refl._pres.
-SFX d   у     ёмся       [бвзмнпс]у #  >  &_1p._plur._refl._pres.
+SFX d   ну    ьнёмся     [зс]ну     #  >  &_1p._plur._refl._pres.
+SFX d   у     ёмся       [^зс]ну    #  >  &_1p._plur._refl._pres.
+SFX d   у     ьсёмся     ссу        #  >  &_1p._plur._refl._pres.
+SFX d   у     ёмся       [^с]су     #  >  &_1p._plur._refl._pres.
+SFX d   у     ёмся       [бвзмп]у   #  >  &_1p._plur._refl._pres.
 SFX d   гу    жомся      гу         #  >  &_1p._plur._refl._pres.
 SFX d   у     зёмся      ду         #  >  &_1p._plur._refl._pres.
 SFX d   у     омся       [жрчш]у    #  >  &_1p._plur._refl._pres.
 SFX d   ку    чомся      ку         #  >  &_1p._plur._refl._pres.
 SFX d   ту    цёмся      ту         #  >  &_1p._plur._refl._pres.
-SFX d   у     яцеся      [вмн]у     #  >  &_2p._plur._refl._pres.
+SFX d   ну    ьняцеся    [сз]ну     #  >  &_2p._plur._refl._pres.
+SFX d   у     яцеся      [^сз]ну    #  >  &_2p._plur._refl._pres.
+SFX d   у     яцеся      [вм]у      #  >  &_2p._plur._refl._pres.
 SFX d   у     уцца       у          #  >  &_3p._plur._refl._pres.
 SFX d   ю     есься      ю          #  >  &_2p._sing._refl._pres.
 SFX d   ю     ецца       ю          #  >  &_3p._sing._refl._pres.
@@ -949,11 +1029,15 @@ SFX j   цца   лася       цца        #  >  &_fem._past_refl.
 SFX j   цца   ліся       цца        #  >  &_plur._past_refl.
 
 # і загадны лад
-SFX x Y 14
+SFX x Y 18
 SFX x   у     зься       ду         # забуду > забудзься &_imp._refl.
 SFX x   у     зьцеся     ду         #  >  &_imp._refl.
-SFX x   у     ься        [змнс]у    # кіну > кінься &_imp._refl.
-SFX x   у     ьцеся      [змнс]у    #  >  &_imp._plur._refl.
+SFX x   ну    нься       [зс]ну     #  >  &_imp._refl.
+SFX x   у     ься        [^зс]ну    #  >  &_imp._refl.
+SFX x   ну    ньцеся     [зс]ну     #  >  &_imp._plur._refl.
+SFX x   у     ьцеся      [^зс]ну    #  >  &_imp._plur._refl.
+SFX x   у     ься        [змс]у     # кіну > кінься &_imp._refl.
+SFX x   у     ьцеся      [змс]у     #  >  &_imp._plur._refl.
 SFX x   у     ся         [жрчш]у    # абмажу > абмажся &_imp._refl.
 SFX x   у     цеся       [жрчш]у    #  >  &_imp._plur._refl.
 SFX x   ю     йся        ю          # гуляю > гуляйся &_imp._refl.
@@ -965,9 +1049,17 @@ SFX x   юся   йцеся      юся        #  >  &_imp.
 SFX x   цца   йся        цца        #  >  &_imp._refl.
 SFX x   цца   йцеся      цца        #  >  &_imp._plur._refl.
 
-SFX y Y 18
-SFX y   у     іся        [бвзлмнпсфц]у # нясу > нясіся &_imp._refl.
-SFX y   у     іцеся      [бвзлмнпсфц]у #  >  &_imp._plur._refl.
+SFX y Y 28
+SFX y   ну    ьніся      [зс]ну     # аблізну > аблізьніся &_imp._refl.
+SFX y   ну    ьніцеся    [зс]ну     # аблізну > аблізьніцеся &_imp._plur._refl.
+SFX y   у     іся        [^зс]ну    #  >  &_imp._refl.
+SFX y   у     іцеся      [^зс]ну    #  >  &_imp._plur._refl.
+SFX y   у     ьсіся      ссу        #  >  &_imp._refl.
+SFX y   у     іся        [^с]су     #  >  &_imp._refl.
+SFX y   у     ьсіцеся    ссу        #  >  &_imp._plur._refl.
+SFX y   у     іцеся      [^с]су     #  >  &_imp._plur._refl.
+SFX y   у     іся        [бвзлмпфц]у # нясу > нясіся &_imp._refl.
+SFX y   у     іцеся      [бвзлмпфц]у #  >  &_imp._plur._refl.
 SFX y   у     ыся        [жрчш]у    # бяру > бярыся &_imp._refl.
 SFX y   у     ыцеся      [жрчш]у    #  >  &_imp._plur._refl.
 SFX y   гу    жыся       гу         #  >  &_imp._refl.
@@ -982,8 +1074,10 @@ SFX y   аць   іся        аць        # трапаць > трапіся &
 SFX y   аць   іцеся      аць        #  >  &_imp._plur._refl.
 SFX y   юся   іся        юся        # ўганюся > ўганіся &_imp.
 SFX y   юся   іцеся      юся        #  >  &_imp.
-SFX y   уцца  іся        уцца       # усміхнуцца > усміхніся &_imp.
-SFX y   уцца  іцеся      уцца       #  >  &_imp.
+SFX y   нуцца ьніся      [зс]нуцца  # агрызнуцца > агрызьніся &_imp.
+SFX y   нуцца ьніцеся    [зс]нуцца  #  >  &_imp.
+SFX y   уцца  іся        [^зс]нуцца #  >  &_imp.
+SFX y   уцца  іцеся      [^зс]нуцца #  >  &_imp.
 
 # калі 1-я і 2-я асобы не ўжываюцца
 SFX n Y 5
@@ -1011,7 +1105,7 @@ SFX k   ыць   це         [жрчш]ыць  #  >  &_imp._plur.
 SFX k   ець   ь          [знс]ець   # ўгледзець > ўгледзь &_imp.
 SFX k   ець   ьце        [знс]ець   #  >  &_imp._plur.
 
-SFX l Y 10
+SFX l Y 12
 SFX l   іць   і          іць        # запоўніць > запоўні &_imp.
 SFX l   іць   іце        іць        #  >  &_imp._plur.
 SFX l   ыць   ы          ыць        # варыць > вары &_imp.
@@ -1020,8 +1114,10 @@ SFX l   ець   і          ець        # цярпець > цярпі &_imp.
 SFX l   ець   іце        ець        #  >  &_imp._plur.
 SFX l   аць   ы          [жрчш]аць  # дрыжаць > дрыжы &_imp.
 SFX l   аць   ыце        [жрчш]аць  #  >  &_imp._plur.
-SFX l   аць   і          [мп]аць    # разламаць > разламі &_imp.
-SFX l   аць   іце        [мп]аць    #  >  &_imp._plur.
+SFX l   аць   і          [^сз][мп]аць    # разламаць > разламі &_imp.
+SFX l   аць   іце        [^сз][мп]аць    #  >  &_imp._plur.
+SFX l   паць  сьпі       спаць      #  >  &_imp.
+SFX l   паць  сьпіце     спаць      #  >  &_imp._plur.
 
 # 1-я асоба адз. ліку цяперашняга часу
 # прошлы час: муж. і жан. род адз. ліку, мн. лік
@@ -1062,15 +1158,19 @@ SFX s   іцца  ьцеся      іцца       #  >  &_imp._plur._refl.
 SFX s   ыцца  ся         ыцца       # тужыцца > тужся &_imp._refl.
 SFX s   ыцца  цеся       ыцца       #  >  &_imp._plur._refl.
 
-SFX w Y 16
+SFX w Y 20
 SFX w   ць    ся         [іы]ць     # упэўніць > упэўніся &_imp.
 SFX w   ць    цеся       [іы]ць     # варыць > варыцеся &_imp._plur.
 SFX w   ець   іся        ець        # вярцець > вярціся &_imp.
 SFX w   ець   іцеся      ець        #  >  &_imp._plur.
 SFX w   аць   ыся        [жрчш]аць  # памчаць > памчыся &_imp.
 SFX w   аць   ыцеся      [жрчш]аць  #  >  &_imp._plur.
-SFX w   аць   іся        [мп]аць    # надламаць > надламіся &_imp.
-SFX w   аць   іцеся      [мп]аць    #  >  &_imp._plur.
+SFX w   паць  ьпіся      [с]паць    # надламаць > надламіся &_imp.
+SFX w   аць   іся        [^с]паць   # надламаць > надламіся &_imp.
+SFX w   паць  ьпіцеся    спаць      #  >  &_imp._plur.
+SFX w   аць   іцеся      [^с]паць   #  >  &_imp._plur.
+SFX w   аць   іся        маць       # надламаць > надламіся &_imp.
+SFX w   аць   іцеся      маць       #  >  &_imp._plur.
 SFX w   цца   ся         [іы]цца    # апомніцца > апомніся &_imp._refl.
 SFX w   цца   цеся       [іы]цца    #  >  &_imp._plur._refl.
 SFX w   ецца  іся        ецца       # заглядзецца > заглядзіся &_imp._refl.
@@ -1134,5 +1234,6 @@ SFX v   ыцца  ацца       ыцца       #  >  &_3p._plur._pres._refl.
 
 # Назначэнне гэтага афікса - утварэнне зваротных дзеепрыслоўяў
 # але часам добра ўжыць і з дзеясловамі
-SFX K Y 1
-SFX K   0     ся         .          # выгнуўшы > выгнуўшыся &_ger._refl.
+SFX K Y 2
+SFX K   0     ься        [зс]       # абтрос > абтросся &_ger._refl.
+SFX K   0     ся         [^зс]      # выгнуўшы > выгнуўшыся &_ger._refl.
