@@ -1,3 +1,9 @@
+spell-be-tarask (0.61) UNRELEASED; urgency=medium
+
+  * Update to version 0.61.
+
+ -- Hleb Valoshka <375gnu@gmail.com>  Wed, 12 Mar 2025 01:01:44 +0200
+
 spell-be-tarask (0.60.1-1) unstable; urgency=medium
 
   * Update to version 0.60.1.

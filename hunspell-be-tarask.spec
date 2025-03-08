@@ -1,6 +1,8 @@
+%define version 0.61
+
 Name: hunspell-be-tarask
 Summary: Belarusian dictionary for hunspell and classic orthography
-Version: 0.60.1
+Version: %{version}
 Release: 1%{?dist}
 URL: https://github.com/375gnu/spell-be-tarask/
 License: CC-BY-SA
@@ -17,7 +19,7 @@ spell-checker currently supported by LibreOffice and Mozilla.
 This dictionary is for the recent taraskievica orthography.
 
 %prep
-%setup -n spell-be-tarask-0.60
+%setup -n spell-be-tarask-%{version}
 
 %build
 make dict
