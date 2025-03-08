@@ -74,7 +74,7 @@ dict-xpi: dict
 	sed -i \
 	's/\"version\": \"[[:graph:]]*\.1w/\"version\": \"$(VERSION_NUMBER)\.1w/' \
 	manifest.json
-	zip -rq spell-be-tarask-$(VERSION_NUMBER).1.xpi \
+	zip -rq spell-be-tarask-$(VERSION_NUMBER)-2.xpi \
 	manifest.json \
 	dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
 	dictionaries/README_be_BY.txt
