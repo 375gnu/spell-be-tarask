@@ -789,8 +789,8 @@ SFX c   ю     юць        ю          # гадую > гадуюць &_3p._plu
 SFX e Y 43
 SFX e   ну    ьнеш       [зс]ну     # аблізну > аблізьнеш &_2p._sing._pres.
 SFX e   у     еш         [^зс]ну    #  >  &_2p._sing._pres.
-SFX e   cу    ьcеш       сcу        # ccу > cьcеш &_2p._sing._pres.
-SFX e   у     еш         [^с]cу     #  >  &_2p._sing._pres.
+SFX e   су    ьсеш       ссу        # ссу > сьсеш &_2p._sing._pres.
+SFX e   у     еш         [^с]су     #  >  &_2p._sing._pres.
 SFX e   у     еш         [бвзмп]у   #  >  &_2p._sing._pres.
 SFX e   гу    жэш        гу         # ілгу > ілжэш &_2p._sing._pres.
 SFX e   у     зеш        ду         #  >  &_2p._sing._pres.
@@ -800,8 +800,8 @@ SFX e   ту    ьцеш       сту        #  >  &_2p._sing._pres.
 SFX e   ту    цеш        [^с]ту     #  >  &_2p._sing._pres.
 SFX e   ну    ьне        [зс]ну     # аблізну > аблізьне &_2p._sing._pres.
 SFX e   у     е          [^зс]ну    #  >  &_2p._sing._pres.
-SFX e   cу    ьcе        сcу        # ccу > cьcе &_2p._sing._pres.
-SFX e   у     е          [^с]cу     #  >  &_2p._sing._pres.
+SFX e   су    ьсе        ссу        # ссу > сьсе &_2p._sing._pres.
+SFX e   у     е          [^с]су     #  >  &_2p._sing._pres.
 SFX e   у     е          [бвзмп]у   #  >  &_3p._sing._pres.
 SFX e   гу    жэ         гу         #  >  &_3p._sing._pres.
 SFX e   у     зе         ду         #  >  &_3p._sing._pres.
@@ -811,8 +811,8 @@ SFX e   ту    ьце        сту        #  >  &_3p._sing._pres.
 SFX e   ту    це         [^с]ту     #  >  &_3p._sing._pres.
 SFX e   ну    ьнеш       [зс]ну     # аблізну > аблізьнём &_2p._sing._pres.
 SFX e   у     еш         [^зс]ну    #  >  &_2p._sing._pres.
-SFX e   cу    ьcём       сcу        # ccу > cьcём &_2p._sing._pres.
-SFX e   у     ём         [^с]cу     #  >  &_2p._sing._pres.
+SFX e   су    ьсём       ссу        # ссу > сьсём &_2p._sing._pres.
+SFX e   у     ём         [^с]су     #  >  &_2p._sing._pres.
 SFX e   у     ём         [бвзмп]у   # рву > рвём &_1p._plur._pres.
 SFX e   гу    жом        гу         #  >  &_1p._plur._pres.
 SFX e   у     зём        ду         # вяду > вядзём &_1p._plur._pres.
