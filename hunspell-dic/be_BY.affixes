@@ -1,5 +1,5 @@
 # Belarusian affix file and dictionaries
-# Version number: 0.60.1
+# Version number: 0.61
 # Copyright: Mikalai Udodau (C) 2010-2023, Hleb Valoshka <375gnu@gmail.com> 2016-2024
 # License: Creative Commons Attribution-ShareAlike
 # See http://creativecommons.org/licenses/by-sa/3.0/
@@ -1080,12 +1080,17 @@ SFX y   уцца  іся        [^зс]нуцца #  >  &_imp.
 SFX y   уцца  іцеся      [^зс]нуцца #  >  &_imp.
 
 # калі 1-я і 2-я асобы не ўжываюцца
-SFX n Y 5
+SFX n Y 10
 SFX n   ць    е          [аеіыэя]ць # брыняць > брыняе &_3p._sing._pres.
 SFX n   ць    юць        [аеіыэя]ць #  >  &_3p._plur._pres.
 SFX n   уць   е          [мн]уць    # адхлынуць > адхлыне &_3p._sing._pres.
 SFX n   сьці  е          сьці       # адгнісьці > адгніе &_3p._sing._pres.
 SFX n   сьці  юць        сьці       #  >  &_3p._plur._pres.
+SFX n   цца   ецца       цца        # агучвацца > агучваeцца &_3p._sing._pres.
+SFX n   цца   юцца       цца        #  >  &_3p._plur._pres.
+SFX n   цца   ўся        цца        #  >  &_masc._past_refl.
+SFX n   цца   лася       цца        #  >  &_fem._past_refl.
+SFX n   цца   ліся       цца        #  >  &_plur._past_refl.
 
 # II спражэнне
 
