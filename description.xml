@@ -7,7 +7,7 @@
         </simple-license>
     </registration>
 -->
-    <version value="0.60.1" />
+    <version value="0.60.2" />
     <identifier value="org.openoffice.dict.be.tarask" />
     <display-name>
         <name lang="en">Belarusian (Belarus, tarask variant) spell check dictionary</name>

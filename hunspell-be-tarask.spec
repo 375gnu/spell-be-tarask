@@ -1,6 +1,6 @@
 Name: hunspell-be-tarask
 Summary: Belarusian dictionary for hunspell and classic orthography
-Version: 0.60.1
+Version: 0.60.2
 Release: 1%{?dist}
 URL: https://github.com/375gnu/spell-be-tarask/
 License: CC-BY-SA
@@ -35,6 +35,12 @@ ln -s be_BY@tarask.dic $RPM_BUILD_ROOT/%{_datadir}/myspell/be_BY.dic
 %{_datadir}/myspell/*
 
 %changelog
+* Thu Mar 20 2025 Hleb Valoshka <375gnu@gmail.com> - 0.60.2-1
+- Update to version 0.60.2.
+
+* Tue May 28 2024 Hleb Valoshka <375gnu@gmail.com> - 0.60.1-1
+- Update to version 0.60.1.
+
 * Sun Apr 28 2024 Hleb Valoshka <375gnu@gmail.com> - 0.60-1
 - Update to version 0.60.
 
