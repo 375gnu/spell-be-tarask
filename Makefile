@@ -10,59 +10,60 @@
 # 171 Second Street, Suite 300, San Francisco,
 # California, 94105, USA.
 
-VERSION_NUMBER=$(shell echo $$(head -n2 hunspell-dic/be_BY.affixes | tail -n1 | cut -c19-))
+VERSION_NUMBER=$(shell grep -F Version: src/be_BY.affixes | cut -f2 -d: | tr -d ' ')
+XPI_BUILD=1
+
+SOURCES=src/chasc.dic \
+        src/dzeeprym.dic \
+        src/dzeeprysl.dic \
+        src/dzejasl1.dic \
+        src/dzejasl2.dic \
+        src/lich.dic \
+        src/naz.dic \
+        src/naz1.dic \
+        src/naz2.dic \
+        src/naz3.dic \
+        src/prym.dic \
+        src/pryn.dic \
+        src/prysl.dic \
+        src/vykl.dic \
+        src/zajm.dic \
+        src/zluchn.dic \
+        src/ext-chim.dic \
+        src/ext-dzeeprym.dic \
+        src/ext-dzejasl1.dic \
+        src/ext-dzejasl2.dic \
+        src/ext-naz.dic \
+        src/ext-naz1.dic \
+        src/ext-naz2.dic \
+        src/ext-naz3.dic \
+        src/ext-prym.dic \
+        src/ext-pryn.dic \
+        src/ext-prysl.dic \
+        src/ext-zajm.dic \
+        src/geagraph.dic \
+        src/im1.dic \
+        src/im2.dic \
+        src/najm.dic \
+        src/prozv.dic \
+        src/pryst.dic \
+        src/sk.dic
 
 all: dict-zip dict-xpi dict-oxt
 
 dict: be_BY@tarask.aff be_BY@tarask.dic
 
 # This target removes comments - all but 5 lines - from affix file
-be_BY@tarask.aff:
-	head -n 5 hunspell-dic/be_BY.affixes > be_BY@tarask.aff
-	cut -d# -f1 hunspell-dic/be_BY.affixes \
+be_BY@tarask.aff: src/be_BY.affixes
+	head -n 5 src/be_BY.affixes > be_BY@tarask.aff
+	cut -d# -f1 src/be_BY.affixes \
 	| tr -s ' ' ' ' | tr -s '\12' '\12' | tail -n+2 \
 	>> be_BY@tarask.aff
 
 # This target concatenates dictionary parts
 # then counts words and put number in 1st line of dictionary
-be_BY@tarask.dic:
-	cat \
-	hunspell-dic/chasc.dic \
-	hunspell-dic/dzeeprym.dic \
-	hunspell-dic/dzeeprysl.dic \
-	hunspell-dic/dzejasl1.dic \
-	hunspell-dic/dzejasl2.dic \
-	hunspell-dic/lich.dic \
-	hunspell-dic/naz.dic \
-	hunspell-dic/naz1.dic \
-	hunspell-dic/naz2.dic \
-	hunspell-dic/naz3.dic \
-	hunspell-dic/prym.dic \
-	hunspell-dic/pryn.dic \
-	hunspell-dic/prysl.dic \
-	hunspell-dic/vykl.dic \
-	hunspell-dic/zajm.dic \
-	hunspell-dic/zluchn.dic \
-	hunspell-dic/ext-chim.dic \
-	hunspell-dic/ext-dzeeprym.dic \
-	hunspell-dic/ext-dzejasl1.dic \
-	hunspell-dic/ext-dzejasl2.dic \
-	hunspell-dic/ext-naz.dic \
-	hunspell-dic/ext-naz1.dic \
-	hunspell-dic/ext-naz2.dic \
-	hunspell-dic/ext-naz3.dic \
-	hunspell-dic/ext-prym.dic \
-	hunspell-dic/ext-pryn.dic \
-	hunspell-dic/ext-prysl.dic \
-	hunspell-dic/ext-zajm.dic \
-	hunspell-dic/geagraph.dic \
-	hunspell-dic/im1.dic \
-	hunspell-dic/im2.dic \
-	hunspell-dic/najm.dic \
-	hunspell-dic/prozv.dic \
-	hunspell-dic/pryst.dic \
-	hunspell-dic/sk.dic \
-	| sort | uniq > be_BY.dictionary
+be_BY@tarask.dic: $(SOURCES)
+	cat $(SOURCES) | sort -u > be_BY.dictionary
 	cat be_BY.dictionary | wc -l > be_BY@tarask.dic
 	cat be_BY.dictionary >> be_BY@tarask.dic && rm be_BY.dictionary
 
@@ -74,7 +75,7 @@ dict-xpi: dict
 	sed -i \
 	's/\"version\": \"[[:graph:]]*\.1w/\"version\": \"$(VERSION_NUMBER)\.1w/' \
 	manifest.json
-	zip -rq spell-be-tarask-$(VERSION_NUMBER)-2.xpi \
+	zip -rq spell-be-tarask-$(VERSION_NUMBER)-$(XPI_BUILD).xpi \
 	manifest.json \
 	dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
 	dictionaries/README_be_BY.txt
@@ -93,7 +94,7 @@ rpm:
 clean:
 	rm -f be_BY@tarask.aff be_BY@tarask.dic hunspell-be-tarask-$(VERSION_NUMBER).zip \
 	dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
-	spell-be-tarask-$(VERSION_NUMBER).1.xpi \
+	spell-be-tarask-$(VERSION_NUMBER)-$(XPI_BUILD).xpi \
 	dict-be-tarask-$(VERSION_NUMBER).oxt
 
 .PHONY: clean rpm
