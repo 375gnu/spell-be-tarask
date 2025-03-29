@@ -88,6 +88,9 @@ dict-oxt: dict
 	META-INF/manifest.xml README_spell_be_BY.txt \
 	be_BY@tarask.aff be_BY@tarask.dic description.xml dictionaries.xcu
 
+wordlist: dict
+	hunaftool -i=dic -o=csv be_BY@tarask.aff be_BY@tarask.dic wordlist
+
 rpm:
 	rpmbuild -v -bb --build-in-place hunspell-be-tarask.spec
 
