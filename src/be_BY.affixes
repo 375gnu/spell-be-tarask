@@ -1025,10 +1025,10 @@ SFX d   цца   юцца       цца        #  >  &_3p._plur._refl._pres.
 # неазначальная форма,
 # прошлы час, адз. (м. і ж. род) і мн. лік
 SFX j Y 33
-SFX j   у     уцца       у          # кіну > кінуцца &_inf._refl.
-SFX j   у     уўся       у          #  >  &_masc._past
-SFX j   у     улася      у          #  >  &_fem._past
-SFX j   у     уліся      у          #  >  &_plur._past
+SFX j   0     цца        у          # кіну > кінуцца &_inf._refl.
+SFX j   0     ўся        у          #  >  &_masc._past
+SFX j   0     лася       у          #  >  &_fem._past
+SFX j   0     ліся       у          #  >  &_plur._past
 SFX j   ю     цца        [аеыэя]ю   # наведваю > наведвацца &_inf._refl.
 SFX j   ю     ўся        [аеыэя]ю   # выветрываю > выветрываўся &_masc._sing._refl._past
 SFX j   ю     лася       [аеыэя]ю   #  >  &_fem._sing._refl._past
