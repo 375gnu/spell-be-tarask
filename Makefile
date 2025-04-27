@@ -67,10 +67,10 @@ be_BY@tarask.dic: $(SOURCES)
 	cat be_BY.dictionary | wc -l > be_BY@tarask.dic
 	cat be_BY.dictionary >> be_BY@tarask.dic && rm be_BY.dictionary
 
-dict-zip: dict
+dict-zip: be_BY@tarask.aff be_BY@tarask.dic
 	zip -rq hunspell-be-tarask-$(VERSION_NUMBER).zip be_BY@tarask.aff be_BY@tarask.dic
 
-dict-xpi: dict
+dict-xpi: be_BY@tarask.aff be_BY@tarask.dic
 	cp be_BY@tarask.aff be_BY@tarask.dic dictionaries/
 	sed -i \
 	's/\"version\": \"[[:graph:]]*\.1w/\"version\": \"$(VERSION_NUMBER)\.1w/' \
@@ -80,7 +80,7 @@ dict-xpi: dict
 	dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
 	dictionaries/README_be_BY.txt
 
-dict-oxt: dict
+dict-oxt: be_BY@tarask.aff be_BY@tarask.dic
 	sed -i \
 	's/<version value=\"[[:graph:]]*\"/<version value=\"$(VERSION_NUMBER)\"/' \
 	description.xml
@@ -88,7 +88,7 @@ dict-oxt: dict
 	META-INF/manifest.xml README_spell_be_BY.txt \
 	be_BY@tarask.aff be_BY@tarask.dic description.xml dictionaries.xcu
 
-wordlist: dict
+wordlist: be_BY@tarask.aff be_BY@tarask.dic
 	hunaftool -i=dic -o=csv be_BY@tarask.aff be_BY@tarask.dic wordlist
 
 rpm:
