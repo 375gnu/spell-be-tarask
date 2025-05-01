@@ -37,6 +37,9 @@ ln -s be_BY@tarask.dic $RPM_BUILD_ROOT/%{_datadir}/myspell/be_BY.dic
 %{_datadir}/myspell/*
 
 %changelog
+* Thu May 1 2025 Hleb Valoshka <375gnu@gmail.com> - 0.61-1
+- Update to version 0.61.
+
 * Sun Apr 28 2024 Hleb Valoshka <375gnu@gmail.com> - 0.60-1
 - Update to version 0.60.
 
