@@ -753,7 +753,7 @@ SFX R   я     мі         [іы]я      # многія > многімі
 SFX c Y 50
 SFX c   у     еш         [^зс]ну    #  >  &_2p._sing._pres.
 SFX c   ну    ьнеш       [зс]ну     #  >  &_2p._sing._pres.
-SFX c   у     ьсеш       ссу        #  >  &_2p._sing._pres.
+SFX c   су    ьсеш       ссу        # выссу > высьсеш &_2p._sing._pres.
 SFX c   у     еш         [^с]су     #  >  &_2p._sing._pres.
 SFX c   у     еш         [бвзм]у   #  >  &_2p._sing._pres.
 SFX c   гу    жаш        гу         # лягу > ляжаш &_2p._sing._pres.
@@ -764,7 +764,7 @@ SFX c   ту    ьцеш       сту        #  >  &_2p._sing._pres.
 SFX c   ту    цеш        [^с]ту     #  >  &_2p._sing._pres.
 SFX c   у     е          [^зс]ну    #  >  &_2p._sing._pres.
 SFX c   ну    ьне        [зс]ну     #  >  &_2p._sing._pres.
-SFX c   у     ьсе        ссу        # выссу > выссе &_3p._sing._pres.
+SFX c   су    ьсе        ссу        # выссу > высьсе &_3p._sing._pres.
 SFX c   у     е          [^с]су     #  >  &_3p._sing._pres.
 SFX c   у     е          [бвзм]у    #  >  &_3p._sing._pres.
 SFX c   гу    жа         гу         #  >  &_3p._sing._pres.
@@ -786,8 +786,8 @@ SFX c   ту    ьцем       сту        # вырасту > вырасьце
 SFX c   ту    цем        [^с]ту     # вырасту > вырасьцем &_1p._plur._pres.
 SFX c   у     еце        [^зс]ну    #  >  &_2p._sing._pres.
 SFX c   ну    ьнеце      [зс]ну     #  >  &_2p._sing._pres.
-SFX c   у     ьсеце      ссу        # сьціхну > сьціхнеце &_2p._plur._pres.
-SFX c   у     еце        [^с]су     # сьціхну > сьціхнеце &_2p._plur._pres.
+SFX c   су    ьсеце      ссу        # выссу > высьсеце &_2p._plur._pres.
+SFX c   у     еце        [^с]су     #  >  &_2p._plur._pres.
 SFX c   у     еце        [бвзм]у    # сьціхну > сьціхнеце &_2p._plur._pres.
 SFX c   гу    жаце       гу         #  >  &_2p._plur._pres.
 SFX c   у     зеце       ду         #  >  &_2p._plur._pres.
@@ -894,9 +894,9 @@ SFX g   ну    ьні        [зс]ну     # абвісну > абвісьні
 SFX g   ну    ьніце      [зс]ну     #  >  &_imp.
 SFX g   у     і          [^зс]ну    #  > &_imp.
 SFX g   у     іце        [^зс]ну    #  >  &_imp.
-SFX g   су    сьсі       ссу        #  >  &_imp.
+SFX g   су    ьсі        ссу        #  >  &_imp.
 SFX g   у     і          [^с]су     #  >  &_imp.
-SFX g   су    сьсіце     ссу        #  >  &_imp.
+SFX g   су    ьсіце      ссу        #  >  &_imp.
 SFX g   у     іце        [^с]су     #  >  &_imp.
 SFX g   у     і          [бвзлмпфц]у # нясу > нясі &_imp.
 SFX g   у     іце        [бвзлмпфц]у #  >  &_imp.
