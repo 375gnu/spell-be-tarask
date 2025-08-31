@@ -1,4 +1,4 @@
-%define version 0.61
+%define version 0.61.1
 
 Name: hunspell-be-tarask
 Summary: Belarusian dictionary for hunspell and classic orthography
@@ -37,6 +37,9 @@ ln -s be_BY@tarask.dic $RPM_BUILD_ROOT/%{_datadir}/myspell/be_BY.dic
 %{_datadir}/myspell/*
 
 %changelog
+* Sun Aug 31 2025 Hleb Valoshka <375gnu@gmail.com> - 0.61.1-1
+- Update to version 0.61.1.
+
 * Thu May 1 2025 Hleb Valoshka <375gnu@gmail.com> - 0.61-1
 - Update to version 0.61.
 
