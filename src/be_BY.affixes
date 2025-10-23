@@ -455,7 +455,7 @@ SFX P   ы     ах         ы          #  >  &_c.pr._plur.
 
 # множны лік, канчатак -оў (-ёў) р.скл. мн.л.
 # і мн.л. пры цьвёрдай аснове з чаргаваньнем галоснай
-SFX Q Y 53
+SFX Q Y 73
 SFX Q   а     ы          [бвджзлмнпрстфцчш]а #  >  &_c.nom._plur.
 SFX Q   а     і          [гкх]а     # васілька > васількі &_c.nom._plur.
 SFX Q   0     ы          [бвджзлмнпрстфцчш] #  >  &_c.nom._plur.
@@ -484,6 +484,17 @@ SFX Q   о     ам         о          #  >  &_c.dat._plur.
 SFX Q   ы     ам         ы          #  >  &_c.dat._plur.
 SFX Q   ь     ям         ь          #  >  &_c.dat._plur.
 SFX Q   я     ям         я          #  >  &_c.dat._plur.
+SFX Q   а     ом         а          #  >  &_c.dat._plur.
+SFX Q   0     ом         [бвгджзклмнпрстфхцчш] #  >  &_c.dat._plur.
+SFX Q   е     ём         е          #  >  &_c.dat._plur.
+SFX Q   ё     ём         ё          #  >  &_c.dat._plur.
+SFX Q   і     ём         [азілмносуўя']і #  >  &_c.dat._plur.
+SFX Q   і     ом         [гкх]і     #  >  &_c.dat._plur.
+SFX Q   й     ём         й          #  >  &_c.dat._plur.
+SFX Q   о     ом         о          #  >  &_c.dat._plur.
+SFX Q   ы     ом         ы          #  >  &_c.dat._plur.
+SFX Q   ь     ём         ь          #  >  &_c.dat._plur.
+SFX Q   я     ём         я          #  >  &_c.dat._plur.
 SFX Q   а     амі        а          #  >  &_c.ins._plur.
 SFX Q   0     амі        [бвгджзклмнпрстфхцчш] #  >  &_c.ins._plur.
 SFX Q   е     ямі        е          #  >  &_c.ins._plur.
@@ -497,18 +508,27 @@ SFX Q   ь     ямі        ь          #  >  &_c.ins._plur.
 SFX Q   я     ямі        я          #  >  &_c.ins._plur.
 SFX Q   а     ах         а          #  >  &_c.pr._plur.
 SFX Q   0     ах         [бвгджзклмнпрстфхцчш] #  >  &_c.pr._plur.
-SFX Q   0     ох         [бвгджзклмнпрстфхцчш] # склад > складох &_c.pr._plur.
 SFX Q   е     ях         е          #  >  &_c.pr._plur.
 SFX Q   ё     ях         ё          #  >  &_c.pr._plur.
 SFX Q   і     ях         [азілмносуўя']і #  >  &_c.pr._plur.
-SFX Q   і     ёх         [лн]і      # карані > каранёх &_c.pr._plur.
 SFX Q   і     ах         [гкх]і     #  >  &_c.pr._plur.
 SFX Q   й     ях         й          #  >  &_c.pr._plur.
 SFX Q   о     ах         о          #  >  &_c.pr._plur.
 SFX Q   ы     ах         ы          #  >  &_c.pr._plur.
-SFX Q   ы     ох         ы          # гады > гадох &_c.pr._plur.
 SFX Q   ь     ях         ь          #  >  &_c.pr._plur.
 SFX Q   я     ях         я          #  >  &_c.pr._plur.
+SFX Q   а     ох         а          #  >  &_c.pr._plur.
+SFX Q   0     ох         [бвгджзклмнпрстфхцчш] #  >  &_c.pr._plur.
+SFX Q   0     ох         [бвгджзклмнпрстфхцчш] # склад > складох &_c.pr._plur.
+SFX Q   е     ёх         е          #  >  &_c.pr._plur.
+SFX Q   ё     ёх         ё          #  >  &_c.pr._plur.
+SFX Q   і     ёх         [азілмносуўя']і #  >  &_c.pr._plur.
+SFX Q   і     ох         [гкх]і     #  >  &_c.pr._plur.
+SFX Q   й     ёх         й          #  >  &_c.pr._plur.
+SFX Q   о     ох         о          #  >  &_c.pr._plur.
+SFX Q   ы     ох         ы          #  >  &_c.pr._plur.
+SFX Q   ь     ёх         ь          #  >  &_c.pr._plur.
+SFX Q   я     ёх         я          #  >  &_c.pr._plur.
 
 
 # Трэцяе скланеньне, назоўнікі жаночага роду
