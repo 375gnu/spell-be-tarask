@@ -1,7 +1,7 @@
-# Makefile for spell-be
-
-# Copyright (C) 2012-2023 Mikalai Udodau
-
+# Makefile for spell-be-tarask. Requires GNU Make.
+#
+# Copyright (C) 2012-2023 Mikalai Udodau, 2025 Hleb Valoshka
+#
 # This work is licensed under the Creative Commons
 # Attribution-ShareAlike 3.0 Unported License.
 # To view a copy of this license, visit
@@ -10,94 +10,84 @@
 # 171 Second Street, Suite 300, San Francisco,
 # California, 94105, USA.
 
-VERSION_NUMBER=$(shell grep -F Version: src/be_BY.affixes | cut -f2 -d: | tr -d ' ')
-XPI_BUILD=1
+VERSION_NUMBER := $(shell git describe --tags | tr -d v)
+XPI_BUILD      := 1
+SOURCES        := $(wildcard src/*.dic)
 
-SOURCES=src/chasc.dic \
-        src/dzeeprym.dic \
-        src/dzeeprysl.dic \
-        src/dzejasl1.dic \
-        src/dzejasl2.dic \
-        src/lich.dic \
-        src/naz.dic \
-        src/naz1.dic \
-        src/naz2.dic \
-        src/naz3.dic \
-        src/prym.dic \
-        src/pryn.dic \
-        src/prysl.dic \
-        src/vykl.dic \
-        src/zajm.dic \
-        src/zluchn.dic \
-        src/ext-chim.dic \
-        src/ext-dzeeprym.dic \
-        src/ext-dzejasl1.dic \
-        src/ext-dzejasl2.dic \
-        src/ext-naz.dic \
-        src/ext-naz1.dic \
-        src/ext-naz2.dic \
-        src/ext-naz3.dic \
-        src/ext-prym.dic \
-        src/ext-pryn.dic \
-        src/ext-prysl.dic \
-        src/ext-zajm.dic \
-        src/geagraph.dic \
-        src/im1.dic \
-        src/im2.dic \
-        src/najm.dic \
-        src/prozv.dic \
-        src/pryst.dic \
-        src/sk.dic
-
-all: dict-zip dict-xpi dict-oxt
-
-dict: be_BY@tarask.aff be_BY@tarask.dic
+build_$(VERSION_NUMBER).lock:
+	touch $@
 
 # This target removes comments - all but 5 lines - from affix file
 be_BY@tarask.aff: src/be_BY.affixes
-	head -n 5 src/be_BY.affixes > be_BY@tarask.aff
-	cut -d# -f1 src/be_BY.affixes \
-	| tr -s ' ' ' ' | tr -s '\12' '\12' | tail -n+2 \
-	>> be_BY@tarask.aff
+	head -n 5 src/be_BY.affixes | sed 's/@VERSION@/$(VERSION_NUMBER)/' > $@
+	cut -d# -f1 src/be_BY.affixes | tr -s ' ' ' ' | tr -s '\12' '\12' | tail -n+2 >> $@
 
 # This target concatenates dictionary parts
 # then counts words and put number in 1st line of dictionary
 be_BY@tarask.dic: $(SOURCES)
 	cat $(SOURCES) | sort -u > be_BY.dictionary
-	cat be_BY.dictionary | wc -l > be_BY@tarask.dic
-	cat be_BY.dictionary >> be_BY@tarask.dic && rm be_BY.dictionary
+	cat be_BY.dictionary | wc -l > $@
+	cat be_BY.dictionary >> $@
+	rm be_BY.dictionary
 
-dict-zip: be_BY@tarask.aff be_BY@tarask.dic
-	zip -rq hunspell-be-tarask-$(VERSION_NUMBER).zip be_BY@tarask.aff be_BY@tarask.dic
+hunspell-be-tarask-$(VERSION_NUMBER).zip: be_BY@tarask.aff be_BY@tarask.dic
+	zip -rq $@ $^
 
-dict-xpi: be_BY@tarask.aff be_BY@tarask.dic
-	cp be_BY@tarask.aff be_BY@tarask.dic dictionaries/
-	sed -i \
-	's/\"version\": \"[[:graph:]]*\.1w/\"version\": \"$(VERSION_NUMBER)\.1w/' \
-	manifest.json
-	zip -rq spell-be-tarask-$(VERSION_NUMBER)-$(XPI_BUILD).xpi \
-	manifest.json \
-	dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
-	dictionaries/README_be_BY.txt
+hunspell-be-tarask-bdic-$(VERSION_NUMBER).zip: qtwebengine_dictionaries/be_BY@tarask.bdic
+	zip -rq $@ $^
 
-dict-oxt: be_BY@tarask.aff be_BY@tarask.dic
-	sed -i \
-	's/<version value=\"[[:graph:]]*\"/<version value=\"$(VERSION_NUMBER)\"/' \
-	description.xml
-	zip -rq dict-be-tarask-$(VERSION_NUMBER).oxt \
-	META-INF/manifest.xml README_spell_be_BY.txt \
-	be_BY@tarask.aff be_BY@tarask.dic description.xml dictionaries.xcu
+manifest.json: manifest.json.in build_$(VERSION_NUMBER).lock
+	sed 's/@VERSION@/$(VERSION_NUMBER)/' < $< > $@
+
+dictionaries/be_BY@tarask.aff: be_BY@tarask.aff
+	cp $< $@
+
+dictionaries/be_BY@tarask.dic: be_BY@tarask.dic
+	cp $< $@
+
+spell-be-tarask-$(VERSION_NUMBER)-$(XPI_BUILD).xpi: dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic manifest.json
+	zip -rq $@ $^ dictionaries/README_be_BY.txt
+
+description.xml: description.xml.in build_$(VERSION_NUMBER).lock
+	sed 's/@VERSION@/$(VERSION_NUMBER)/' < $< > $@
+
+dict-be-tarask-$(VERSION_NUMBER).oxt: be_BY@tarask.aff be_BY@tarask.dic description.xml
+	zip -rq $@ $^  META-INF/manifest.xml README_spell_be_BY.txt dictionaries.xcu
+
+qtwebengine_dictionaries:
+	mkdir qtwebengine_dictionaries
+
+qtwebengine_dictionaries/be_BY@tarask.bdic: be_BY@tarask.dic be_BY@tarask.aff qtwebengine_dictionaries
+	convert-bdic $< $@
 
 wordlist: be_BY@tarask.aff be_BY@tarask.dic
-	hunaftool -i=dic -o=csv be_BY@tarask.aff be_BY@tarask.dic wordlist
+	hunaftool -i=dic -o=csv $^ $@
 
 rpm:
 	rpmbuild -v -bb --build-in-place hunspell-be-tarask.spec
 
 clean:
-	rm -f be_BY@tarask.aff be_BY@tarask.dic hunspell-be-tarask-$(VERSION_NUMBER).zip \
-	dictionaries/be_BY@tarask.aff dictionaries/be_BY@tarask.dic \
+	rm -rf be_BY@tarask.aff be_BY@tarask.dic \
+	be_BY@tarask.bdic \
+	hunspell-be-tarask-$(VERSION_NUMBER).zip \
+	hunspell-be-tarask-bdic-$(VERSION_NUMBER).zip \
+	dictionaries/be_BY@tarask.aff \
+	dictionaries/be_BY@tarask.dic \
 	spell-be-tarask-$(VERSION_NUMBER)-$(XPI_BUILD).xpi \
-	dict-be-tarask-$(VERSION_NUMBER).oxt
+	dict-be-tarask-$(VERSION_NUMBER).oxt \
+	description.xml \
+	manifest.json \
+	qtwebengine_dictionaries \
+	build_$(VERSION_NUMBER).lock
+
+# useful aliases
+
+oxt: dict-be-tarask-$(VERSION_NUMBER).oxt
+xpi: spell-be-tarask-$(VERSION_NUMBER)-$(XPI_BUILD).xpi
+bdic: qtwebengine_dictionaries/be_BY@tarask.bdic
+bdic-zip: hunspell-be-tarask-bdic-$(VERSION_NUMBER).zip
+zip: hunspell-be-tarask-$(VERSION_NUMBER).zip
+dict: be_BY@tarask.aff be_BY@tarask.dic
+all: zip xpi oxt bdic-zip
 
 .PHONY: clean rpm

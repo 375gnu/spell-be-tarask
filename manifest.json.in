@@ -3,7 +3,7 @@
     {
         "be": "dictionaries/be_BY@tarask.dic"
     },
-    "version": "0.61.1",
+    "version": "@VERSION@",
     "browser_specific_settings":
     {
         "gecko":
