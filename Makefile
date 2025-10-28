@@ -14,6 +14,8 @@ VERSION_NUMBER := $(shell git describe --tags | tr -d v)
 XPI_BUILD      := 1
 SOURCES        := $(wildcard src/*.dic)
 
+DEB_VER = $(shell head -n1 debian/changelog | cut '-d;' -f1 | cut '-d ' -f2 | tr -d '()')
+
 build_$(VERSION_NUMBER).lock:
 	touch $@
 
@@ -63,6 +65,18 @@ qtwebengine_dictionaries/be_BY@tarask.bdic: be_BY@tarask.dic be_BY@tarask.aff qt
 wordlist: be_BY@tarask.aff be_BY@tarask.dic
 	hunaftool -i=dic -o=csv $^ $@
 
+deb:
+	if [ $(VERSION_NUMBER) != $(DEB_VER) ]; then \
+	    dch -v $(VERSION_NUMBER) "Build version $(VERSION_NUMBER)." && dch -r ""; \
+	fi
+	debuild -uc -us -b
+
+debalt:
+	if [ $(VERSION_NUMBER) != $(DEB_VER) ]; then \
+	    dch -v $(VERSION_NUMBER) "Build version $(VERSION_NUMBER)." && dch -r ""; \
+	fi
+	DEB_BUILD_PROFILES=pkg.spell-be-tarask.nolinks debuild -uc -us -b
+
 rpm:
 	rpmbuild -v -bb --build-in-place hunspell-be-tarask.spec
 
@@ -90,4 +104,4 @@ zip: hunspell-be-tarask-$(VERSION_NUMBER).zip
 dict: be_BY@tarask.aff be_BY@tarask.dic
 all: zip xpi oxt bdic-zip
 
-.PHONY: clean rpm
+.PHONY: clean rpm deb debalt
