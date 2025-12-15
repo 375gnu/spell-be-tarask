@@ -53,8 +53,8 @@ spell-be-tarask-$(VERSION_NUMBER)-$(XPI_BUILD).xpi: dictionaries/be_BY@tarask.af
 description.xml: description.xml.in build_$(VERSION_NUMBER).lock
 	sed 's/@VERSION@/$(VERSION_NUMBER)/' < $< > $@
 
-dict-be-tarask-$(VERSION_NUMBER).oxt: be_BY@tarask.aff be_BY@tarask.dic description.xml
-	zip -rq $@ $^  META-INF/manifest.xml README_spell_be_BY.txt dictionaries.xcu
+dict-be-tarask-$(VERSION_NUMBER).oxt: be_BY@tarask.aff be_BY@tarask.dic description.xml hyph_be_BY@tarask.dic dictionaries.xcu README_spell_be_BY.txt META-INF/manifest.xml
+	zip -rq $@ $^
 
 qtwebengine_dictionaries:
 	mkdir qtwebengine_dictionaries
