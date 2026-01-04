@@ -9,7 +9,7 @@
 
 Усе пералічаныя тут файлы трэба загружаць з [github](https://github.com/375gnu/spell-be-tarask/releases). Замяніце `${version}` на патрэбную вэрсію, напрыклад, `0.63`.
 
-Калі маеце *Debian*, або сыстэма на ягонай базе (*Devuan*, *Ubuntu*, *Mint* і т.п.), то трэба ўсталяваць адзін з файлаў `deb`:
+Калі маеце *Debian*, або сыстэму на ягонай базе (*Devuan*, *Ubuntu*, *Mint* і т.п.), то трэба ўсталяваць адзін з файлаў `deb`:
 
 * `hunspell-be-tarask_${version}_all.deb` — асноўная вэрсія. Канфліктуе з `hunspell-be`, бо дадае спасылкі `be_BY@tarask.aff->be_BY.aff` і `be_BY@tarask.dic->be_BY.dic`.
 * `hunspell-be-tarask-alt_${version}_all.deb` — альтэрнатыўны пакет, не дадае спасылак `be_BY.aff` ды `be_BY.dic`, таму можа суіснаваць разам з `hunspell-be`.
