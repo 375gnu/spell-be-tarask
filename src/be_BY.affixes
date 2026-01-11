@@ -642,14 +642,14 @@ SFX V   і     ай         [гкх]і     #  >  &_c.gen._fem.
 SFX V   і     ую         [гкх]і     #  >  &_c.acc._fem.
 SFX V   і     аю         [гкх]і     #  >  &_c.ins._fem.
 SFX V   і     ае         [гкх]і     #  >  &_c.nom._neut.
-SFX V   і     яга        [нц]і      # сіні > сіняга &_c.gen._masc.
-SFX V   і     яму        [нц]і      # трэці > трэцяму &_c.dat._masc.
-SFX V   і     ім         [нц]і      #  >  &_c.ins._masc.
-SFX V   і     яя         [нц]і      #  >  &_c.nom._fem.
-SFX V   і     яй         [нц]і      #  >  &_c.gen._fem.
-SFX V   і     юю         [нц]і      #  >  &_c.acc._fem.
-SFX V   і     яю         [нц]і      #  >  &_c.ins._fem.
-SFX V   і     яе         [нц]і      #  >  &_c.nom._neut.
+SFX V   і     яга        [нцы]і     # сіні > сіняга &_c.gen._masc.
+SFX V   і     яму        [нцы]і     # трэці > трэцяму &_c.dat._masc.
+SFX V   і     ім         [нцы]і     #  >  &_c.ins._masc.
+SFX V   і     яя         [нцы]і     #  >  &_c.nom._fem.
+SFX V   і     яй         [нцы]і     #  >  &_c.gen._fem.
+SFX V   і     юю         [нцы]і     #  >  &_c.acc._fem.
+SFX V   і     яю         [нцы]і     #  >  &_c.ins._fem.
+SFX V   і     яе         [нцы]і     #  >  &_c.nom._neut.
 SFX V   і     ія         і          #  >  &_c.nom._plur.
 SFX V   і     іх         і          #  >  &_c.gen._plur.
 SFX V   і     ім         і          #  >  &_c.dat._plur.
