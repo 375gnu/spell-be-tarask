@@ -570,7 +570,7 @@ SFX L   а     ам         а          #  >  &_c.dat._plur.
 SFX L   а     амі        а          #  >  &_c.ins._plur.
 SFX L   а     ах         а          #  >  &_c.pr._plur.
 SFX L   0     і          [бф]       # верф > верфі &_c.nom.plur.
-SFX L   0     ей         [бф]       #  >  &_c.gen.plur.
+SFX L   0     яў         [бф]       #  >  &_c.gen.plur.
 SFX L   0     ям         [бф]       #  >  &_c.dat.plur.
 SFX L   0     ямі        [бф]       #  >  &_c.ins.plur.
 SFX L   0     ях         [бф]       #  >  &_c.pr.plur.
@@ -587,7 +587,7 @@ SFX L   ы     эй         ы          # куры > курэй &_c.gen.plur.
 SFX L   ы     ам         ы          #  >  &_c.dat._plur.
 SFX L   ы     амі        ы          #  >  &_c.ins._plur.
 SFX L   ы     ах         ы          #  >  &_c.pr._plur.
-SFX L   ь     яў         ь          # супольнасьць > супольнасьцей &_c.gen.plur.
+SFX L   ь     яў         ь          # супольнасьць > супольнасьцяў &_c.gen.plur.
 SFX L   ь     ям         ь          #  >  &_c.dat._plur.
 SFX L   ь     ямі        ь          #  >  &_c.ins._plur.
 SFX L   ь     ях         ь          #  >  &_c.pr._plur.
