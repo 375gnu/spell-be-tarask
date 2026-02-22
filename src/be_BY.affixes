@@ -463,16 +463,19 @@ SFX P   ы     ах         ы          #  >  &_c.pr._plur.
 
 # множны лік, канчатак -оў (-ёў) р.скл. мн.л.
 # і мн.л. пры цьвёрдай аснове з чаргаваньнем галоснай
-SFX Q Y 73
+SFX Q Y 87
 SFX Q   а     ы          [бвджзлмнпрстфцчш]а #  >  &_c.nom._plur.
 SFX Q   а     і          [гкх]а     # васілька > васількі &_c.nom._plur.
 SFX Q   0     ы          [бвджзлмнпрстфцчш] #  >  &_c.nom._plur.
-SFX Q   0     і          [гкх]      # бык > быкі &_c.nom._plur.
+SFX Q   0     і          [^о]к      #
+SFX Q   0     і          [гх]       # бык > быкі &_c.nom._plur.
 SFX Q   о     ы          [^гкх]о    # кайло > кайлы &_c.nom._plur.
-SFX Q   о     і          [гкх]о    #  >  &_c.nom._plur.
+SFX Q   о     і          [гкх]о     #  >  &_c.nom._plur.
 SFX Q   ь     і          ь          # руль > рулі &_c.nom._plur.
+SFX Q   ок    кі         ок         # станок > станкі &_c.nom._plur.
 SFX Q   а     оў         а          #  >  &_c.gen.plur.
-SFX Q   0     оў         [бвгджзклмнпрстфхцчш] # бык > быкоў &_c.gen._plur.
+SFX Q   0     оў         [^о]к      #  >  &_c.gen.plur.
+SFX Q   0     оў         [бвгджзлмнпрстфхцчш] # бык > быкоў &_c.gen._plur.
 SFX Q   е     ёў         е          #  >  &_c.gen._plur.
 SFX Q   ё     ёў         ё          #  >  &_c.gen._plur.
 SFX Q   і     ёў         [азілмносуўя']і # баі > баёў &_c.gen._plur.
@@ -482,8 +485,10 @@ SFX Q   ь     ёў         ь          # куль > кулёў &_c.gen._plur.
 SFX Q   о     оў         о          # кайло > кайлоў &_c.gen.plur.
 SFX Q   ы     оў         ы          # галасы > галасоў &_c.gen.plur.
 SFX Q   я     ёў         я          # крамля > крамлёў &_c.gen._plur.
+SFX Q   ок    коў        ок         # станок > станкоў &_c.gen._plur.
 SFX Q   а     ам         а          #  >  &_c.dat._plur.
-SFX Q   0     ам         [бвгджзклмнпрстфхцчш] #  >  &_c.dat._plur.
+SFX Q   0     ам         [^о]к      #  >  &_c.dat._plur.
+SFX Q   0     ам         [бвгджзлмнпрстфхцчш] #  >  &_c.dat._plur.
 SFX Q   е     ям         е          #  >  &_c.dat._plur.
 SFX Q   ё     ям         ё          #  >  &_c.dat._plur.
 SFX Q   і     ям         [азілмносуўця']і #  >  &_c.dat._plur.
@@ -493,8 +498,10 @@ SFX Q   о     ам         о          #  >  &_c.dat._plur.
 SFX Q   ы     ам         ы          #  >  &_c.dat._plur.
 SFX Q   ь     ям         ь          #  >  &_c.dat._plur.
 SFX Q   я     ям         я          #  >  &_c.dat._plur.
+SFX Q   ок    кам        ок         # станок > станкам &_c.dat._plur.
 SFX Q   а     ом         а          #  >  &_c.dat._plur.
-SFX Q   0     ом         [бвгджзклмнпрстфхцчш] #  >  &_c.dat._plur.
+SFX Q   0     ом         [^о]к      #  >  &_c.dat._plur.
+SFX Q   0     ом         [бвгджзлмнпрстфхцчш] #  >  &_c.dat._plur.
 SFX Q   е     ём         е          #  >  &_c.dat._plur.
 SFX Q   ё     ём         ё          #  >  &_c.dat._plur.
 SFX Q   і     ём         [азілмносуўця']і #  >  &_c.dat._plur.
@@ -504,8 +511,10 @@ SFX Q   о     ом         о          #  >  &_c.dat._plur.
 SFX Q   ы     ом         ы          #  >  &_c.dat._plur.
 SFX Q   ь     ём         ь          #  >  &_c.dat._plur.
 SFX Q   я     ём         я          #  >  &_c.dat._plur.
+SFX Q   ок    ком        ок         # станок > станком &_c.dat._plur.
 SFX Q   а     амі        а          #  >  &_c.ins._plur.
-SFX Q   0     амі        [бвгджзклмнпрстфхцчш] #  >  &_c.ins._plur.
+SFX Q   0     амі        [^о]к      #  >  &_c.ins._plur.
+SFX Q   0     амі        [бвгджзлмнпрстфхцчш] #  >  &_c.ins._plur.
 SFX Q   е     ямі        е          #  >  &_c.ins._plur.
 SFX Q   ё     ямі        ё          #  >  &_c.ins._plur.
 SFX Q   і     ямі        [азілмносуўця']і #  >  &_c.ins._plur.
@@ -515,8 +524,10 @@ SFX Q   о     амі        о          #  >  &_c.ins._plur.
 SFX Q   ы     амі        ы          #  >  &_c.ins._plur.
 SFX Q   ь     ямі        ь          #  >  &_c.ins._plur.
 SFX Q   я     ямі        я          #  >  &_c.ins._plur.
+SFX Q   ок    камі       ок         # станок > станкамі &_c.ins._plur.
 SFX Q   а     ах         а          #  >  &_c.pr._plur.
-SFX Q   0     ах         [бвгджзклмнпрстфхцчш] #  >  &_c.pr._plur.
+SFX Q   0     ах         [^о]к      #  >  &_c.pr._plur.
+SFX Q   0     ах         [бвгджзлмнпрстфхцчш] #  >  &_c.pr._plur.
 SFX Q   е     ях         е          #  >  &_c.pr._plur.
 SFX Q   ё     ях         ё          #  >  &_c.pr._plur.
 SFX Q   і     ях         [азілмносуўця']і #  >  &_c.pr._plur.
@@ -526,8 +537,10 @@ SFX Q   о     ах         о          #  >  &_c.pr._plur.
 SFX Q   ы     ах         ы          #  >  &_c.pr._plur.
 SFX Q   ь     ях         ь          #  >  &_c.pr._plur.
 SFX Q   я     ях         я          #  >  &_c.pr._plur.
+SFX Q   ок    ках        ок         # станок > станках &_c.pr._plur.
 SFX Q   а     ох         а          #  >  &_c.pr._plur.
-SFX Q   0     ох         [бвгджзклмнпрстфхцчш] # склад > складох &_c.pr._plur.
+SFX Q   0     ох         [^о]к      #  >  &_c.pr._plur.
+SFX Q   0     ох         [бвгджзлмнпрстфхцчш] # склад > складох &_c.pr._plur.
 SFX Q   е     ёх         е          #  >  &_c.pr._plur.
 SFX Q   ё     ёх         ё          #  >  &_c.pr._plur.
 SFX Q   і     ёх         [азілмносуўця']і #  >  &_c.pr._plur.
@@ -537,6 +550,7 @@ SFX Q   о     ох         о          #  >  &_c.pr._plur.
 SFX Q   ы     ох         ы          #  >  &_c.pr._plur.
 SFX Q   ь     ёх         ь          #  >  &_c.pr._plur.
 SFX Q   я     ёх         я          #  >  &_c.pr._plur.
+SFX Q   ок    кох        ок         # станок > станкох &_c.pr._plur.
 
 
 # Трэцяе скланеньне, назоўнікі жаночага роду
