@@ -1,4 +1,4 @@
-﻿Слоўнік для праверкі артаграфіі беларускай мовы (клясычны правапіс 2005 году) у фармаце Hunspell.
+﻿Слоўнік правяраць артаграфію беларускае мовы (клясычны правапіс 2005 году) у фармаце Hunspell.
 
 Асаблівасьці:
 
@@ -23,7 +23,7 @@
 
 ---
 
-Dictionary for Belarusian language (tarask orthography) in Hunspell format.
+Dictionary to check spelling of the Belarusian language (classic orthography, 2005 ed.) in Hunspell format.
 
 Features:
 
